@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial;
+			padding: 10px;
+			background: white;
+		}
+
+		/* Header/Blog Title */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: midnightblue;
+        }
+
+			.header h1 {
+				font-size: 50px;
+			}
+
+		/* Style the top navigation bar */
+		.topnav {
+			background-color: #333;
+			min-height: 48px;
+		}
+
+			/* Style the topnav links */
+			.topnav a {
+				float: left;
+				display: block;
+				color: #f2f2f2;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+
+				/* Change color on hover */
+				.topnav a:hover {
+					background-color: red;
+					color: black;
+				}
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: black;
+		}
+
+		li {
+			float: left;
+		}
+            li a, .dropbtn {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+                li a:hover, .dropdown:hover .dropbtn {
+                    background-color: red;
+                }
+
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+
+			.dropdown .dropbtn {
+				font-size: 16px;
+				border: none;
+				outline: none;
+				color: white;
+				padding: 14px 16px;
+				background-color: black;
+				font-family: inherit;
+				margin: 0;
+			}
+
+			.navbar a:hover, .dropdown:hover .dropbtn {
+				background-color: red;
+			}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+			.dropdown-content a {
+				float: none;
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+				text-align: left;
+			}
+
+				.dropdown-content a:hover {
+					background-color: #ddd;
+				}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+		/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+		@media screen and (max-width: 400px) {
+			#topnav a {
+				float: none;
+				width: 100%;
+			}
+		}
+
+		/* Style the footer */
+		footer {
+			background-color: midnightblue;
+			padding: 10px;
+			text-align: center;
+			color: white;
+		}
+
+		.topleft {
+			position: absolute;
+			top: 50px;
+			left: 128px;
+			font-size: 18px;
+		}
+
+		.topright {
+			position: absolute;
+			top: 32px;
+			right: 20px;
+		}
+
+		/* Create two columns/boxes that floats next to each other */
+		nav {
+			float: left;
+			width: 20%;
+			background: #ccc;
+			background-color: lightgray;
+			padding: 20px;
+		}
+			/* Style the list inside the menu */
+			nav ul {
+				list-style-type: none;
+				padding: 0;
+			}
+
+		article {
+			float: left;
+			padding: 20px;
+			width: 80%;
+			background-color: #f1f1f1;
+		}
+
+		/* Clear floats after the columns */
+		section::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+		@media (max-width: 600px) {
+			nav, article {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.sticky {
+			position: fixed;
+			top: 0;
+			width: 97.6%;
+		}
+
+			.sticky + .article {
+				padding-top: 60px;
+			}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<h1 style="color:white;">The RFL</h1>
+		<p style="color:white;"><i>The Greatest Fantasy Football League Ever.</i></p>
+		<div class="topleft"><img src=".\RFL LOGO.png" width="100px" /></div>
+		<div class="topright"><img src=".\players.png" width="400px" /></div>
+	</div>
+	<section>
+		<div class="topnav">
+			<ul>
+				<li><a href=".\RFL Webpage.html">Home</a></li>
+				<li><a href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
+				<li><a href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">Teams</a>
+					<div class="dropdown-content">
+						<a href="./Dictator.html"><img src=".\Prof Pic1.png" width="20px" /> The Dictator</a>
+						<a href="./Red Army.html">The Red Army</a>
+						<a href="./Big Ounce.html"><img src=".\big ounce logo.png" width="20px" /> Big Ounce</a>
+						<a href="./Gruden's Plan.html"><img src=".\gruden logo.png" width="20px" /> Gruden's Plan</a>
+						<a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
+						<a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Wentz Wagon</a>
+						<a href="./Red Wolf.html">The Red Wolf of Wall Street</a>
+						<a href="./Mullet Man.html"><img src=".\Mullet Logo.jpg" width="20px" /> Mullet Man</a>
+						<a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" /> Sleepy Nick</a>
+						<a href="./Wack Attacks.html">Wack Attacks</a>
+					</div>
+				</li>
+				<li>
+					<a href="./Past Teams.html">Former Teams</a>
+				</li>
+				<li>
+					<a href="./draft.html">Drafts</a>
+				</li>
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">League Videos</a>
+					<div class="dropdown-content">
+						<a href="https://youtu.be/hTfTKxbhBHc">Announcing Our 10th and Final RFL Member For 2021!</a>
+						<a href="https://youtu.be/89NbZ0oGmTQ">2021 State of the League Address</a>
+						<a href="https://youtu.be/oua0MqRtpLg">The Red Army's 2020 Punishment</a>
+						<a href="https://youtu.be/5dfQiQEzpYM">2020 Waterbets</a>
+						<a href="https://youtu.be/_btkqdhmESU">2020 Exit Interviews</a>
+						<a href="https://youtu.be/Ap3etxqNsV4">Our 2020 Draft</a>
+						<a href="https://youtu.be/gpnV7FCJTdg">Draft Day 2020 Hype Video</a>
+						<a href="https://www.youtube.com/watch?v=801p3bd-SEk">2019 Exit Interviews</a>
+						<a href="https://youtu.be/i6lJSjG6js8">Our 2019 Draft</a>
+						<a href="https://youtu.be/YFUnB669-rE">2019 Commish Annoucement</a>
+					</div>
+				</li>
+				<li>
+					<a href="./standings.html">Standings</a>
+				</li>
+				<li>
+					<a href="./records.html">Records</a>
+				</li>
+			</ul>
+		</div>
+
+		<nav>
+			<p>	<h3>2020 League Standings</h3> </p>
+			<p>
+				1. Gruden's Plan
+				<br />	2. The Wentz Wagon
+				<br />	3. Maryland Marijuanas
+				<br />	4. Sleepy Nick
+				<br />	5. The Red Wolf of Wall Street
+				<br />	6. Babylon
+				<br />	7. Mullet Man
+				<br />	8. Big Ounce
+				<br />	9. The Dictator
+				<br />	10. The Red Army
+			</p>
+			<p> <h3>2021 Draft Order</h3> </p>
+			1. The Red Wolf of Wall Street
+			<br />	2. Mullet Man
+			<br />	3. Big Ounce
+			<br />	4. The Dictator
+			<br />	5. The Red Army
+			<br />	6. Gruden's Plan
+			<br />	7. The Wentz Wagon
+			<br />	8. Maryland Marijuanas
+			<br />	9. Sleepy Nick
+			<br />	10. Wack Attacks
+		</nav>
+
+		<article>
+			<h1>Welcome to the RFL!</h1>
+			<p>
+				<strong>Commissioner: </strong> Jeremy Harley
+				<br />	<strong>FRC Members: </strong>Brian Levesque, Michael Boswell Jr., Brandon Harley
+				<br /> <strong>Year Established: </strong>2013
+
+			<p> <strong>Champions: </strong></p>
+			2020 Gruden's Plan
+			<br />	2019 Big Ounce
+			<br />	2018 Big Ounce
+			<br />	2017 The Dictator
+			<br />	2016 Cookie Charizards
+			<br />	2015 The Dictator
+			<br />	2014 Huntingtown Hurricanes
+			<br />	2013 The Dictator
+
+			<h1>History</h1>
+			<p>
+				The greatest fantasy football league of all time was established in 2013 by commissioner Jeremy Harley. Jeremy had played fantasy football
+				in years prior, but he would be stuck with inactive and incompetent commissioners and managers. Seeking a more competitive and involved
+				league experience, Jeremy set out to create his very own league. Early on he found that finding quality managers was going to be very tough.
+				Thus, the inaugural season in 2013 only saw 6 teams. Jeremy brought on childhood friends Brian Levesque, Zachary Przybocki, and Ben Martin
+				along with his brother Brandon Harley to round out the 2013 class. If you are good at math, this only equals 5 teams, so Jeremy had to create
+				a second team just to have enough for the bare minimum of teams allowed to play. Despite barely having enough teams to even play, the pilot
+				year would end successfully, and this new league would be renewed for another year.
+			<p>
+				Going into the 2014 season, the league was set for an expansion. Knowing how hard it was to find people in the first year, Jeremy significantly
+				increased his recruiting efforts. He would find much success as the league went from 5 different people to now 8, including 4 new faces. Brandon
+				would part ways with the league after the first season some say due to their tragic defeat in the championship game. Jeremy would then bring on
+				a slew of middle school friends including Jonathan Heng, Nick Sagun, Justin Ferguson, and the first and only female in league history Sanaya Clark.
+				Though we were able to have more members, the new members were not very dedicated. There were very few active managers and there was one who never
+				even set a lineup in the first place. Though it was nice to see more people apart of the league, major changes had to come to get it to be more
+				competitive.
+			<p>
+				With the 2015 season approaching, two members Jonathan Heng and Justin Ferguson were removed for inactivity. Thus, Jeremy was back on the recruiting
+				trip looking to find two more active and passionate members. In the end, Jeremy would bring on two friends from band class and fellow clarinetists
+				Brian Thomas and Adam Cullen. Both Adam and Brian would do very well that season and would even make the playoffs. However, the recruits from last
+				year's class were the ones who disappointed. Both Sanaya and Nick failed to even set one lineup all season long, thus making this year's season
+				even less competitive than the year prior.
+			<p>
+				The 2016 season presented something totally different. This year would represent a lot of change in this league. Commissioner Jeremy would go to
+				high school and meet some new friends and leave some old ones. First off Sanaya would be removed for inactivity, Brian Thomas would be excluded
+				since he went to a different high school. Nick who was the other inactive member from last year was set to come back since we were still desperate
+				for people, but Nick would back out last second and his team would be controlled by the commissioner. Then to replace the two other open positions,
+				Jeremy brought on new friends Harry Heck and Tyler Ulmschneider. Much like last year, these new additions got off to a hot start as both made the
+				playoffs and Tyler would even win the championship. These two early on seemed to be important pieces in the future of this league.
+			<p>
+				The 2017 season would come to represent what we have deemed the "new era." This new wave brought in four new members: the biggest expansion in
+				league history. Adam Cullen would be removed for inactivity, Zachary Przybocki had moved away a year or so prior and we had grown apart from each
+				other, Ben Martin had also grown apart from us, and Nick was not invited back. To fill these voids, Jeremy brought on soccer friend Rc Miller, new
+				high school friends Michael Boswell Jr. and Zane Lehosky, and Brandon would make his return. This year would probably be known as the most important
+				in league history as this was the year that things started to become more and more serious. This year we saw the infamous "Fabiano trade" where
+				Gruden's Plan traded Tom Brady and LeSean McCoy to The Dictator for Marcus Mariota and Ty Montgomery. This trade was sent to NFL Fantasy Live
+				via Twitter and it would make the show and Michael Fabiano would roast Gruden's Plan owner Michael Boswell Jr. for making the abysmal trade.
+				This year also saw the first team video as The Dictator would celebrate their championship victory.
+			<p>
+				The 2018 season would be quite historic as well. It would be the first year in league history that we did not lose a single team and we even added
+				two more. The league would expand into a 10-team league now including high school friends Jason Rowland and Billy Goodnow. This year we would have
+				our first ever purchased draft board and championship trophy, that we granted in our first awards ceremony. We also created our first league
+				constitution to have a document that contains all the rules and regulations in one place. Some new rules laid out in this document included the
+				introduction of keepers for the first time, allowing a team to keep one player on their roster at the end of the season for the cost
+				of losing a draft pick in the round that the player's aveage draft position is in for the next year's draft. We also saw a change to a half-ppr
+				scoring format. This year saw a major increase in competition, and you
+				could tell that what we had here was only going to grow.
+			<p>
+				In 2019, we decided to remove Tyler Ulmschneider from the league since he did not really seem to fit into the core group. Instead, we brought
+				on high school friend Logan Handwork. This year we would see a lot of major changes and improvements. We would hold our first ever Annual Settings
+				Summit (ASS) where we would make additions or changes to the constitution leading up to the season. This year, we would see the creation of the FRC
+				who was created as a commissioner appointed congress that served to advise the Commissioner and oversee trades to assure there would be no collusion
+				nor drastically unfair deals. Waivers were also introduced and thus there would be no more free-for-all and advantage given to those quickest on the
+				draw. We would also establish our first league punishment for the last place finisher which was draft day torture for the following season. The last
+				place finisher would be determined through the Panzerkampfwagen Bowl that would pit the 9th and 10th place finishers against one another for an epic
+				two-week showdown, where the loser would be punished. Kickers were also officially removed from the league in favor of a second FLEX spot. Draft day
+				saw a big change with the inclusion of confessionals, where people could record their reactions and strategies as the draft went on, which was later
+				turned into an award-winning video. This year The Dictator would make the first ever team name announcement video and then go on to make weekly diss
+				tracks for their opponent that week until they made one for every other team in the league. From there, Jeremy would release a weekly recap of the
+				games and a preview of next week's games. Here he and whoever else would participate would give their picks based on the RFL matchups that week and
+				also a lock and upset for the NFL games. When the season ended, this show was then discontinued. But by this time, The Dictator had single-handedly
+				made videos an integral part of the league culture. The award ceremony saw a big change as well as we would conduct exit interviews, where we would
+				confront owners about things that they said at the draft day confessionals, discuss their year's performance, and hear their plans going into next
+				season.
+			<p>
+				Leading up to the 2020 season, we would let go of Logan Handwork from the league due to a lack of participation since work and school weighed heavy
+				on his plate. Logan was then immediately added to Gruden's Plan as a co-manager, marking the first ever time a former owner has become a co-manager.
+				In deciding who to bring in to fill that last spot, old friend Nick Sagun came into the conversation. Nick had served as The Wentz Wagon's co-manager
+				in 2019 and seemed to now have a real interest in what this league has become. But we could not just give him the job as there was a lot of skepticism
+				surrounding his qualifications. We then established in our first ever in-person Annual Settings Summit that to be admitted into this league, one would
+				have to interview with the Commissioner and the FRC, together known as The Inclusion Tribunal (TIT), a major change from the early years of begging
+				people to join. Other major changes made at the ASS included putting money on the line for the first time and the creation of the Waiver Wire Draft.
+				The first TIT interview was then conducted with Nick, which he passed, and he was accepted officially into the league. The 2020 offseason also saw
+				the creation of team press conferences when a major change was announced including hiring and firing of co-managers and an introductory press
+				conference for new managers. We also saw the popularization of team name announcement videos including ones released by Babylon, The Dictator,
+				The Red Army, Sleepy Nick, and The Red Wolf of Wall Street. The 2020 Draft would mark the first draft with 100% in-person attendance and also was
+				held outdoors for the first time and was kicked off by the first ever presentation of the league national anthem performed by the inaugural
+				Panzerkampfwagen Bowl losing team of Zane Lehosky and Nick Sagun. Once the season was under way, we would see The Dictator put out weekly propaganda
+				videos called "7 Minutes of Hate", where The Dictator would comment on major league stories and discuss the state of their team. At the awards
+				ceremony, we saw a series of waterbets paid out, The Red Army's pie in the face punishment, and mini footballs were used as trophies instead of
+				certificates.
+			</p>
+		</article>
+	</section>
+
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementsByClassName("topnav").item(0);
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+		if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+		} else {
+		navbar.classList.remove("sticky");
+		}
+		}
+	</script>
+
+	<footer>
+		<p><a href="./RFL Webpage.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
+	</footer>
+</body>
+
+
