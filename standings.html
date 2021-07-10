@@ -1,0 +1,768 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RFL Standings</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+
+        /* Style the header */
+        header {
+            background-color: midnightblue;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 20%;
+            background: #ccc;
+            padding: 20px;
+        }
+
+            /* Style the list inside the menu */
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+  
+
+
+
+        /* Style the footer */
+        footer {
+            background-color: midnightblue;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .topleft {
+            position: absolute;
+            top: 40px;
+            left: 144px;
+            font-size: 18px;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            /* Style the topnav links */
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                /* Change color on hover */
+                .topnav a:hover {
+                    background-color: red;
+                    color: black;
+                }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        li {
+            float: left;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+            .dropdown .dropbtn {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                padding: 14px 16px;
+                background-color: black;
+                font-family: inherit;
+                margin: 0;
+            }
+
+            .navbar a:hover, .dropdown:hover .dropbtn {
+                background-color: red;
+            }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 97.6%;
+        }
+
+            .sticky + .article {
+                padding-top: 60px;
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="topleft"><img src=".\RFL LOGO.png" width="100px" /></div>
+
+        <h2 style="color:white;">RFL Standings</h2>
+    </header>
+
+
+    <div class="topnav">
+        <ul>
+            <li><a href=".\RFL Webpage.html">Home</a></li>
+            <li><a href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
+            <li><a href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Teams</a>
+                <div class="dropdown-content">
+                    <a href="./Dictator.html"><img src=".\Prof Pic1.png" width="20px" /> The Dictator</a>
+                    <a href="./Red Army.html">The Red Army</a>
+                    <a href="./Big Ounce.html"><img src=".\big ounce logo.png" width="20px" /> Big Ounce</a>
+                    <a href="./Gruden's Plan.html"><img src=".\gruden logo.png" width="20px" /> Gruden's Plan</a>
+                    <a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
+                    <a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Wentz Wagon</a>
+                    <a href="./Red Wolf.html">The Red Wolf of Wall Street</a>
+                    <a href="./Mullet Man.html"><img src=".\Mullet Logo.jpg" width="20px" /> Mullet Man</a>
+                    <a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" /> Sleepy Nick</a>
+                    <a href="./Wack Attacks.html">Wack Attacks</a>
+                </div>
+            </li>
+            <li>
+                <a href="./Past Teams.html">Former Teams</a>
+            </li>
+            <li>
+                <a href="./draft.html">Drafts</a>
+            </li>
+
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">League Videos</a>
+                <div class="dropdown-content">
+                    <a href="https://youtu.be/hTfTKxbhBHc">Announcing Our 10th and Final RFL Member For 2021!</a>
+                    <a href="https://youtu.be/89NbZ0oGmTQ">2021 State of the League Address</a>
+                    <a href="https://youtu.be/oua0MqRtpLg">The Red Army's 2020 Punishment</a>
+                    <a href="https://youtu.be/5dfQiQEzpYM">2020 Waterbets</a>
+                    <a href="https://youtu.be/_btkqdhmESU">2020 Exit Interviews</a>
+                    <a href="https://youtu.be/Ap3etxqNsV4">Our 2020 Draft</a>
+                    <a href="https://youtu.be/gpnV7FCJTdg">Draft Day 2020 Hype Video</a>
+                    <a href="https://www.youtube.com/watch?v=801p3bd-SEk">2019 Exit Interviews</a>
+                    <a href="https://youtu.be/i6lJSjG6js8">Our 2019 Draft</a>
+                    <a href="https://youtu.be/YFUnB669-rE">2019 Commish Annoucement</a>
+                </div>
+            </li>
+            <li>
+                <a href="./standings.html">Standings</a>
+            </li>
+            <li>
+                <a href="./records.html">Records</a>
+            </li>
+        </ul>
+    </div>
+    <p>
+
+    </p>
+
+    <table>
+        <tr>
+            <th>2020 Final Standings</th>
+            <th>Record</th>
+            <th>Points For</th>
+            <th>Points Against</th>
+        </tr>
+        <tr>
+            <td>1. Gruden's Plan</td>
+            <td>13-3</td>
+            <td>1799.32</td>
+            <td>1464.60</td>
+
+        </tr>
+        <tr>
+            <td>2. The Wentz Wagon</td>
+            <td>13-3</td>
+            <td>1861.40</td>
+            <td>1578.28</td>
+
+        </tr>
+        <tr>
+            <td>3. Maryland Marijuanas</td>
+            <td>9-7</td>
+            <td>1560.16</td>
+            <td>1506.80</td>
+        </tr>
+        <tr>
+            <td>4. Sleepy Nick</td>
+            <td>7-9</td>
+            <td>1544.12</td>
+            <td>1598.16</td>
+        </tr>
+        <tr>
+            <td>5. The Red Wolf of Wall Street</td>
+            <td>7-9</td>
+            <td>1589.12</td>
+            <td>1799.34</td>
+        </tr>
+        <tr>
+            <td>6. Babylon</td>
+            <td>7-9</td>
+            <td>1748.48</td>
+            <td>1848.26</td>
+        </tr>
+        <tr>
+            <td>7. Mullet Man</td>
+            <td>7-9</td>
+            <td>1579.50</td>
+            <td>1615.62</td>
+        </tr>
+        <tr>
+            <td>8. Big Ounce</td>
+            <td>5-11</td>
+            <td>1588.98</td>
+            <td>1636.22</td>
+        </tr>
+        <tr>
+            <td>9. The Dictator</td>
+            <td>6-9</td>
+            <td>1507.50</td>
+            <td>1595.74</td>
+        </tr>
+        <tr>
+            <td>10. The Red Army</td>
+            <td>5-10</td>
+            <td>1570.28</td>
+            <td>1705.84</td>
+        </tr>
+
+    </table>
+    <hr style="height:20px" color="midnightblue">
+
+    <table>
+        <tr>
+            <th>2019 Final Standings</th>
+            <th>Record</th>
+            <th>Points For</th>
+            <th>Points Against</th>
+        </tr>
+        <tr>
+            <td>1. Big Ounce</td>
+            <td>13-3</td>
+            <td>1717.46</td>
+            <td>1591.12</td>
+
+        </tr>
+        <tr>
+            <td>2. Maryland Marijuanas</td>
+            <td>11-5</td>
+            <td>1624.30</td>
+            <td>1516.94</td>
+
+        </tr>
+        <tr>
+            <td>3. Babylon</td>
+            <td>10-6</td>
+            <td>1673.94</td>
+            <td>1535.64</td>
+        </tr>
+        <tr>
+            <td>4. The Red Wolf of Wall Street</td>
+            <td>9-7</td>
+            <td>1696.00</td>
+            <td>1545.84</td>
+        </tr>
+        <tr>
+            <td>5. Mullet Man</td>
+            <td>9-7</td>
+            <td>1559.72</td>
+            <td>1508.74</td>
+        </tr>
+        <tr>
+            <td>6. The Dictator</td>
+            <td>7-9</td>
+            <td>1531.90</td>
+            <td>1649.72</td>
+        </tr>
+        <tr>
+            <td>7. The Washington Buttkickers</td>
+            <td>6-10</td>
+            <td>1597.96</td>
+            <td>1636.40</td>
+        </tr>
+        <tr>
+            <td>8. Gruden's Plan</td>
+            <td>5-11</td>
+            <td>1579.76</td>
+            <td>1681.86</td>
+        </tr>
+        <tr>
+            <td>9. The Red Army</td>
+            <td>6-9</td>
+            <td>1526.62</td>
+            <td>1657.00</td>
+        </tr>
+        <tr>
+            <td>10. The Wentz Wagon</td>
+            <td>3-12</td>
+            <td>1459.32</td>
+            <td>1643.72</td>
+        </tr>
+    </table>
+    <hr style="height:20px" color="midnightblue">
+
+    <table>
+        <tr>
+            <th>2018 Final Standings</th>
+            <th>Record</th>
+            <th>Points For</th>
+            <th>Points Against</th>
+        </tr>
+        <tr>
+            <td>1. Big Ounce</td>
+            <td>12-4</td>
+            <td>1732.60</td>
+            <td>1673.42</td>
+
+        </tr>
+        <tr>
+            <td>2. Cookie Charizards</td>
+            <td>12-4</td>
+            <td>1702.42</td>
+            <td>1585.16</td>
+
+        </tr>
+        <tr>
+            <td>3. The Dictator</td>
+            <td>10-6</td>
+            <td>1836.54</td>
+            <td>1555.32</td>
+        </tr>
+        <tr>
+            <td>4. The Red Wolf of Wall Street</td>
+            <td>10-6</td>
+            <td>1583.76</td>
+            <td>1395.24</td>
+        </tr>
+        <tr>
+            <td>5. The Wentz Wagon</td>
+            <td>9-7</td>
+            <td>1630.08</td>
+            <td>1685.32</td>
+        </tr>
+        <tr>
+            <td>6. The Red Army</td>
+            <td>5-11</td>
+            <td>1584.12</td>
+            <td>1708.34</td>
+        </tr>
+        <tr>
+            <td>7. Babylon</td>
+            <td>10-6</td>
+            <td>1690.72</td>
+            <td>1516.58</td>
+        </tr>
+        <tr>
+            <td>8. Maryland Marijuanas</td>
+            <td>6-10</td>
+            <td>1591.74</td>
+            <td>1704.36</td>
+        </tr>
+        <tr>
+            <td>9. Mullet Man</td>
+            <td>2-12</td>
+            <td>1357.58</td>
+            <td>1645.06</td>
+        </tr>
+        <tr>
+            <td>10. Gruden's Plan</td>
+            <td>2-12</td>
+            <td>1335.24</td>
+            <td>1576.00</td>
+        </tr>
+    </table>
+    <hr style="height:20px" color="midnightblue">
+
+    <table>
+        <tr>
+            <th>2017 Final Standings</th>
+            <th>Record</th>
+            <th>Points For</th>
+            <th>Points Against</th>
+        </tr>
+        <tr>
+            <td>1. The Dictator</td>
+            <td>10-6</td>
+            <td>1470.12</td>
+            <td>1281.64</td>
+
+        </tr>
+        <tr>
+            <td>2. Cookie Charizards</td>
+            <td>10-6</td>
+            <td>1391.94</td>
+            <td>1264.18</td>
+
+        </tr>
+        <tr>
+            <td>3. Babylon</td>
+            <td>11-5</td>
+            <td>1324.44</td>
+            <td>1274.36</td>
+        </tr>
+        <tr>
+            <td>4. The Red Army</td>
+            <td>9-7</td>
+            <td>1455.90</td>
+            <td>1274.36</td>
+        </tr>
+        <tr>
+            <td>5. Big Ounce</td>
+            <td>9-7</td>
+            <td>1282.56</td>
+            <td>1385.90</td>
+        </tr>
+        <tr>
+            <td>6. Gruden's Plan</td>
+            <td>6-10</td>
+            <td>1139.16</td>
+            <td>1269.98</td>
+        </tr>
+        <tr>
+            <td>7. The Wentz Wagon</td>
+            <td>8-8</td>
+            <td>1211.04</td>
+            <td>1274.72</td>
+        </tr>
+        <tr>
+            <td>8. Maryland Marijuanas</td>
+            <td>1-15</td>
+            <td>1120.32</td>
+            <td>1372.44</td>
+        </tr>
+    </table>
+    <hr style="height:20px" color="midnightblue">
+
+    <table>
+        <tr>
+            <th>2016 Final Standings</th>
+            <th>Record</th>
+            <th>Points For</th>
+            <th>Points Against</th>
+        </tr>
+        <tr>
+            <td>1. Cookie Charizards</td>
+            <td>11-5</td>
+            <td>1310.60</td>
+            <td>1127.08</td>
+
+        </tr>
+        <tr>
+            <td>2. Benskins</td>
+            <td>8-8</td>
+            <td>1016.56</td>
+            <td>1051.78</td>
+        </tr>
+        <tr>
+            <td>3. The Dictator</td>
+            <td>12-4</td>
+            <td>1470.12</td>
+            <td>1281.64</td>
+
+        </tr>
+        <tr>
+            <td>4. Maryland Marijuanas</td>
+            <td>11-5</td>
+            <td>1385.52</td>
+            <td>1181.58</td>
+        </tr>
+        <tr>
+            <td>5. The Red Army</td>
+            <td>8-8</td>
+            <td>1126.60</td>
+            <td>1061.06</td>
+        </tr>
+        <tr>
+            <td>6. Huntingtown Hurricanes</td>
+            <td>5-10</td>
+            <td>858.00</td>
+            <td>1078.32</td>
+        </tr>
+        <tr>
+            <td>7. Sleepy Nick</td>
+            <td>7-9</td>
+            <td>1017.88</td>
+            <td>1019.08</td>
+        </tr>
+        <tr>
+            <td>8. The Winners</td>
+            <td>2-12</td>
+            <td>565.20</td>
+            <td>1223.22</td>
+        </tr>
+    </table>
+    <hr style="height:20px" color="midnightblue">
+
+    <table>
+        <tr>
+            <th>2015 Final Standings</th>
+            <th>Record</th>
+            <th>Points For</th>
+            <th>Points Against</th>
+        </tr>
+        <tr>
+            <td>1. The Dictator</td>
+            <td>13-3</td>
+            <td>1334.56</td>
+            <td>740.16</td>
+
+        </tr>
+        <tr>
+            <td>2. Huntingtown Hurricanes</td>
+            <td>11-5</td>
+            <td>1400.78</td>
+            <td>887.78</td>
+        </tr>
+        <tr>
+            <td>3. The Indian Spartans</td>
+            <td>11-5</td>
+            <td>1338.52</td>
+            <td>782.36</td>
+        </tr>
+        <tr>
+            <td>4. The Winners</td>
+            <td>10-6</td>
+            <td>954.14</td>
+            <td>847.74</td>
+        </tr>
+        <tr>
+            <td>5. The Red Army</td>
+            <td>10-6</td>
+            <td>1150.76</td>
+            <td>955.82</td>
+        </tr>
+        <tr>
+            <td>6. Benskins</td>
+            <td>6-10</td>
+            <td>804.06</td>
+            <td>905.06</td>
+        </tr>
+        <tr>
+            <td>7. Sleepy Nick</td>
+            <td>0-12-2</td>
+            <td>0.00</td>
+            <td>937.42</td>
+        </tr>
+        <tr>
+            <td>8. Savage Jabberwalkies</td>
+            <td>0-12-2</td>
+            <td>0.00</td>
+            <td>926.48</td>
+        </tr>
+    </table>
+    <hr style="height:20px" color="midnightblue">
+
+    <table>
+        <tr>
+            <th>2014 Final Standings</th>
+            <th>Record</th>
+            <th>Points For</th>
+            <th>Points Against</th>
+        </tr>
+        <tr>
+            <td>1. Huntingtown Hurricanes</td>
+            <td>15-1</td>
+            <td>1457.66</td>
+            <td>849.96</td>
+        </tr>
+        <tr>
+            <td>2. The Dictator</td>
+            <td>13-3</td>
+            <td>1640.40</td>
+            <td>817.38</td>
+
+        </tr>
+        <tr>
+            <td>3. Benskins</td>
+            <td>11-5</td>
+            <td>1388.76</td>
+            <td>930.66</td>
+        </tr>
+        <tr>
+            <td>4. Golden Dragon</td>
+            <td>8-8</td>
+            <td>1078.06</td>
+            <td>943.18</td>
+        </tr>
+        <tr>
+            <td>5. The Red Army</td>
+            <td>8-8</td>
+            <td>1104.00</td>
+            <td>1012.92</td>
+        </tr>
+        <tr>
+            <td>6. Savage Jabberwalkies</td>
+            <td>6-10</td>
+            <td>693.98</td>
+            <td>965.62</td>
+        </tr>
+        <tr>
+            <td>7. Sleepy Nick</td>
+            <td>3-13</td>
+            <td>369.84</td>
+            <td>1114.04</td>
+        </tr>
+        <tr>
+            <td>8. Krackersmadefreshdaily</td>
+            <td>0-16</td>
+            <td>0.00</td>
+            <td>1098.94</td>
+        </tr>
+
+    </table>
+    <hr style="height:20px" color="midnightblue">
+
+    <table>
+        <tr>
+            <th>2013 Final Standings</th>
+            <th>Record</th>
+            <th>Points For</th>
+            <th>Points Against</th>
+        </tr>
+        <tr>
+            <td>1. The Dictator</td>
+            <td>13-2</td>
+            <td>1498.90</td>
+            <td>1134.40</td>
+        </tr>
+        <tr>
+            <td>2. Big Ounce</td>
+            <td>11-4</td>
+            <td>1359.88</td>
+            <td>1124.80</td>
+        </tr>
+        <tr>
+            <td>3. Venom</td>
+            <td>7-8</td>
+            <td>1108.94</td>
+            <td>1236.70</td>
+        </tr>
+        <tr>
+            <td>4. The Red Army</td>
+            <td>6-9</td>
+            <td>1068.66</td>
+            <td>1185.74</td>
+        </tr>
+        <tr>
+            <td>5. Huntingtown Hurricanes</td>
+            <td>5-9</td>
+            <td>1068.66</td>
+            <td>1185.74</td>
+        </tr>
+        <tr>
+            <td>6. Benskins</td>
+            <td>2-12</td>
+            <td>1039.98</td>
+            <td>1266.14</td>
+        </tr>
+
+
+    </table>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementsByClassName("topnav").item(0);
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        } else {
+        navbar.classList.remove("sticky");
+        }
+        }
+    </script>
+
+    <footer>
+        <p><a href="./RFL Webpage.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
+    </footer>
+
+
+    </p>
+
+</body>

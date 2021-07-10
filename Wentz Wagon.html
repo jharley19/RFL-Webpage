@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Wentz Wagon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            
+            background-color: black;
+            
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 20%;
+            background: #ccc;
+            padding: 20px;
+        }
+
+            /* Style the list inside the menu */
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 80%;
+            background-color: #f1f1f1;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: midnightblue;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+
+        .top-left {
+            position: absolute;
+            top: 16px;
+            left: 225px;
+            text-align: left;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            /* Style the topnav links */
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                /* Change color on hover */
+                .topnav a:hover {
+                    background-color: red;
+                    color: black;
+                }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        li {
+            float: left;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+            .dropdown .dropbtn {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: white;
+                padding: 14px 16px;
+                background-color: black;
+                font-family: inherit;
+                margin: 0;
+            }
+
+            .navbar a:hover, .dropdown:hover .dropbtn {
+                background-color: red;
+            }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 99%;
+        }
+
+            .sticky + .article {
+                padding-top: 60px;
+            }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src=".\zane background.png" width="1503px" />
+
+            <div class="top-left">
+                <h1 style="font-size:30px;">The Wentz Wagon</h1>
+                2nd place
+                <br />13-3-0
+
+            </div>
+
+        </div>
+    </header>
+
+    <section>
+        <div class="topnav">
+            <ul>
+                <li><a href=".\RFL Webpage.html">Home</a></li>
+                <li><a href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
+                <li><a href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Teams</a>
+                    <div class="dropdown-content">
+                        <a href="./Dictator.html"><img src=".\Prof Pic1.png" width="20px" /> The Dictator</a>
+                        <a href="./Red Army.html">The Red Army</a>
+                        <a href="./Big Ounce.html"><img src=".\big ounce logo.png" width="20px" /> Big Ounce</a>
+                        <a href="./Gruden's Plan.html"><img src=".\gruden logo.png" width="20px" /> Gruden's Plan</a>
+                        <a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
+                        <a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Wentz Wagon</a>
+                        <a href="./Red Wolf.html">The Red Wolf of Wall Street</a>
+                        <a href="./Mullet Man.html"><img src=".\Mullet Logo.jpg" width="20px" /> Mullet Man</a>
+                        <a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" /> Sleepy Nick</a>
+                        <a href="./Wack Attacks.html">Wack Attacks</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="./Past Teams.html">Former Teams</a>
+                </li>
+                <li>
+                    <a href="./draft.html">Drafts</a>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Team Videos</a>
+                    <div class="dropdown-content">
+                        <a href="https://youtu.be/QU7HfqTXoiI">The Wentz Wagon's 2020 Press Conference</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">League Videos</a>
+                    <div class="dropdown-content">
+                        <a href="https://youtu.be/hTfTKxbhBHc">Announcing Our 10th and Final RFL Member For 2021!</a>
+                        <a href="https://youtu.be/89NbZ0oGmTQ">2021 State of the League Address</a>
+                        <a href="https://youtu.be/oua0MqRtpLg">The Red Army's 2020 Punishment</a>
+                        <a href="https://youtu.be/5dfQiQEzpYM">2020 Waterbets</a>
+                        <a href="https://youtu.be/_btkqdhmESU">2020 Exit Interviews</a>
+                        <a href="https://youtu.be/Ap3etxqNsV4">Our 2020 Draft</a>
+                        <a href="https://youtu.be/gpnV7FCJTdg">Draft Day 2020 Hype Video</a>
+                        <a href="https://www.youtube.com/watch?v=801p3bd-SEk">2019 Exit Interviews</a>
+                        <a href="https://youtu.be/i6lJSjG6js8">Our 2019 Draft</a>
+                        <a href="https://youtu.be/YFUnB669-rE">2019 Commish Annoucement</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="./standings.html">Standings</a>
+                </li>
+                <li>
+                    <a href="./records.html">Records</a>
+                </li>
+            </ul>
+        </div>
+        <nav>
+
+            <h3>Roster</h3>
+
+            <p>
+                QB: Russell Wilson
+                <br />RB: Dalvin Cook
+                <br />RB: Josh Jacobs
+                <br />WR: Stefon Diggs
+                <br />WR: Justin Jefferson
+                <br />TE: Darren Waller
+                <br />FLEX: Amari Cooper
+                <br />FLEX: D.J. Moore
+                <br />DST: Los Angeles Rams
+                <br />BN: Brandin Cooks
+                <br />BN: Chase Claypool
+                <br />BN: J.D. McKissic
+                <br />BN: Jamaal Williams
+                <br />BN: Greg Ward
+                <br />BN: Miami Dolphins
+            </p>
+
+        </nav>
+
+        <article>
+            <h1>Basic Information</h1>
+            <p>
+
+                <strong>Owner: </strong> Zane Lehosky
+                <br />	<strong>Co-Manager: </strong>N/A
+                <br /> <strong>Year joined: </strong>2017
+
+            <p>
+                <strong>Former Co-Managers: </strong>Nick Sagun (2019)
+                <br /> <strong>Former Team Names:</strong> The Foles Wagon (2017), The Wentz Wagon Revenge Tour (2019)
+            <p>
+                <strong>Championships:</strong> N/A
+                <br /><strong>Other Awards: </strong>2020 Comeback Player of the Year, 2020 Biggest Draft Steal (Justin Jefferson), 2020 Regular Season First Place,
+                2020 Highest Scoring Team, 2019 Best Player Performance (Russell Wilson - 49.22 pts), 2019 Last Place, 2018 Best Player Performance (Derrick Henry - 47.80 pts)
+            <p>
+                <strong>Career Record: </strong>33-30
+                <br /><strong>Career Winning Percentage: </strong>52%
+                <br /><strong>Playoff Percentage: </strong>25%
+                <br /><strong>Finshes: </strong>7th, 5th, 10th, 2nd
+            </p>
+
+            <h1>Biography</h1>
+            <p>
+                The Wentz Wagon entered the league in 2017 and they started with a bang, but not in a good way. The Wentz Wagon quickly made an unprecedented move by
+                sleeping through the entirety of the draft (the draft started in the afternoon). Because of this, The Wentz Wagon was left with scraps as the league
+                does not approve of autodraft. This band of misfits performed just as you would expect and they finished the regualr season at 7-7 in 6th place. Then
+                in the Loser's bracket, they ended up finishing in 7th place, just escaping the dreaded last place.
+            <p>
+                Now going into the 2018 season, The Wentz Wagon would be awake for the draft and could now build his own team for the first time. With their own squad,
+                The Wentz Wagon disappointed again finishing the regular season at 7-7 and in 6th place. However, The Wentz Wagon managed to show up for the postseason
+                and earn the 1st overall pick for the 2019 season.
+            <p>
+                Coming into the 2019 season with the first pick, The Wentz Wagon decided to make another big addition by adding close friend Nick Sagun as their co-manager.
+                Nick however was late to the draft and could not stop The Wentz Wagon from selecting Le'Veon Bell with the first overall pick. A disappointing draft
+                then led to a disappointing season. They would win their first game and would go on to lose the next eight. They would end the regular season in last place
+                at 3-11 and would go on to lose to The Red Army in the first ever Panzerkampfwagen Bowl. The Wentz Wagon would then suffer the first league sanctioned punishment
+                as they would perform the league national anthem at the beginning of the 2020 Draft and act as the "sticker bitches" for the entirety of the draft.
+            <p>
+                Going into the 2020 season, co-manager Nick Sagun was able to own his own team and thus parted ways with The Wentz Wagon. Following their embarrassing
+                and honestly underwhelming punishment, The Wentz Wagon set out to begin their revenge tour. They started their season hot at 3-1 and from there they
+                would win nine straight games, allowing them to finish the regular season at 12-2 in first place. The Wentz Wagon was a legit wagon and had a lot of
+                steam going into their first playoffs. They would squeak out a win in the first round against their former co-manager's new team and would reach their first
+                championship match. Despite a strong showing, The Wentz Wagon ultimately fell to Gruden's Plan and finished the year in second place.
+            </p>
+        </article>
+    </section>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementsByClassName("topnav").item(0);
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        } else {
+        navbar.classList.remove("sticky");
+        }
+        }
+    </script>
+
+    <footer>
+        <p><a href="./RFL Webpage.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
+    </footer>
+
+
+    </p>
+
+</body>
+
+

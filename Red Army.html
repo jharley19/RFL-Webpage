@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Red Army</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            
+            background-color: red;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 20%;
+            background: #ccc;
+            padding: 20px;
+        }
+
+            /* Style the list inside the menu */
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+        article {
+         
+            float: left;
+            padding: 20px;
+            width: 80%;
+            background-color: #f1f1f1;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: midnightblue;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            /* Style the topnav links */
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                /* Change color on hover */
+                .topnav a:hover {
+                    background-color: red;
+                    color: black;
+                }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        li {
+            float: left;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+            .dropdown .dropbtn {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: white;
+                padding: 14px 16px;
+                background-color: black;
+                font-family: inherit;
+                margin: 0;
+            }
+
+            .navbar a:hover, .dropdown:hover .dropbtn {
+                background-color: red;
+            }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 99%;
+        }
+
+            .sticky + .article {
+                padding-top: 60px;
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2 style="color:yellow;">The Red Army</h2>
+    </header>
+
+    <section>
+        <div class="topnav">
+            <ul>
+                <li><a href=".\RFL Webpage.html">Home</a></li>
+                <li><a href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
+                <li><a href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Teams</a>
+                    <div class="dropdown-content">
+                        <a href="./Dictator.html"><img src=".\Prof Pic1.png" width="20px" /> The Dictator</a>
+                        <a href="./Red Army.html">The Red Army</a>
+                        <a href="./Big Ounce.html"><img src=".\big ounce logo.png" width="20px" /> Big Ounce</a>
+                        <a href="./Gruden's Plan.html"><img src=".\gruden logo.png" width="20px" /> Gruden's Plan</a>
+                        <a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
+                        <a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Wentz Wagon</a>
+                        <a href="./Red Wolf.html">The Red Wolf of Wall Street</a>
+                        <a href="./Mullet Man.html"><img src=".\Mullet Logo.jpg" width="20px" /> Mullet Man</a>
+                        <a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" />  Sleepy Nick</a>
+                        <a href="./Wack Attacks.html">Wack Attacks</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="./Past Teams.html">Former Teams</a>
+                </li>
+                <li>
+                    <a href="./draft.html">Drafts</a>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Team Videos</a>
+                    <div class="dropdown-content">
+                        <a href="https://youtu.be/IUQXrP5AQn8">2020 Team Announcement Video</a>
+                        <a href="https://youtu.be/mHAjQd3tNF4">Waterbet Payout - Lost to Jeremy Week 1 2019</a>
+                        <a href="https://youtu.be/UP5WxcWXRXw">The True Fantasy God</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">League Videos</a>
+                    <div class="dropdown-content">
+                        <a href="https://youtu.be/hTfTKxbhBHc">Announcing Our 10th and Final RFL Member For 2021!</a>
+                        <a href="https://youtu.be/89NbZ0oGmTQ">2021 State of the League Address</a>
+                        <a href="https://youtu.be/oua0MqRtpLg">The Red Army's 2020 Punishment</a>
+                        <a href="https://youtu.be/5dfQiQEzpYM">2020 Waterbets</a>
+                        <a href="https://youtu.be/_btkqdhmESU">2020 Exit Interviews</a>
+                        <a href="https://youtu.be/Ap3etxqNsV4">Our 2020 Draft</a>
+                        <a href="https://youtu.be/gpnV7FCJTdg">Draft Day 2020 Hype Video</a>
+                        <a href="https://www.youtube.com/watch?v=801p3bd-SEk">2019 Exit Interviews</a>
+                        <a href="https://youtu.be/i6lJSjG6js8">Our 2019 Draft</a>
+                        <a href="https://youtu.be/YFUnB669-rE">2019 Commish Annoucement</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="./standings.html">Standings</a>
+                </li>
+                <li>
+                    <a href="./records.html">Records</a>
+                </li>
+            </ul>
+        </div>
+        <nav>
+            <h3>Roster</h3>
+            <p>
+                QB: Tom Brady
+                <br />RB: Jonathan Taylor
+                <br />RB: Ezekiel Elliot
+                <br />WR: Calvin Ridley
+                <br />WR: Allen Robinson
+                <br />TE: Mike Gesicki
+                <br />FLEX: Clyde Edwards-Helaire
+                <br />FLEX: Kareem Hunt
+                <br />DST: Tampa Bay Buccaneers
+                <br />BN: Juju Smith-Schuster
+                <br />BN: Mike Williams
+                <br />BN: Jalen Hurts
+                <br />BN: Hayden Hurst
+                <br />BN: Rashard Higgins
+                <br />BN: Washington Football Team
+
+            </p>
+
+
+        </nav>
+
+        <article>
+            <h1>Basic Information</h1>
+            <p>
+
+                <strong>Owner: </strong> Brian Levesque
+                <br />	<strong>Co-Manager: </strong>N/A
+                <br /> <strong>Year joined: </strong>2013
+
+            <p>
+                <strong>Former Co-Managers: </strong>N/A
+                <br /> <strong>Former Team Names:</strong> Team USA (2013), That Awesome Team (2014), Waldorf Ice Penguins (2015), Fusion FC (2016), Krippled United (2017),
+                Melvin and the Shitmunks (2018), Cookie Charizards (2019)
+            </p>
+            <p>
+                <strong>Championships:</strong> N/A
+                <br /><strong>Other Awards: </strong>2020 Best Draft, 2020 Last Place, 2019 Panzerkampfwagen Bowl Survivor, 2018 Best Draft, 2017 Best Week Performance
+            <p>
+                <strong>Career Record: </strong>57-69
+                <br /><strong>Career Winning Percentage: </strong>45%
+                <br /><strong>Playoff Percentage: </strong>25%
+                <br /><strong>Finshes: </strong>4th, 5th, 5th, 5th, 4th, 6th, 9th, 10th
+            </p>
+
+            <h1>Biography</h1>
+            <p>
+                The Red Army is one of two teams that has been in the league every single year since its inception. Despite his
+                tenured service, he has still yet to achieve a championship, let alone a playoff win. In the early years of the league,
+                The Red Army acredits their lack of success to "not caring." In recent years, his lack of success is seen as a mystery.
+                Despite always having one of the top drafts, The Red Army always seems to underperform.
+            <p>
+                In the 2019 season, The Red Army
+                made a dramtic name change and released an iconic video to go along with it. In this video, The Red Army bashed the RFL and
+                its commissioner for the removal of Tyler Ulmschneider and his Cookie Charizards. Furthermore, he acknowledged that Tyler
+                himself is the true fantasy god and would change his own team name to "Cookie Charizards" to honor him. In the video he also
+                uttered the infamous line "Gruden has no plan," a bash at Michael Boswell's Gruden's Plan. Despite his devotion to Tyler,
+                Brian would learn that he was a false idol as he would suffer his worst year in franchise historty up until that point.
+            <p>
+                Leading up to the 2020 season, Brian would reject Tyler but his skeptism for the league and its commissioner only grew. This
+                led to another video that acted as a manifesto. Here The Red Army called for the members of the league to unite and reject the league's
+                commissoner Jeremy Harley. He paints the commissioner as a fascist leader that acts in his own self-interest and cares not about the
+                common league member. He also calls for the league to adopt a communist governing structure where no person has any more power over
+                another. To that effect, he also acknowldeged the "father of communism" Karl Marx as his new fanatsy god and he would adopt the
+                new team name "The Red Army". His efforts, however, came up short as the commissioner still reigns to this day. Furthermore, The Red Army
+                would suffer their worst finsih in franchise history as they would attend back to back Panzerkampfwagen Bowls and this time
+                finish in last place. His poor finish forced him to endure a cruel punishment put on by the other league members as each member was
+                able to throw a pie in the face of The Red Army's owner, Brian Levesque. We have not heard any further word since The Red Army suffered this
+                embarrassing punishment.
+            </p>
+        </article>
+    </section>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementsByClassName("topnav").item(0);
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        } else {
+        navbar.classList.remove("sticky");
+        }
+        }
+    </script>
+
+    <footer>
+        <p><a href="./RFL Webpage.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
+    </footer>
+
+
+    </p>
+
+</body>

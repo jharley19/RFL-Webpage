@@ -1,0 +1,356 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gruden's Plan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: black;
+      
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 20%;
+            background: #ccc;
+            padding: 20px;
+        }
+
+            /* Style the list inside the menu */
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 80%;
+            background-color: #f1f1f1;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: midnightblue;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+
+        .top-left {
+            position: absolute;
+            top: 16px;
+            left: 225px;
+            text-align: left;
+        }
+
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            /* Style the topnav links */
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                /* Change color on hover */
+                .topnav a:hover {
+                    background-color: red;
+                    color: black;
+                }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        li {
+            float: left;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+            .dropdown .dropbtn {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                
+                padding: 14px 16px;
+                background-color: black;
+                font-family: inherit;
+                margin: 0;
+            }
+
+            .navbar a:hover, .dropdown:hover .dropbtn {
+                background-color: red;
+            }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 99%;
+        }
+
+            .sticky + .article {
+                padding-top: 60px;
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src=".\Gruden background.png" width="1503px" />
+
+            <div class="top-left">
+                <h1 style="font-size:30px;">Gruden's Plan</h1>
+                1st place
+                <br />13-3-0
+
+            </div>
+
+        </div>
+    </header>
+
+    <section>
+        <div class="topnav">
+            <ul>
+                <li><a href=".\RFL Webpage.html">Home</a></li>
+                <li><a href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
+                <li><a href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Teams</a>
+                    <div class="dropdown-content">
+                        <a href="./Dictator.html"><img src=".\Prof Pic1.png" width="20px" /> The Dictator</a>
+                        <a href="./Red Army.html">The Red Army</a>
+                        <a href="./Big Ounce.html"><img src=".\big ounce logo.png" width="20px" /> Big Ounce</a>
+                        <a href="./Gruden's Plan.html"><img src=".\gruden logo.png" width="20px" /> Gruden's Plan</a>
+                        <a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
+                        <a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Wentz Wagon</a>
+                        <a href="./Red Wolf.html">The Red Wolf of Wall Street</a>
+                        <a href="./Mullet Man.html"><img src=".\Mullet Logo.jpg" width="20px" /> Mullet Man</a>
+                        <a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" /> Sleepy Nick</a>
+                        <a href="./Wack Attacks.html">Wack Attacks</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="./Past Teams.html">Former Teams</a>
+                </li>
+                <li>
+                    <a href="./draft.html">Drafts</a>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Team Videos</a>
+                    <div class="dropdown-content">
+                        <a href="https://youtu.be/C6-Ooi2IfeQ">Gruden's Plan 2020 Press Conference</a>
+                    </div>
+                </li>
+
+
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">League Videos</a>
+                    <div class="dropdown-content">
+                        <a href="https://youtu.be/hTfTKxbhBHc">Announcing Our 10th and Final RFL Member For 2021!</a>
+                        <a href="https://youtu.be/89NbZ0oGmTQ">2021 State of the League Address</a>
+                        <a href="https://youtu.be/oua0MqRtpLg">The Red Army's 2020 Punishment</a>
+                        <a href="https://youtu.be/5dfQiQEzpYM">2020 Waterbets</a>
+                        <a href="https://youtu.be/_btkqdhmESU">2020 Exit Interviews</a>
+                        <a href="https://youtu.be/Ap3etxqNsV4">Our 2020 Draft</a>
+                        <a href="https://youtu.be/gpnV7FCJTdg">Draft Day 2020 Hype Video</a>
+                        <a href="https://www.youtube.com/watch?v=801p3bd-SEk">2019 Exit Interviews</a>
+                        <a href="https://youtu.be/i6lJSjG6js8">Our 2019 Draft</a>
+                        <a href="https://youtu.be/YFUnB669-rE">2019 Commish Annoucement</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="./standings.html">Standings</a>
+                </li>
+                <li>
+                    <a href="./records.html">Records</a>
+                </li>
+            </ul>
+        </div>
+        <nav>
+            <h3>Roster</h3>
+
+            <p>
+                QB: Patrick Mahomes
+                <br />RB: Alvin Kamara
+                <br />RB: Myles Gaskin
+                <br />WR: DeAndre Hopkins
+                <br />WR: Tyler Lockett
+                <br />TE: Travis Kelce
+                <br />FLEX: Robby Anderson
+                <br />FLEX: Chase Edmonds
+                <br />DST: Arizona Cardinals
+                <br />BN: Jerry Jeudy
+                <br />BN: Rob Gronkowski
+                <br />BN: Gus Edwards
+                <br />BN: Latavius Murray
+                <br />BN: Sterling Shepard
+                <br />BN: Sammy Watkins
+                <br />RES: Ronald Jones
+            </p>
+
+        </nav>
+
+        <article>
+            <h1>Basic Information</h1>
+            <p>
+
+                <strong>Owner: </strong> Michael Boswell Jr.
+                <br />	<strong>Co-Manager: </strong>Logan Handwork (2020-present)
+                <br /> <strong>Year joined: </strong>2017
+
+            <p>
+                <strong>Former Co-Managers: </strong>Evan Patterson (2018), Jacob Kerstner (2019 offseason)
+                <br /> <strong>Former Team Names:</strong> Rex Ryan (2017)
+            <p>
+                <strong>Championships:</strong> 2020
+                <br /><strong>Other Awards: </strong>2020 Biggest Trade Rape, 2020 Best Week Performance (201.80 pts), 2020 Best Player Performance (Alvin Kamara - 54.70 pts),
+                2019 Best Draft, 2018 Last Place
+            <p>
+                <strong>Career Record: </strong>26-36
+                <br /><strong>Career Winning Percentage: </strong>42%
+                <br /><strong>Playoff Percentage: </strong>25%
+                <br /><strong>Finshes: </strong>6th, 10th, 8th, 1st
+            </p>
+
+            <h1>Biography</h1>
+            <p>
+                Gruden's Plan entered the league in 2017 and had a chip on their shoulder from the beginning. However, they quickly realized that they
+                may be a little in over their heads as they finished the season in 6th place thanks in large part to the league's most infamous trade rape
+                where Gruden's Plan sent over Tom Brady and LeSean McCoy to The Dictator in exchange for Marcus Mariota and Ty Montgomery. This trade was
+                so atrocious that it would be mocked on national television by the former NFL Fantasy Analyst Michael Fabiano.
+            <p>
+                After realizing that this
+                league is tougher than they first thought, Gruden's Plan brought in former North Point High School kicker Evan Patterson as his co-manager
+                for the 2018 season, making him the first ever co-manager in league history. They would also adopt the new name "Gruden's Plan" as a nod to
+                the owner's favorite NFL coach Jon Gruden. The addition of co-manager, a new team name, and a draft that he roster-baited to only inflated
+                the hype and the confidence of Gruden's Plan. However, the shock of reality would hit, and they would finish the season with a mere 2 wins in
+                last place. This poor performance made many skeptical of Gruden's Plan, as even The Red Army declared that "Gruden has no plan." Following
+                this disappointing season, Gruden's Plan and Evan agreed to "mutually part ways" and Gruden's Plan went on a search for a new co-manager
+                for the 2019 season.
+            <p>
+                A few weeks prior to the 2019 draft, Gruden's Plan announced that they will be bringing on unstable friend Jacob Kernster
+                as their new co-manager. However, on the day of the draft, Gruden's Plan showed up without Jacob and announced that he had been let go for
+                reasons still unknown. Gruden's Plan would go into the 2019 season without a co-manager and would begin the season 3-1 and sat in first place.
+                However, their team soon began to fall apart and would even lose the last 7 games of the season to finish the year in 8th place.
+            <p>
+                Knowing that he could not find success on his own, Gruden's Plan went in search of a new co-manager. That season, The Washington
+                Buttkickers and owner Logan Handwork had been gracefully removed from the league for lack of participation. Gruden's Plan would then
+                immediately offer Mr. Handwork a co-manager position that he graciously accepted. This year Gruden's Plan seemed to turn things around.
+                Firstly, they completed a major trade with the Maryland Marijuanas that would be named the 2020 Trade Rape of the year, this time in
+                Gruden's Plan's favor. In this trade they received Patrick Mahomes, Alvin Kamara, DeSean Jackson, and a 1st round Waiver Wire Draft pick
+                for Todd Gurley, Adam Thielen, Zach Ertz, and Drew Brees. Gruden's Plan continued to make smart trades as they traded away Derrick Henry
+                and a recently injured Austin Ekeler over to Babylon for DeAndre Hopkins, Travis Kelce, and Devin Singletary. With the help of these additions
+                Gruden's Plan would set some league records including the most points in a week at 201.80 points and the most points by player in a week with
+                Alvin Kamara's championship week 54.70 points. All this led Gruden's Plan to their first championship in franchise history. Now was this season
+                just a fluke? Or might Gruden now actually have a plan? Only time will tell.
+            </p>
+        </article>
+    </section>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementsByClassName("topnav").item(0);
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        } else {
+        navbar.classList.remove("sticky");
+        }
+        }
+    </script>
+
+    <footer>
+        <p><a href="./RFL Webpage.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
+    </footer>
+
+
+    </p>
+
+</body>
