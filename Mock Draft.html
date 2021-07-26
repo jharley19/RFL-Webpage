@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RFL Standings</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+
+        /* Style the header */
+        header {
+            background-color: midnightblue;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 20%;
+            background: #ccc;
+            padding: 20px;
+        }
+
+            /* Style the list inside the menu */
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+
+
+
+
+        /* Style the footer */
+        footer {
+            background-color: midnightblue;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .topleft {
+            position: absolute;
+            top: 40px;
+            left: 144px;
+            font-size: 18px;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            /* Style the topnav links */
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                /* Change color on hover */
+                .topnav a:hover {
+                    background-color: red;
+                    color: black;
+                }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        li {
+            float: left;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+            .dropdown .dropbtn {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                padding: 14px 16px;
+                background-color: black;
+                font-family: inherit;
+                margin: 0;
+            }
+
+            .navbar a:hover, .dropdown:hover .dropbtn {
+                background-color: red;
+            }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+            .sticky + .article {
+                padding-top: 60px;
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="topleft"><img src=".\RFL LOGO.png" width="100px" /></div>
+
+        <h2 style="color:white;">Mock Draft Center</h2>
+    </header>
+
+
+    <div class="topnav">
+        <ul>
+            <li><a href=".\index.html">Home</a></li>
+            <li><a href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
+            <li><a href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Teams</a>
+                <div class="dropdown-content">
+                    <a href="./Dictator.html"><img src=".\Prof Pic1.png" width="20px" /> The Dictator</a>
+                    <a href="./Red Army.html">The Red Army</a>
+                    <a href="./Big Ounce.html"><img src=".\big ounce logo.png" width="20px" /> Big Ounce</a>
+                    <a href="./Gruden's Plan.html"><img src=".\gruden logo.png" width="20px" /> Gruden's Plan</a>
+                    <a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
+                    <a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Wentz Wagon</a>
+                    <a href="./Red Wolf.html">The Red Wolf of Wall Street</a>
+                    <a href="./Mullet Man.html"><img src=".\Mullet Logo.jpg" width="20px" /> Mullet Man</a>
+                    <a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" /> Sleepy Nick</a>
+                    <a href="./Wack Attacks.html">Wack Attacks</a>
+                </div>
+            </li>
+            <li>
+                <a href="./Past Teams.html">Former Teams</a>
+            </li>
+            <li>
+                <a href="./draft.html">Drafts</a>
+            </li>
+
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">League Videos</a>
+                <div class="dropdown-content">
+                    <a href="https://youtu.be/hTfTKxbhBHc">Announcing Our 10th and Final RFL Member For 2021!</a>
+                    <a href="https://youtu.be/89NbZ0oGmTQ">2021 State of the League Address</a>
+                    <a href="https://youtu.be/oua0MqRtpLg">The Red Army's 2020 Punishment</a>
+                    <a href="https://youtu.be/5dfQiQEzpYM">2020 Waterbets</a>
+                    <a href="https://youtu.be/_btkqdhmESU">2020 Exit Interviews</a>
+                    <a href="https://youtu.be/Ap3etxqNsV4">Our 2020 Draft</a>
+                    <a href="https://youtu.be/gpnV7FCJTdg">Draft Day 2020 Hype Video</a>
+                    <a href="https://www.youtube.com/watch?v=801p3bd-SEk">2019 Exit Interviews</a>
+                    <a href="https://youtu.be/i6lJSjG6js8">Our 2019 Draft</a>
+                    <a href="https://youtu.be/YFUnB669-rE">2019 Commish Annoucement</a>
+                </div>
+            </li>
+            <li>
+                <a href="./standings.html">Standings</a>
+            </li>
+            <li>
+                <a href="./records.html">Records</a>
+            </li>
+            <li>
+                <a href="./Hall of Fame.html">Hall of Fame</a>
+            </li>
+        </ul>
+    </div>
+    <p>
+
+    </p>
+    <applet code="MockDraft.class" archive="mockDraftCode.jar" width="640" height="480"></applet>
+   
+
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementsByClassName("topnav").item(0);
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        } else {
+        navbar.classList.remove("sticky");
+        }
+        }
+    </script>
+
+    <footer>
+        <p><a href="./index.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
+    </footer>
+
+
+    </p>
+
+</body>
