@@ -15,13 +15,13 @@
 
         /* Style the header */
         header {
-            
-            background-color: red;
-            padding: 30px;
-            text-align: center;
-            font-size: 35px;
-            color: white;
+            background-color: black;
         }
+
+        .header h1 {
+            font-size: 100000px;
+        }
+
 
         /* Create two columns/boxes that floats next to each other */
         nav {
@@ -44,6 +44,11 @@
             width: 80%;
             background-color: #f1f1f1;
         }
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
 
         /* Clear floats after the columns */
         section::after {
@@ -62,8 +67,8 @@
 
         /* Style the top navigation bar */
         .topnav {
-            overflow: hidden;
             background-color: #333;
+            min-height: 48px;
         }
 
             /* Style the topnav links */
@@ -114,6 +119,12 @@
                 background-color: red;
             }
 
+        .top-left {
+            position: absolute;
+            top: 16px;
+            left: 225px;
+            text-align: left;
+        }
         .dropdown-content {
             display: none;
             position: absolute;
@@ -169,28 +180,43 @@
 
 <body>
     <header>
-        <h2 style="color:yellow;">The Red Army</h2>
+        <div class="container">
+            <picture>
+                <source srcset=".\Prof Pic1.png" media="(max-width: 800px)">
+                <source srcset=".\brian background.png" media="(max-width: 1500px)">
+
+                <img src=".\brian background.png" width="100%" />
+            </picture>
+
+          <!--  <div class="top-left">
+        <h1 style="font-size:30px;">The Red Army</h1>
+        10th place
+        <br />5-10-0
+
+    </div>-->
+
+        </div>
     </header>
 
     <section>
         <div class="topnav">
             <ul>
-                <li><a href=".\RFL Webpage.html">Home</a></li>
-                <li><a href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
-                <li><a href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
+                <li><a href=".\index.html">Home</a></li>
+                <li><a target="_blank" href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
+                <li><a target="_blank" href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Teams</a>
                     <div class="dropdown-content">
                         <a href="./Dictator.html"><img src=".\Prof Pic1.png" width="20px" /> The Dictator</a>
-                        <a href="./Red Army.html">The Red Army</a>
+                        <a href="./Red Army.html"><img src=".\brian logo.png" width="20px" /> The Red Army</a>
                         <a href="./Big Ounce.html"><img src=".\big ounce logo.png" width="20px" /> Big Ounce</a>
                         <a href="./Gruden's Plan.html"><img src=".\gruden logo.png" width="20px" /> Gruden's Plan</a>
                         <a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
                         <a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Wentz Wagon</a>
-                        <a href="./Red Wolf.html">The Red Wolf of Wall Street</a>
+                        <a href="./Red Wolf.html"><img src=".\jason logo.png" width="20px" /> Goofy God</a>
                         <a href="./Mullet Man.html"><img src=".\Mullet Logo.jpg" width="20px" /> Mullet Man</a>
                         <a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" />  Sleepy Nick</a>
-                        <a href="./Wack Attacks.html">Wack Attacks</a>
+                        <a href="./Wack Attacks.html"><img src=".\zach logo.jpg" width="20px" /> Wack Attacks</a>
                     </div>
                 </li>
                 <li>
@@ -227,6 +253,12 @@
                 </li>
                 <li>
                     <a href="./records.html">Records</a>
+                </li>
+                <li>
+                    <a href="./Hall of Fame.html">Hall of Fame</a>
+                </li>
+                <li>
+                    <a href="./Mock Draft.html">Mock Draft</a>
                 </li>
             </ul>
         </div>
@@ -279,26 +311,65 @@
 
             <h1>Biography</h1>
             <p>
-                The Red Army is one of two teams that has been in the league every single year since its inception. Despite his
-                tenured service, he has still yet to achieve a championship, let alone a playoff win. In the early years of the league,
-                The Red Army acredits their lack of success to "not caring." In recent years, his lack of success is seen as a mystery.
-                Despite always having one of the top drafts, The Red Army always seems to underperform.
+                The Red Army would enter the league in its inaugural season in 2013 and is only one of two teams to have participated in every season since the
+                league's inception. In their first year, The Red Army struggled to muster up consistent wins and ended the regular season at 5-8 in 5th place.
+                They would take on the Huntingtown Hurricanes in the play-in game for the chance to clinch a playoff spot. The Red Army would roll past the Huntingtown
+                Hurricanes and would punch their ticket to their first playoff appearance. They now had to take on Big Ounce and they would suffer a narrow defeat that
+                would knock them into the consolation game and they
+                ended the year in fourth place.
+            <p>
+                In the 2014 season, The Red Army sought to avenge their playoff shortcomings. They would finish the year with a similar record as last year at 6-8.
+                However, the league now had eight members and this record was only good enough for 5th place, just missing the playoffs. The Red Army would finish
+                the year in 5th place with an even 8-8 record.
+            <p>
+            <p>
+                In the 2015 season, The Red Army would have its best season to date. They would finish the regular season with an 8-6 record. However, once again this
+                record was not good enough to make the playoffs as they would be set in 5th place. They would go on to win back-to-back Toes Bowls and finish the
+                year in 5th place at 10-6.
+            <p>
+            <p>
+                In the 2016 season, The Red Army desired to break out of this mediocre rut and return to the playoffs for the first time in three years. However, this
+                dream would be cut short very early on as they would only muster 2 wins in the first eight weeks of the season. But a late year resurgence allowed
+                The Red Army to come back and finish the regular season at 6-8, again in 5th place. Then in the Toes Bowl, The Red Army would dominate once again
+                and win for the third straight season.
+            <p>
+            <p>
+                Entering the 2017 season, The Red Army was sick of being a joke in this league after 5 straight years of just missing out on the playoffs. This chip on
+                their shoulder pushed them to their best finish in franchise history with a 9-5 record, which was good enough to finally clinch the playoffs in second place.
+                The Red Army was now back in the playoffs for the first time since 2013. They would have the tall task of taking on the Cookie Charizards in search of their
+                first playoff win. In this matchup, The Red Army would fail to perform and lose by more than 50 points. They ended the year in 4th place with a 9-7 record.
+            <p>
+            <p>
+                Now in the 2018 season, The Red Army had finally found the recipe for the playoffs a year prior and had planned to take a similar approach in 2018. However,
+                this recipe seemed flawed as they would only have one win after the first six weeks of the season. They would end the season with their worst year yet
+                at 4-10 in 8th place. Since they finished in 8th place, they would get to compete in the Toes Bowl bracket once again, where they are 6-0 in Toes Bowl matches
+                with a record 3 Toes Bowl championships. Here they would make it to the Toes Bowl
+                championship game once again but would lose to The Wentz Wagon and they would finish this disappointing year in 6th place with a pitiful 5-11 record.
+<p>
+     
             <p>
                 In the 2019 season, The Red Army
                 made a dramtic name change and released an iconic video to go along with it. In this video, The Red Army bashed the RFL and
                 its commissioner for the removal of Tyler Ulmschneider and his Cookie Charizards. Furthermore, he acknowledged that Tyler
                 himself is the true fantasy god and would change his own team name to "Cookie Charizards" to honor him. In the video he also
-                uttered the infamous line "Gruden has no plan," a bash at Michael Boswell's Gruden's Plan. Despite his devotion to Tyler,
-                Brian would learn that he was a false idol as he would suffer his worst year in franchise historty up until that point.
+                uttered the infamous line "Gruden has no plan," a bash at Michael Boswell's Gruden's Plan. Despite his belief in this new God, 
+                he would start the season with the worst record of his career with 1 win after 7 weeks. He would finish the season at 5-9 in 
+                9th place and would compete against The Wentz Wagon in the first ever Panzerkampfwagen Bowl. After the grueling two week battle, 
+                The Red Army would come out on top and avoid the league's first punishment. So after this pitiful season, The Red Army would realize that 
+                Tyler was a false idol and abandon him.
             <p>
-                Leading up to the 2020 season, Brian would reject Tyler but his skeptism for the league and its commissioner only grew. This
+                Leading up to the 2020 season, Brian would reject Tyler but his skepticism for the league and its commissioner only grew. This
                 led to another video that acted as a manifesto. Here The Red Army called for the members of the league to unite and reject the league's
-                commissoner Jeremy Harley. He paints the commissioner as a fascist leader that acts in his own self-interest and cares not about the
+                commissioner Jeremy Harley. He paints the commissioner as a fascist leader that acts in his own self-interest and cares not about the
                 common league member. He also calls for the league to adopt a communist governing structure where no person has any more power over
-                another. To that effect, he also acknowldeged the "father of communism" Karl Marx as his new fanatsy god and he would adopt the
-                new team name "The Red Army". His efforts, however, came up short as the commissioner still reigns to this day. Furthermore, The Red Army
-                would suffer their worst finsih in franchise history as they would attend back to back Panzerkampfwagen Bowls and this time
-                finish in last place. His poor finish forced him to endure a cruel punishment put on by the other league members as each member was
+                another. To that effect, he also acknowledged the "father of communism" Karl Marx as his new fantasy God and he would adopt the
+                new team name "The Red Army". The Red Army would start the season very hot as they would win 3 out of their first 4 games. This was all on
+                the back of very well drafted team, as they would receive the best draft award, as well as some fortunate injuries. Marlon Mack would tear his achilles
+                in week 1 allowing The Red Army's Jonathan Taylor to take over the backfield as well as Nick Chubb's MCL sprain that allowed The Red Army's Kareem Hunt to
+                see an increased workload. However, this good luck would soon turn sour as they would only win 2 of their remaining 10 games. This would give them to finish the
+                regular season at 5-9 in 9th place. This would mean The Red Army would enter back-to-back Panzerkamfwagen Bowls, this time facing off against his rival The Dictator.
+                This time The Red Army would be defeated and would finish the year in last place. This poor finish forced him to endure a cruel punishment put on by the other league members
+                as each member was
                 able to throw a pie in the face of The Red Army's owner, Brian Levesque. We have not heard any further word since The Red Army suffered this
                 embarrassing punishment.
             </p>
@@ -321,7 +392,7 @@
     </script>
 
     <footer>
-        <p><a href="./RFL Webpage.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
+        <p><a href="./index.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
     </footer>
 
 

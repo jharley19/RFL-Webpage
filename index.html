@@ -3,25 +3,26 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<style>
 		* {
 			box-sizing: border-box;
 		}
 
-		body {
-			font-family: Arial;
-			padding: 10px;
-			background: white;
-		}
-
-		/* Header/Blog Title */
-        .header {
-            padding: 30px;
-            text-align: center;
-            background: midnightblue;
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background-color: white;
         }
 
-			.header h1 {
+		/* Header/Blog Title */
+        #header {
+            
+            
+            background: black;
+        }
+
+			#header h1 {
 				font-size: 50px;
 			}
 
@@ -35,7 +36,7 @@
 			.topnav a {
 				float: left;
 				display: block;
-				color: #f2f2f2;
+				color: white;
 				text-align: center;
 				padding: 14px 16px;
 				text-decoration: none;
@@ -114,15 +115,6 @@
 		.dropdown:hover .dropdown-content {
 			display: block;
 		}
-
-		/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-		@media screen and (max-width: 400px) {
-			#topnav a {
-				float: none;
-				width: 100%;
-			}
-		}
-
 		/* Style the footer */
 		footer {
 			background-color: midnightblue;
@@ -145,20 +137,21 @@
 		}
 
 		/* Create two columns/boxes that floats next to each other */
-		nav {
-			float: left;
-			width: 20%;
-			background: #ccc;
-			background-color: lightgray;
-			padding: 20px;
-		}
+        #aside {
+            float: left;
+            width: 20%;
+            background: #ccc;
+            background-color: lightgray;
+            padding: 20px;
+            /*height: 1772px;*/
+        }
 			/* Style the list inside the menu */
-			nav ul {
+			#aside ul {
 				list-style-type: none;
 				padding: 0;
 			}
 
-		article {
+		#article {
 			float: left;
 			padding: 20px;
 			width: 80%;
@@ -173,12 +166,24 @@
 		}
 
 		/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-		@media (max-width: 600px) {
-			nav, article {
-				width: 100%;
-				height: auto;
+        @media only screen and (max-width: 800px) {
+            /* For mobile phones: */
+            #aside {
+                text-align: center;
+                width: 100%;
+            } 
+			#article, .footer {
+                width: 100%;
+            }
+			.topright {
+				display: none;
 			}
-		}
+            .topleft {
+                width: 30%;
+                top: 80px;
+                left: 5px;
+            }
+        }
 
 		.sticky {
 			position: fixed;
@@ -186,38 +191,42 @@
 			width: 97.6%;
 		}
 
-			.sticky + .article {
+			.sticky + #article {
 				padding-top: 60px;
 			}
 	</style>
 </head>
 
 <body>
-	<div class="header">
-		<h1 style="color:white;">The RFL</h1>
-		<p style="color:white;"><i>The Greatest Fantasy Football League Ever.</i></p>
-		<div class="topleft"><img src=".\RFL LOGO.png" width="100px" /></div>
-		<div class="topright"><img src=".\players.png" width="400px" /></div>
+	<div id="header">
+		<!--<h1 style="color:white;">The RFL</h1>
+	<p style="color:white;"><i>The Greatest Fantasy Football League Ever.</i></p>
+	<div class="topleft"><img src=".\RFL LOGO.png" style="width:35%;" /></div>
+	<div class="topright"><img src=".\players.png" style="width:74.4%;" /></div>-->
+		
+
+			<img src=".\RFL background.png" width="100%" />
+		
 	</div>
 	<section>
 		<div class="topnav">
 			<ul>
-				<li><a href=".\RFL Webpage.html">Home</a></li>
-				<li><a href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
-				<li><a href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
+				<li><a href=".\index.html">Home</a></li>
+				<li><a target="_blank" href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
+				<li><a target="_blank" href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
 				<li class="dropdown">
 					<a href="javascript:void(0)" class="dropbtn">Teams</a>
 					<div class="dropdown-content">
 						<a href="./Dictator.html"><img src=".\Prof Pic1.png" width="20px" /> The Dictator</a>
-						<a href="./Red Army.html">The Red Army</a>
+						<a href="./Red Army.html"><img src=".\brian logo.png" width="20px" /> The Red Army</a>
 						<a href="./Big Ounce.html"><img src=".\big ounce logo.png" width="20px" /> Big Ounce</a>
 						<a href="./Gruden's Plan.html"><img src=".\gruden logo.png" width="20px" /> Gruden's Plan</a>
 						<a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
 						<a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Wentz Wagon</a>
-						<a href="./Red Wolf.html">The Red Wolf of Wall Street</a>
+						<a href="./Red Wolf.html"><img src=".\jason logo.png" width="20px" /> Goofy God</a>
 						<a href="./Mullet Man.html"><img src=".\Mullet Logo.jpg" width="20px" /> Mullet Man</a>
 						<a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" /> Sleepy Nick</a>
-						<a href="./Wack Attacks.html">Wack Attacks</a>
+						<a href="./Wack Attacks.html"><img src=".\zach logo.jpg" width="20px" /> Wack Attacks</a>
 					</div>
 				</li>
 				<li>
@@ -248,19 +257,22 @@
 					<a href="./records.html">Records</a>
 				</li>
 				<li>
+					<a href="./Hall of Fame.html">Hall of Fame</a>
+				</li>
+				<li>
 					<a href="./Mock Draft.html">Mock Draft</a>
 				</li>
 			</ul>
 		</div>
 
-		<nav>
+		<aside id="aside">
 			<p>	<h3>2020 League Standings</h3> </p>
 			<p>
 				1. Gruden's Plan
 				<br />	2. The Wentz Wagon
 				<br />	3. Maryland Marijuanas
 				<br />	4. Sleepy Nick
-				<br />	5. The Red Wolf of Wall Street
+				<br />	5. Goofy God
 				<br />	6. Babylon
 				<br />	7. Mullet Man
 				<br />	8. Big Ounce
@@ -268,7 +280,7 @@
 				<br />	10. The Red Army
 			</p>
 			<p> <h3>2021 Draft Order</h3> </p>
-			1. The Red Wolf of Wall Street
+			1. Goofy God
 			<br />	2. Mullet Man
 			<br />	3. Big Ounce
 			<br />	4. The Dictator
@@ -278,9 +290,9 @@
 			<br />	8. Maryland Marijuanas
 			<br />	9. Sleepy Nick
 			<br />	10. Wack Attacks
-		</nav>
+		</aside>
 
-		<article>
+		<article id="article">
 			<h1>Welcome to the RFL!</h1>
 			<p>
 				<strong>Commissioner: </strong> Jeremy Harley
@@ -334,7 +346,7 @@
 				high school friends Michael Boswell Jr. and Zane Lehosky, and Brandon would make his return. This year would probably be known as the most important
 				in league history as this was the year that things started to become more and more serious. This year we saw the infamous "Fabiano trade" where
 				Gruden's Plan traded Tom Brady and LeSean McCoy to The Dictator for Marcus Mariota and Ty Montgomery. This trade was sent to NFL Fantasy Live
-				via Twitter and it would make the show and Michael Fabiano would roast Gruden's Plan owner Michael Boswell Jr. for making the abysmal trade.
+				via Twitter, and it would make the show and Michael Fabiano would roast Gruden's Plan owner Michael Boswell Jr. for making the abysmal trade.
 				This year also saw the first team video as The Dictator would celebrate their championship victory.
 			<p>
 				The 2018 season would be quite historic as well. It would be the first year in league history that we did not lose a single team and we even added
@@ -373,12 +385,23 @@
 				The first TIT interview was then conducted with Nick, which he passed, and he was accepted officially into the league. The 2020 offseason also saw
 				the creation of team press conferences when a major change was announced including hiring and firing of co-managers and an introductory press
 				conference for new managers. We also saw the popularization of team name announcement videos including ones released by Babylon, The Dictator,
-				The Red Army, Sleepy Nick, and The Red Wolf of Wall Street. The 2020 Draft would mark the first draft with 100% in-person attendance and also was
+				The Red Army, Sleepy Nick, and Goofy God. The 2020 Draft would mark the first draft with 100% in-person attendance and also was
 				held outdoors for the first time and was kicked off by the first ever presentation of the league national anthem performed by the inaugural
 				Panzerkampfwagen Bowl losing team of Zane Lehosky and Nick Sagun. Once the season was under way, we would see The Dictator put out weekly propaganda
-				videos called "7 Minutes of Hate", where The Dictator would comment on major league stories and discuss the state of their team. At the awards
-				ceremony, we saw a series of waterbets paid out, The Red Army's pie in the face punishment, and mini footballs were used as trophies instead of
-				certificates.
+				videos called "7 Minutes of Hate", where The Dictator would comment on major league stories and discuss the state of their team.  At the awards
+				ceremony, we saw a series of waterbets paid out and The Red Army's pie in the face punishment.
+			</p>
+			<p>
+				Entering the 2021 season, a petition was created and signed by nine league members requesting the removal of Babylon from the RFL. Owner of Babylon, Rc Miller, 
+				had increasingly grown apart from the league socially due to repeated annoying actions and failed to fit in anymore. For this reasoning, the petition was approved
+				by the Commissioner and he would assemble the TIT once again in search of a new league member. Three options for a replacement arose including Mullet Man co-manager
+				Ben Adams, Big Ounce co-manager Alex Garcia, and friend of the league Adam Fenton. Ben and Alex would be interviewed, and Adam would back out of his interview last second
+				after failing to respond to the Commissioner. The TIT had not yet been convinced of suitable hire just yet, so they called upon a friend of Michael Boswell for a last second interview.
+				Zach Zalovick would leave a wedding early and delay a booty call just to have his interview, which he knocked out of the park. Zach was given the position and would become the 
+				10th member for the 2021 season of the RFL. Meanwhile, The Dictator had begun to preview a groundbreaking video series that would tell the complete story of their offseason as they prepared for
+				the 2021 season. This video series was revolutionary and was something that the league never experienced before. Also, the Commissioner began to develop the first ever 
+				RFL website, which you are using right now! The website was designed to
+				become the new hub of information, statistics, and history about the RFL.
 			</p>
 		</article>
 	</section>
@@ -399,7 +422,7 @@
 	</script>
 
 	<footer>
-		<p><a href="./RFL Webpage.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
+		<p><a href="#header"><img src=".\RFL LOGO.png" width="100px" /></a></p>
 	</footer>
 </body>
 

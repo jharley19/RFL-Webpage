@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>The Red Wolf of Wall Street</title>
+    <title>Goofy God</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
@@ -15,15 +15,11 @@
 
         /* Style the header */
         header {
-            background-color: red;
-            padding: 30px;
-            text-align: center;
-            font-size: 35px;
-            color: white;
+            background-color: black;
         }
 
         /* Create two columns/boxes that floats next to each other */
-        nav {
+        #nav {
             float: left;
             width: 20%;
             background: #ccc;
@@ -36,7 +32,7 @@
                 padding: 0;
             }
 
-        article {
+        #article {
             float: left;
             padding: 20px;
             width: 80%;
@@ -61,8 +57,8 @@
 
         /* Style the top navigation bar */
         .topnav {
-            overflow: hidden;
             background-color: #333;
+            min-height: 48px;
         }
 
             /* Style the topnav links */
@@ -91,6 +87,14 @@
 
         li {
             float: left;
+        }
+
+        .top-left {
+            position: absolute;
+            top: 16px;
+            left: 225px;
+            text-align: left;
+            color: white;
         }
 
         .dropdown {
@@ -139,19 +143,15 @@
             display: block;
         }
 
-        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-        @media screen and (max-width: 400px) {
-            .topnav a {
-                float: none;
+        @media only screen and (max-width: 800px) {
+            /* For mobile phones: */
+            #nav {
+                text-align: center;
                 width: 100%;
             }
-        }
 
-        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-        @media (max-width: 600px) {
-            nav, article {
+            #article, .footer {
                 width: 100%;
-                height: auto;
             }
         }
 
@@ -168,28 +168,35 @@
 </head>
 
 <body>
-    <header>
-        <h2 style="color:black;">The Red Wolf of Wall Street</h2>
-    </header>
+    <header id="header">
+        <div class="container">
+            <img src=".\jason background.png" width="100%" />
 
+         <!--<div class="top-left">
+                 <h1 style="font-size:30px;">Goofy God</h1>
+                 5th place
+                 <br />7-9
+        </div>-->
+
+    </header>
     <div class="topnav">
         <ul>
-            <li><a href=".\RFL Webpage.html">Home</a></li>
-            <li><a href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
-            <li><a href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
+            <li><a href=".\index.html">Home</a></li>
+            <li><a target="_blank" href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
+            <li><a target="_blank" href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Teams</a>
                 <div class="dropdown-content">
                     <a href="./Dictator.html"><img src=".\Prof Pic1.png" width="20px" /> The Dictator</a>
-                    <a href="./Red Army.html">The Red Army</a>
+                    <a href="./Red Army.html"><img src=".\brian logo.png" width="20px" /> The Red Army</a>
                     <a href="./Big Ounce.html"><img src=".\big ounce logo.png" width="20px" /> Big Ounce</a>
                     <a href="./Gruden's Plan.html"><img src=".\gruden logo.png" width="20px" /> Gruden's Plan</a>
                     <a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
                     <a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Wentz Wagon</a>
-                    <a href="./Red Wolf.html">The Red Wolf of Wall Street</a>
+                    <a href="./Red Wolf.html"><img src=".\jason logo.png" width="20px" /> Goofy God</a>
                     <a href="./Mullet Man.html"><img src=".\Mullet Logo.jpg" width="20px" /> Mullet Man</a>
                     <a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" /> Sleepy Nick</a>
-                    <a href="./Wack Attacks.html">Wack Attacks</a>
+                    <a href="./Wack Attacks.html"><img src=".\zach logo.jpg" width="20px" /> Wack Attacks</a>
                 </div>
             </li>
             <li>
@@ -232,10 +239,16 @@
             <li>
                 <a href="./records.html">Records</a>
             </li>
+            <li>
+                <a href="./Hall of Fame.html">Hall of Fame</a>
+            </li>
+            <li>
+                <a href="./Mock Draft.html">Mock Draft</a>
+            </li>
         </ul>
     </div>
     <section>
-        <nav>
+        <nav id="nav">
 
             <h3>Roster</h3>
 
@@ -260,7 +273,7 @@
 
         </nav>
 
-        <article>
+        <article id="article">
             <h1>Basic Information</h1>
             <p>
 
@@ -270,7 +283,7 @@
 
             <p>
                 <strong>Former Co-Managers: </strong>N/A
-                <br /> <strong>Former Team Names:</strong> High Quality H2O (2018), The Many Faced God (2019)
+                <br /> <strong>Former Team Names:</strong> High Quality H2O (2018), The Many Faced God (2019), The Red Wolf of Wall Street (2020)
             <p>
                 <strong>Championships:</strong> N/A
                 <br /><strong>Other Awards: </strong>2020 First Overall Pick Winner
@@ -283,22 +296,28 @@
 
             <h1>Biography</h1>
             <p>
-                The Red Wolf of Wall Street entered the league in 2018 and was a force to be reckoned with from the start. In their first season, they would make the playoffs
-                in third place at 10-4 thanks in large part to a five game winning streak to end the season. Coming in hot in the playoffs, their winning streak would
-                come to screeching halt as they put up only 58.86 points losing to the eventual champion Big Ounce. They would lose again in the third place game to finish
+                The Goofy God entered the league in 2018 and was a force to be reckoned with from the start. In their first season, they would make the playoffs
+                in third place at 10-4 thanks in large part to a five-game winning streak to end the season. Coming in hot in the playoffs, their winning streak would
+                come to screeching halt as they put up only 58.86 points losing to the eventual champion Big Ounce. They would lose again in the third-place game to finish
                 in fourth place.
             <p>
-                Now going into the 2019 season, The Red Wolf of Wall Street decided to keep stud running back, Saquon Barkley, looking to improve from last year's fourth place
-                performance. This season was very similar to their previous one as they struggled at first, but would finish the year in third place at 9-5 thanks to now a six
-                game winning streak to end the season. Now in the playoffs, The Red Wolf of Wall Street looked to keep their streak alive and win their first playoff game. This
+                Now going into the 2019 season, The Goofy God decided to keep stud running back, Saquon Barkley, looking to improve from last year's fourth place
+                performance. This season was very similar to their previous one as they struggled at first but would finish the year in third place at 9-5 thanks to now a six-game
+                winning streak to end the season. Now in the playoffs, the Goofy God looked to keep their streak alive and win their first playoff game. This
                 time they narrowly lost to The Maryland Marijuanas and then lost again in third place game to finish in fourth place for the second straight season.
             <p>
-                Coming into the 2020 season, The Red Wolf of Wall Street was painted as the Marvin Lewis of the league in that they could always make the playoffs, but could
-                never win a game. The Red Wolf of Wall Street then contemplated quiting, but after illegally consuming some alcohol, he decided that he was "not fucking leaving."
-                To accompany this new culture, they changed their name to "The Red Wolf of Wall Street." The good news is this culture change allowed The Red Wolf of Wall Street
+                Coming into the 2020 season, Goofy God was painted as the Marvin Lewis of the league in that they could always make the playoffs but could
+                never win a game. The Goofy God then contemplated quitting, but after illegally consuming some alcohol, he decided that he was "not fucking leaving."
+                To accompany this new culture, they changed their name to "The Red Wolf of Wall Street." The good news is this culture change allowed The Goofy God
                 to finally get a different result, but not a better one. Their top draft picks were riddled with injuries and their team struggled throughout the season. They
-                narrowly escaped the Panzerkampfwagen Bowl at 5-9 and finsihed the regular season in 7th place. This time in the postseason, The Red Wolf of Wall Street
-                shined and they would go on to claim the first overall pick for the 2021 season.
+                narrowly escaped the Panzerkampfwagen Bowl at 5-9 and finished the regular season in 7th place. This time in the postseason, the Goofy God
+                shined, and they would go on to claim the first overall pick for the 2021 season.
+            </p>
+            <p>
+                Entering the 2021 season, the Goofy God wanted another new look. However, this time they wanted a name and a brand that would stand the test of time. After some heavy contemplation
+                in the Buffalo Wild Wings parking lot at 1 o'clock in the morning following the season opening Hall of Fame game, they would land on a new team name: "Goofy God." This new name 
+                not only is representative of him denying a bad bitch because she is "too goofy", but also incorporates his favorite rap artist Eminem, since Eminem refers to himself as the "Rap God."
+                A third meaning in the name is seen in its initials: "GG," as the Goofy God is notorious for always saying "GG" in the group chat before the game is even over. 
             </p>
         </article>
     </section>
@@ -319,7 +338,7 @@
     </script>
 
     <footer>
-        <p><a href="./RFL Webpage.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
+        <p><a href="./index.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
     </footer>
 
 

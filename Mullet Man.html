@@ -13,9 +13,11 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-
+        #header{
+            background-color: black;
+        }
         /* Create two columns/boxes that floats next to each other */
-        nav {
+        #nav {
             float: left;
             width: 20%;
             background: #ccc;
@@ -23,12 +25,12 @@
         }
 
             /* Style the list inside the menu */
-            nav ul {
+            #nav ul {
                 list-style-type: none;
                 padding: 0;
             }
 
-        article {
+        #article {
             float: left;
             padding: 20px;
             width: 80%;
@@ -66,8 +68,8 @@
 
         /* Style the top navigation bar */
         .topnav {
-            overflow: hidden;
             background-color: #333;
+            min-height: 48px;
         }
 
             /* Style the topnav links */
@@ -144,19 +146,15 @@
             display: block;
         }
 
-        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-        @media screen and (max-width: 400px) {
-            .topnav a {
-                float: none;
+        @media only screen and (max-width: 800px) {
+            /* For mobile phones: */
+            #nav {
+                text-align: center;
                 width: 100%;
             }
-        }
 
-        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-        @media (max-width: 600px) {
-            nav, article {
+            #article, .footer {
                 width: 100%;
-                height: auto;
             }
         }
 
@@ -173,16 +171,16 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="container">
-            <img src=".\mullet background.png" width="1503px" />
+            <img src=".\mullet background.png" width="100%" />
 
-            <div class="top-left">
+           <!-- <div class="top-left">
                 <h1 style="font-size:30px;">Mullet Man</h1>
                 7th place
                 <br />7-9
 
-            </div>
+            </div>-->
 
         </div>
     </header>
@@ -190,22 +188,22 @@
     <section>
         <div class="topnav">
             <ul>
-                <li><a href=".\RFL Webpage.html">Home</a></li>
-                <li><a href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
-                <li><a href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
+                <li><a href=".\index.html">Home</a></li>
+                <li><a target="_blank" href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
+                <li><a target="_blank" href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Teams</a>
                     <div class="dropdown-content">
                         <a href="./Dictator.html"><img src=".\Prof Pic1.png" width="20px" /> The Dictator</a>
-                        <a href="./Red Army.html">The Red Army</a>
+                        <a href="./Red Army.html"><img src=".\brian logo.png" width="20px" /> The Red Army</a>
                         <a href="./Big Ounce.html"><img src=".\big ounce logo.png" width="20px" /> Big Ounce</a>
                         <a href="./Gruden's Plan.html"><img src=".\gruden logo.png" width="20px" /> Gruden's Plan</a>
                         <a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
                         <a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Wentz Wagon</a>
-                        <a href="./Red Wolf.html">The Red Wolf of Wall Street</a>
+                        <a href="./Red Wolf.html"><img src=".\jason logo.png" width="20px" /> Goofy God</a>
                         <a href="./Mullet Man.html"><img src=".\Mullet Logo.jpg" width="20px" /> Mullet Man</a>
                         <a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" /> Sleepy Nick</a>
-                        <a href="./Wack Attacks.html">Wack Attacks</a>
+                        <a href="./Wack Attacks.html"><img src=".\zach logo.jpg" width="20px" /> Wack Attacks</a>
                     </div>
                 </li>
                 <li>
@@ -241,9 +239,15 @@
                 <li>
                     <a href="./records.html">Records</a>
                 </li>
+                <li>
+                    <a href="./Hall of Fame.html">Hall of Fame</a>
+                </li>
+                <li>
+                    <a href="./Mock Draft.html">Mock Draft</a>
+                </li>
             </ul>
         </div>
-        <nav>
+        <nav id="nav">
 
             <h3>Roster</h3>
 
@@ -267,7 +271,7 @@
 
         </nav>
 
-        <article>
+        <article id="article">
             <h1>Basic Information</h1>
             <p>
 
@@ -294,20 +298,26 @@
                 The Mullet Man entered the league in 2018 and found great struggle from the start. Their first draft was a rough experience as they assembled a below
                 average roster and even swapped picks with Gruden's Plan where they received nothing in return other than more time to think about a pick. This translated
                 immediately as they started their season with five straight losses and would end the year at a pitiful 2-12 in 9th place. This was a rude awakening for
-                The Mullet Man. They soon realized that success in this league was going to be harder than they orginally thought.
+                the Mullet Man. They soon realized that success in this league was going to be harder than they originally thought.
             <p>
-                Now going into the 2019 season, The Mullet Man would be the only team to not select a keeper. This was an interesting strategy that caught much of the league
+                Now going into the 2019 season, the Mullet Man would be the only team to not select a keeper. This was an interesting strategy that caught much of the league
                 off guard. This strategy allowed The Mullet Man to have their best season in franchise history as they would finish the regular season just outside the
                 playoffs in 5th place at 7-7. They would go on to win the next two games and clinch the first overall pick for the 2020 season.
             <p>
-                Coming into the 2020 season, The Mullet Man had the first overall pick and knew that they were going to select the running back from their favortie NFL
-                team, Christian McCaffery, since Decemeber. But before the draft, The Mullet Man decided to sign recently-released Ben Adams on as their co-manager.
+                Coming into the 2020 season, the Mullet Man had the first overall pick and knew that they were going to select the running back from their favorite NFL
+                team, Christian McCaffery, since December. But before the draft, the Mullet Man decided to sign recently released Ben Adams on as their co-manager.
                 Their draft left many teams questioning their picks including selecting George Kittle in the second round, T.Y. Hilton in the fourth round, unknown rookie
                 Antonio Gibson in the ninth round, and of course the recently released Derrius Guice in the fifteenth round. This poor decision making combined with an
-                unfortunate early injury to Christian McCaffery spelled doom for The Mullet Man. In an attempt to stop their bleeding, The Mullet Man engaged in the most
+                unfortunate early injury to Christian McCaffery spelled doom for the Mullet Man. In an attempt to stop their bleeding, the Mullet Man engaged in the most
                 trades in a single season in league history with 8 total deals made. This however could not stop The Mullet Man from missing the playoffs for the third
                 straight season. They would finish the regular season at 6-8 in 6th place. They would ultimately finish the year in 7th place. They are the only current
                 non-rookie team to never make the playoffs.
+            </p>
+            <p>
+                Entering the 2021 season, co-manager Ben Adams had drawn interest as the next franchise owner in the league, but he had failed to pass his interview. Ben then
+                displayed some disinterest in his current role on the Mullet Man and wanted to explore his options on the open market. He was very interested in signing with 
+                Sleepy Nick, where he thought he would have more control over the decision making, but the team was not interested in bringing on any further consultation. Ben would
+                then re-sign with the Mullet Man.
             </p>
         </article>
     </section>
@@ -328,7 +338,7 @@
     </script>
 
     <footer>
-        <p><a href="./RFL Webpage.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
+        <p><a href="./index.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
     </footer>
 
 

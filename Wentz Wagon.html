@@ -21,7 +21,7 @@
         }
 
         /* Create two columns/boxes that floats next to each other */
-        nav {
+        #nav {
             float: left;
             width: 20%;
             background: #ccc;
@@ -29,12 +29,12 @@
         }
 
             /* Style the list inside the menu */
-            nav ul {
+            #nav ul {
                 list-style-type: none;
                 padding: 0;
             }
 
-        article {
+        #article {
             float: left;
             padding: 20px;
             width: 80%;
@@ -72,8 +72,8 @@
 
         /* Style the top navigation bar */
         .topnav {
-            overflow: hidden;
             background-color: #333;
+            min-height: 48px;
         }
 
             /* Style the topnav links */
@@ -150,19 +150,15 @@
             display: block;
         }
 
-        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-        @media screen and (max-width: 400px) {
-            .topnav a {
-                float: none;
+        @media only screen and (max-width: 800px) {
+            /* For mobile phones: */
+            #nav {
+                text-align: center;
                 width: 100%;
             }
-        }
 
-        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-        @media (max-width: 600px) {
-            nav, article {
+            #article, .footer {
                 width: 100%;
-                height: auto;
             }
         }
 
@@ -182,14 +178,14 @@
 <body>
     <header>
         <div class="container">
-            <img src=".\zane background.png" width="1503px" />
+            <img src=".\zane background.png" width="100%" />
 
-            <div class="top-left">
+           <!-- <div class="top-left">
                 <h1 style="font-size:30px;">The Wentz Wagon</h1>
                 2nd place
                 <br />13-3-0
 
-            </div>
+            </div>-->
 
         </div>
     </header>
@@ -197,22 +193,22 @@
     <section>
         <div class="topnav">
             <ul>
-                <li><a href=".\RFL Webpage.html">Home</a></li>
-                <li><a href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
-                <li><a href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
+                <li><a href=".\index.html">Home</a></li>
+                <li><a target="_blank" href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
+                <li><a target="_blank" href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Teams</a>
                     <div class="dropdown-content">
                         <a href="./Dictator.html"><img src=".\Prof Pic1.png" width="20px" /> The Dictator</a>
-                        <a href="./Red Army.html">The Red Army</a>
+                        <a href="./Red Army.html"><img src=".\brian logo.png" width="20px" /> The Red Army</a>
                         <a href="./Big Ounce.html"><img src=".\big ounce logo.png" width="20px" /> Big Ounce</a>
                         <a href="./Gruden's Plan.html"><img src=".\gruden logo.png" width="20px" /> Gruden's Plan</a>
                         <a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
                         <a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Wentz Wagon</a>
-                        <a href="./Red Wolf.html">The Red Wolf of Wall Street</a>
+                        <a href="./Red Wolf.html"><img src=".\jason logo.png" width="20px" /> Goofy God</a>
                         <a href="./Mullet Man.html"><img src=".\Mullet Logo.jpg" width="20px" /> Mullet Man</a>
                         <a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" /> Sleepy Nick</a>
-                        <a href="./Wack Attacks.html">Wack Attacks</a>
+                        <a href="./Wack Attacks.html"><img src=".\zach logo.jpg" width="20px" /> Wack Attacks</a>
                     </div>
                 </li>
                 <li>
@@ -248,9 +244,15 @@
                 <li>
                     <a href="./records.html">Records</a>
                 </li>
+                <li>
+                    <a href="./Hall of Fame.html">Hall of Fame</a>
+                </li>
+                <li>
+                    <a href="./Mock Draft.html">Mock Draft</a>
+                </li>
             </ul>
         </div>
-        <nav>
+        <nav id="nav">
 
             <h3>Roster</h3>
 
@@ -274,7 +276,7 @@
 
         </nav>
 
-        <article>
+        <article id="article">
             <h1>Basic Information</h1>
             <p>
 
@@ -300,7 +302,7 @@
             <p>
                 The Wentz Wagon entered the league in 2017 and they started with a bang, but not in a good way. The Wentz Wagon quickly made an unprecedented move by
                 sleeping through the entirety of the draft (the draft started in the afternoon). Because of this, The Wentz Wagon was left with scraps as the league
-                does not approve of autodraft. This band of misfits performed just as you would expect and they finished the regualr season at 7-7 in 6th place. Then
+                does not approve of auto-draft. This band of misfits performed just as you would expect, and they finished the regular season at 7-7 in 6th place. Then
                 in the Loser's bracket, they ended up finishing in 7th place, just escaping the dreaded last place.
             <p>
                 Now going into the 2018 season, The Wentz Wagon would be awake for the draft and could now build his own team for the first time. With their own squad,
@@ -338,7 +340,7 @@
     </script>
 
     <footer>
-        <p><a href="./RFL Webpage.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
+        <p><a href="./index.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
     </footer>
 
 

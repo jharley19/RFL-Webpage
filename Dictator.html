@@ -25,16 +25,16 @@
 
 
 		/* Create two columns/boxes that floats next to each other */
-        nav {
-           
+        #nav {
             float: left;
             width: 20%;
             background: #ccc;
             padding: 20px;
+            /*height: 1343.5px;*/
         }
 
 			/* Style the list inside the menu */
-			nav ul {
+			#nav ul {
 				list-style-type: none;
 				padding: 0;
 			}
@@ -79,8 +79,8 @@
 
         /* Style the top navigation bar */
         .topnav {
-            overflow: hidden;
             background-color: #333;
+            min-height: 48px;
         }
 
             /* Style the topnav links */
@@ -162,21 +162,18 @@
             display: block;
         }
 
-        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-        @media screen and (max-width: 400px) {
-            .topnav a {
-                float: none;
+        @media only screen and (max-width: 800px) {
+            /* For mobile phones: */
+            #nav {
+                text-align: center;
                 width: 100%;
             }
-        }
 
-		/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-		@media (max-width: 600px) {
-			nav, article {
-				width: 100%;
-				height: auto;
-			}
-		}
+            #article, .footer {
+                width: 100%;
+            }
+		
+        }
 
         .sticky {
             position: fixed;
@@ -193,14 +190,19 @@
 <body>
 	<header>
 		<div class="container">
-			<img src=".\Dictator Background.png" width="1503px" />
-
-			<div class="top-left">
+			<picture>
+				<source srcset=".\Prof Pic1.png" media="(max-width: 800px)">
+				<source srcset=".\Dictator Background.png" media="(max-width: 1500px)">
+				
+				<img src=".\Dictator Background.png" width="100%" />
+			</picture>
+			
+			<!--<div class="top-left">
 				<h1 style="font-size:30px;">The Dictator</h1>
 				9th place
 				<br />6-9-0
 
-			</div>
+			</div>-->
 
 		</div>
 
@@ -213,22 +215,22 @@
 
 		<div class="topnav">
 			<ul>
-				<li><a href=".\RFL Webpage.html">Home</a></li>
-				<li><a href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
-				<li><a href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
+				<li><a href=".\index.html">Home</a></li>
+				<li><a target="_blank" href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
+				<li><a target="_blank" href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
 				<li class="dropdown">
 					<a href="javascript:void(0)" class="dropbtn">Teams</a>
 					<div class="dropdown-content">
 						<a href="./Dictator.html"><img src=".\Prof Pic1.png" width="20px" /> The Dictator</a>
-						<a href="./Red Army.html">The Red Army</a>
+						<a href="./Red Army.html"><img src=".\brian logo.png" width="20px" /> The Red Army</a>
 						<a href="./Big Ounce.html"><img src=".\big ounce logo.png" width="20px" /> Big Ounce</a>
 						<a href="./Gruden's Plan.html"><img src=".\gruden logo.png" width="20px" /> Gruden's Plan</a>
 						<a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
 						<a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Wentz Wagon</a>
-						<a href="./Red Wolf.html">The Red Wolf of Wall Street</a>
+						<a href="./Red Wolf.html"><img src=".\jason logo.png" width="20px" /> Goofy God</a>
 						<a href="./Mullet Man.html"><img src=".\Mullet Logo.jpg" width="20px" /> Mullet Man</a>
 						<a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" /> Sleepy Nick</a>
-						<a href="./Wack Attacks.html">Wack Attacks</a>
+						<a href="./Wack Attacks.html"><img src=".\zach logo.jpg" width="20px" /> Wack Attacks</a>
 					</div>
 				</li>
 				<li>
@@ -240,6 +242,8 @@
 				<li class="dropdown">
 					<a href="javascript:void(0)" class="dropbtn">Team Videos</a>
 					<div class="dropdown-content">
+						<a href="https://www.youtube.com/watch?v=BRfA9Y28qRQ">The Reckoning</a>
+						<a href="https://youtu.be/lsKuZ0Bm67E">A Pilgrimage to the Holy Land</a>
 						<a href="https://youtu.be/i7uqr52fnyE">Therapy</a>
 						<a href="https://youtu.be/4GTX_GvNvF4">A Letter to Mother</a>
 						<a href="https://youtu.be/SqINasg9MZg">7 Minutes of Hate - Evaluations - Ep. #18</a>
@@ -314,9 +318,15 @@
 				<li>
 					<a href="./records.html">Records</a>
 				</li>
+				<li>
+					<a href="./Hall of Fame.html">Hall of Fame</a>
+				</li>
+				<li>
+					<a href="./Mock Draft.html">Mock Draft</a>
+				</li>
 			</ul>
 		</div>
-		<nav>
+		<nav id="nav">
 			<h3>Roster</h3>
 
 			<p>
@@ -340,17 +350,17 @@
 
 		</nav>
 
-		<article>
-			<video id="titantron" width="320" height="240" controls autoplay loop>
-				<source src="C:\Users\jharl\OneDrive\Documents\Website\Dictator Titantron.mp4" type="video/mp4">
-				<source src="C:\Users\jharl\OneDrive\Documents\Website\Dictator Titantron.ogg" type="video/ogg">
-			</video>
+		<article id="article">
+			<!--<video id="titantron" width="320" height="240" controls autoplay loop>
+		<source src="C:\Users\jharl\OneDrive\Documents\Website\Dictator Titantron.mp4" type="video/mp4">
+		<source src="C:\Users\jharl\OneDrive\Documents\Website\Dictator Titantron.ogg" type="video/ogg">
+	</video> -->
 
 			<h1>Basic Information</h1>
 			<p>
 
 				<strong>Owner: </strong> Jeremy Harley
-				<br />	<strong>Co-Manager: </strong>N/A
+				<br />	<strong>Co-Manager: </strong>Scabby Katie
 				<br /> <strong>Year joined: </strong>2013
 
 			<p>
@@ -391,7 +401,7 @@
 				meet their rival The Huntingtown Hurricanes in the championship. This time The Dictator would come away with the win to achieve their second championship.
 			<p>
 				The 2016 season would see The Dictator reassert his dominance as they would finish the regular season again in first place for the third time in four years
-				and would have the the highest point total for the third time in four years. However, his team would disappoint in the first round and The Dictator would fail to make
+				and would have the highest point total for the third time in four years. However, his team would disappoint in the first round and The Dictator would fail to make
 				the championship game for the first time in league history.
 			<p>
 				The Dictator then went into the 2017 seeking to rise back to the top. Despite finishing the season
@@ -421,10 +431,24 @@
 				The Dictator brought on an intern whom he dubbed "The Dictern." The Dictator would release a weekly propaganda show entitled "7 Minutes of Hate"
 				where The Dictator would comment on major league stories and discuss the state of their team. The Dictator struggled throughout the year
 				and would end the season with their worst performance in league history and ended up in the Panzerkampfwagen Bowl where they would defeat
-				The Red Army and avoid an embarrassing league punishment. The poor performance prompted The Dictator to fire The Dictern. At the conclusion of the year,
+				The Red Army and avoid an embarrassing league punishment. The poor performance prompted The Dictator to fire The Dictern.
+			<p>
+				At the conclusion of the year,
 				it was discovered that The Dictern had purposefully sabotaged The Dictator's 2020 season and now plans to do the same for their 2021 season.
-				Meanwhile, The Dictator has entered therapy and has discovered a major breakthrough while looking at some inkblots. The Dictator now
-				plans to search a holy area in search of answers.
+				Meanwhile, The Dictator has entered therapy and has discovered a major breakthrough while looking at some inkblots. This led him to take a pilgrimage to the
+				holy land, where three years before he had burned the picture (thus the soul) of Scabby Katie. Upon arrival, The Dictator would deliver an emotional apology
+				and would beg for Scabby Katie's forgiveness. After breaking down in tears, a baseball bat appeared and began emitting a sound. The Dictator cautiously approached
+				and realized that this bat now possessed the soul of his beloved Scabby Katie. Just as he began to grab the bat, his wrist was slashed by his former employee, The Dictern.
+				The Dictern expressed that he wanted revenge for the treatment he experienced while working for The Dictator and that he desired to kill The Dictator and become the new
+				Dictator. Before he would pull the trigger, the Dictern elected to torture The Dictator by spearing the end of his rifle into the left eye of The Dictator. As The Dictator
+				began to cry out in pain, the baseball bat began to twitch more and more. Eventually, the bat would fly through the air, striking the Dictern and knocking him to the ground, and
+				the bat would land in the hand of a now standing Dictator. The Dictern would retreat into the woods in fear as The Dictator would collapse due to the injuries had sustained.
+				Luckily, the Dictffcer was concerned with The Dictator leaving by himself and had followed him. Now the Dictffcer was able to bring the unconscious Dictator back to their
+				headquarters, where The Dictator would be healed and given a new look. The iconic shirt and tie was ditched in favor of a bullet proof vest and an eye patch, a look that now
+				represents a time of war for The Dictator. But before he could move his focus to the other teams in the league, he wanted to neutralize the threat of the Dictern. A search party
+				went out and the Dictffcer would find the Dictern as he was regrouping and plotting a bombing on The Dictator's headquarters. The Dictern was brought in front of The Dictator to
+				pay for his crimes. Despite the Dictern's pleading and begging, The Dictator sentenced the Dictern to death, which The Dictator carried out himself with the use of Scabby Katie. Now with
+				that chapter of his life out of the way, The Dictator, alongside Scabby Katie, looked to finally reclaim what is rightfully theirs.
 			</p>
 		</article>
 	</section>
@@ -445,7 +469,7 @@
 	</script>
 
 	<footer>
-		<p><a href="./RFL Webpage.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
+		<p><a href="./index.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
 	</footer>
 
 

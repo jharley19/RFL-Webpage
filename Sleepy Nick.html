@@ -21,7 +21,7 @@
         }
 
         /* Create two columns/boxes that floats next to each other */
-        nav {
+        #nav {
             
             float: left;
             width: 20%;
@@ -30,12 +30,12 @@
         }
 
             /* Style the list inside the menu */
-            nav ul {
+            #nav ul {
                 list-style-type: none;
                 padding: 0;
             }
 
-        article {
+        #article {
             
             float: left;
             padding: 20px;
@@ -74,8 +74,8 @@
 
         /* Style the top navigation bar */
         .topnav {
-            overflow: hidden;
             background-color: #333;
+            min-height: 48px;
         }
 
             /* Style the topnav links */
@@ -152,19 +152,15 @@
             display: block;
         }
 
-        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-        @media screen and (max-width: 400px) {
-            .topnav a {
-                float: none;
+        @media only screen and (max-width: 800px) {
+            /* For mobile phones: */
+            #nav {
+                text-align: center;
                 width: 100%;
             }
-        }
 
-        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-        @media (max-width: 600px) {
-            nav, article {
+            #article, .footer {
                 width: 100%;
-                height: auto;
             }
         }
 
@@ -183,14 +179,14 @@
 <body>
     <header>
         <div class="container">
-            <img src=".\Nick background.png" width="1503px" />
+            <img src=".\Nick background.png" width="100%" />
 
-            <div class="top-left">
+           <!-- <div class="top-left">
                 <h1 style="font-size:30px;">Sleepy Nick</h1>
                 4th place
                 <br />7-9-0
 
-            </div>
+            </div>-->
 
         </div>
     </header>
@@ -198,22 +194,22 @@
     <section>
         <div class="topnav">
             <ul>
-                <li><a href=".\RFL Webpage.html">Home</a></li>
-                <li><a href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
-                <li><a href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
+                <li><a href=".\index.html">Home</a></li>
+                <li><a target="_blank" href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
+                <li><a target="_blank" href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Teams</a>
                     <div class="dropdown-content">
                         <a href="./Dictator.html"><img src=".\Prof Pic1.png" width="20px" /> The Dictator</a>
-                        <a href="./Red Army.html">The Red Army</a>
+                        <a href="./Red Army.html"><img src=".\brian logo.png" width="20px" /> The Red Army</a>
                         <a href="./Big Ounce.html"><img src=".\big ounce logo.png" width="20px" /> Big Ounce</a>
                         <a href="./Gruden's Plan.html"><img src=".\gruden logo.png" width="20px" /> Gruden's Plan</a>
                         <a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
                         <a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Wentz Wagon</a>
-                        <a href="./Red Wolf.html">The Red Wolf of Wall Street</a>
+                        <a href="./Red Wolf.html"><img src=".\jason logo.png" width="20px" /> Goofy God</a>
                         <a href="./Mullet Man.html"><img src=".\Mullet Logo.jpg" width="20px" /> Mullet Man</a>
                         <a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" /> Sleepy Nick</a>
-                        <a href="./Wack Attacks.html">Wack Attacks</a>
+                        <a href="./Wack Attacks.html"><img src=".\zach logo.jpg" width="20px" /> Wack Attacks</a>
                     </div>
                 </li>
                 <li>
@@ -251,10 +247,16 @@
                 <li>
                     <a href="./records.html">Records</a>
                 </li>
+                <li>
+                    <a href="./Hall of Fame.html">Hall of Fame</a>
+                </li>
+                <li>
+                    <a href="./Mock Draft.html">Mock Draft</a>
+                </li>
             </ul>
         </div>
 
-        <nav>
+        <nav id="nav">
             <h3>Roster</h3>
 
             <p>
@@ -279,7 +281,7 @@
 
         </nav>
 
-        <article>
+        <article id="article">
             <h1>Basic Information</h1>
             <p>
 
@@ -295,7 +297,7 @@
                 <strong>Championships:</strong> N/A
                 <br /><strong>Other Awards: </strong>2020 Worst Draft
             <p>
-                <strong>Career Record: </strong>11-35-2
+                <strong>Career Record: </strong>11-36-3
                 <br /><strong>Career Winning Percentage: </strong>23%
                 <br /><strong>Playoff Percentage: </strong>33%
                 <br /><strong>Finshes: </strong>7th, 7th, 4th
@@ -303,11 +305,11 @@
 
             <h1>Biography</h1>
             <p>
-                Sleepy Nick entered the league orginally in 2014 and did not take this league very seriously. They spent very little time trying to improve their team and
+                Sleepy Nick entered the league originally in 2014 and did not take this league very seriously. They spent very little time trying to improve their team and
                 ended the regular season with a mere 2 wins finishing the year in 7th place.
             <p>
                 Now going into the 2015 season, experts estimated that Sleepy Nick would realize his mistakes that were made in the last season and improve upon his team
-                and finally take this elague seriously. The experts were wrong. This year, Sleepy Nick found a way to take the league even less seriously as they failed
+                and finally take this league seriously. The experts were wrong. This year, Sleepy Nick found a way to take the league even less seriously as they failed
                 to ever set a starting lineup and ended the year with 0 wins and in 7th place once again.
             <p>
                 Following the 2015 season, Sleepy Nick was removed from the league due to negligence. Sleepy Nick and owner Nick Sagun were not heard from again for nearly
@@ -317,10 +319,10 @@
                 helped The Wentz Wagon finish the year in last place. Despite a poor finish, Nick seemed to finally be engaged in this league and ready to take it seriously.
 
             <p>
-                Lucky enough for him, a spot would open up for the 2020 season and Nick would become a top candidate. Some members of the FRC still questioned the committment of
-                Nick due to his unfaithful past in this league. This prompted the first ever TIT interview where Nick's competence and committment would be tested. Nick ultimately
-                passed the interview and was once again granted a spot in the RFL. He would declare that much like the haters would sleep on him, he would sleep on the haters. This
-                along with his narcoleptic tendiencies prompted him to announce his new team name, "Sleepy Nick." Many teams did sleep on Sleepy Nick as despite a slew of
+                Lucky enough for him, a spot would open for the 2020 season and Nick would become a top candidate. Some members of the FRC still questioned the commitment of
+                Nick due to his unfaithful past in this league. This prompted the first ever TIT interview where Nick's competence and commitment would be tested. Nick ultimately
+                passed the interview and was once again granted a spot in the RFL. He would declare that much like the haters would sleep on him; he would sleep on the haters. This
+                along with his narcoleptic tendencies prompted him to announce his new team name, "Sleepy Nick." Many teams did sleep on Sleepy Nick as despite a slew of
                 questionable decisions and a bad draft, Sleepy Nick would show that they are incredibly resilient and would just find ways to win games, despite an underwhelming roster.
                 This resilience allowed them to sneak into a playoff spot for the first time at a measly 7-7. However, they would show their true colors in the postseason and would lose
                 both games to finish the year in 4th place.
@@ -344,7 +346,7 @@
     </script>
 
     <footer>
-        <p><a href="./RFL Webpage.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
+        <p><a href="./index.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
     </footer>
 
 

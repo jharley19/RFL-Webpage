@@ -20,7 +20,7 @@
         }
 
         /* Create two columns/boxes that floats next to each other */
-        nav {
+        #nav {
             float: left;
             width: 20%;
             background: #ccc;
@@ -28,12 +28,12 @@
         }
 
             /* Style the list inside the menu */
-            nav ul {
+            #nav ul {
                 list-style-type: none;
                 padding: 0;
             }
 
-        article {
+        #article {
             float: left;
             padding: 20px;
             width: 80%;
@@ -72,8 +72,8 @@
 
         /* Style the top navigation bar */
         .topnav {
-            overflow: hidden;
             background-color: #333;
+            min-height: 48px;
         }
 
             /* Style the topnav links */
@@ -150,19 +150,15 @@
             display: block;
         }
 
-        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-        @media screen and (max-width: 400px) {
-            .topnav a {
-                float: none;
+        @media only screen and (max-width: 800px) {
+            /* For mobile phones: */
+            #nav {
+                text-align: center;
                 width: 100%;
             }
-        }
 
-        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-        @media (max-width: 600px) {
-            nav, article {
+            #article, .footer {
                 width: 100%;
-                height: auto;
             }
         }
 
@@ -182,14 +178,14 @@
 <body>
     <header>
         <div class="container">
-            <img src=".\harry background.png" width="1503px" />
+            <img src=".\harry background.png" width="100%" />
 
-            <div class="top-left">
+            <!--<div class="top-left">
                 <h1 style="font-size:30px;">Maryland Marijuanas</h1>
                 3rd place
                 <br />9-7-0
 
-            </div>
+            </div>-->
 
         </div>
     </header>
@@ -197,22 +193,22 @@
     <section>
         <div class="topnav">
             <ul>
-                <li><a href=".\RFL Webpage.html">Home</a></li>
-                <li><a href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
-                <li><a href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
+                <li><a href=".\index.html">Home</a></li>
+                <li><a target="_blank" href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
+                <li><a target="_blank" href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Teams</a>
                     <div class="dropdown-content">
                         <a href="./Dictator.html"><img src=".\Prof Pic1.png" width="20px" /> The Dictator</a>
-                        <a href="./Red Army.html">The Red Army</a>
+                        <a href="./Red Army.html"><img src=".\brian logo.png" width="20px" /> The Red Army</a>
                         <a href="./Big Ounce.html"><img src=".\big ounce logo.png" width="20px" /> Big Ounce</a>
                         <a href="./Gruden's Plan.html"><img src=".\gruden logo.png" width="20px" /> Gruden's Plan</a>
                         <a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
                         <a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Wentz Wagon</a>
-                        <a href="./Red Wolf.html">The Red Wolf of Wall Street</a>
+                        <a href="./Red Wolf.html"><img src=".\jason logo.png" width="20px" /> Goofy God</a>
                         <a href="./Mullet Man.html"><img src=".\Mullet Logo.jpg" width="20px" /> Mullet Man</a>
                         <a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" /> Sleepy Nick</a>
-                        <a href="./Wack Attacks.html">Wack Attacks</a>
+                        <a href="./Wack Attacks.html"><img src=".\zach logo.jpg" width="20px" /> Wack Attacks</a>
                     </div>
                 </li>
                 <li>
@@ -250,9 +246,15 @@
                 <li>
                     <a href="./records.html">Records</a>
                 </li>
+                <li>
+                    <a href="./Hall of Fame.html">Hall of Fame</a>
+                </li>
+                <li>
+                    <a href="./Mock Draft.html">Mock Draft</a>
+                </li>
             </ul>
         </div>
-        <nav>
+        <nav id="nav">
 
             <h3>Roster</h3>
 
@@ -279,7 +281,7 @@
 
         </nav>
 
-        <article>
+        <article id="article">
             <h1>Basic Information</h1>
             <p>
 
@@ -302,31 +304,31 @@
 
             <h1>Biography</h1>
             <p>
-                The Maryland Marijuanas entered the league in 2016 and had a very impressive showing from the get go. In his first season, they finished the regular season
+                The Maryland Marijuanas entered the league in 2016 and had a very impressive showing from the get-go. In his first season, they finished the regular season
                 at 11-3 in second place on the back of the Aaron Rodgers and Jordy Nelson stack. However, this dominance seemed to fade in playoffs as his team put up
-                two underwhleming performances and would end the year in 4th place.
+                two underwhelming performances and would end the year in 4th place.
             <p>
-                This slide in the playoffs would continue in to the 2017 season as The Maryland Marijuanas put up one of the worst seasons in league history. The
-                Maryland Marijuanas would fail to get a single win until week 12 and would finish the year in last place at 1-13. This performance made The Maryland Marijuanas
-                become a laughing stock.
+                This slide in the playoffs would continue in to the 2017 season as the Maryland Marijuanas put up one of the worst seasons in league history. The
+                Maryland Marijuanas would fail to get a single win until week 12 and would finish the year in last place at 1-13. This performance made the Maryland Marijuanas
+                become a laughingstock.
             <p>
-                Coming off a bad year, The Maryland Marijuanas hoped to change this narrative in 2018. Again, they elected to make Drew Brees their quarterback and their team would
+                Coming off a bad year, the Maryland Marijuanas hoped to change this narrative in 2018. Again, they elected to make Drew Brees their quarterback and their team would
                 continue to underperform. This time they would finish the year at 6-8 and would lose both games in the postseason and finished again in eighth place.
             <p>
-                Entering the 2019 season, The Maryland Marijuanas knew things needed to change. Now they would fully adopt a unique strategy that they hoped would
+                Entering the 2019 season, the Maryland Marijuanas knew things needed to change. Now they would fully adopt a unique strategy that they hoped would
                 help improve their team. This plan was called the "no plan plan" where the drafter would conduct very little research prior to the draft and tries only
-                to draft caucasian wide receivers. A strategy that seemed crazy to some, but it helped The Maryland Marijuanas reclaim their 2016 form. The Maryland Marijuanas
-                finished the regular season at 10-4 in second place. They they would finally get their first playoff win in a narrow defeat of the Red Wolf of Wall Street.
-                They then were set for their first championship match where they lost by nearly 40 points. Despite a disappointing finish, The Maryland Marijuanas
-                were acknowledeged as the year's Comeback Player of the Year.
+                to draft Caucasian wide receivers. A strategy that seemed crazy to some, but it helped the Maryland Marijuanas reclaim their 2016 form. The Maryland Marijuanas
+                finished the regular season at 10-4 in second place. They would finally get their first playoff win in a narrow defeat of the Goofy God.
+                They then were set for their first championship match where they lost by nearly 40 points. Despite a disappointing finish, the Maryland Marijuanas
+                were acknowledged as the year's Comeback Player of the Year.
             <p>
-                Even though last year was not the desired outcome, The Maryland Marijuanas came in to the 2020 season with the same strategy. This time however, they
-                elected to bring on Ben Adams as a co-managerThe Maryland Marijuanas
+                Even though last year was not the desired outcome, the Maryland Marijuanas came in to the 2020 season with the same strategy. This time however, they
+                elected to bring on Ben Adams as a co-manager. The Maryland Marijuanas
                 would make a season altering move when they decided to make a major trade with Gruden's Plan. This trade would be awarded the trade rape of the year
-                and not in The Maryland Marijuanas' favor. The Maryland Marijuanas would let their love for white receivers and their toxic relationship with Drew
+                and not in the Maryland Marijuanas' favor. The Maryland Marijuanas would let their love for white receivers and their toxic relationship with Drew
                 Brees cloud their judgement as they would trade away Patrick Mahomes, Alvin Kamara, DeSean Jackson, and a 1st Round WWD pick for Drew Brees,
-                Adam Thielen, Todd Gurley, and Zach Ertz. Despite this terrible move, The Maryland Marijuanas would make the playoffs finishing the regular season
-                in third place at a mere 8-6. They would ironically lose in the first round thanks to the star players they had traded away and The Maryland Marijuanas
+                Adam Thielen, Todd Gurley, and Zach Ertz. Despite this terrible move, the Maryland Marijuanas would make the playoffs finishing the regular season
+                in third place at a mere 8-6. They would ironically lose in the first round thanks to the star players they had traded away, and the Maryland Marijuanas
                 ended their campaign in third place.
             </p>
         </article>
@@ -348,7 +350,7 @@
     </script>
 
     <footer>
-        <p><a href="./RFL Webpage.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
+        <p><a href="./index.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
     </footer>
 
 
