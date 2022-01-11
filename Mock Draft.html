@@ -218,6 +218,7 @@
 			<li class="dropdown">
 				<a href="javascript:void(0)" class="dropbtn">League Videos</a>
 				<div class="dropdown-content">
+					<a href="https://youtu.be/I5AjigexrEU">2021 RFL Draft</a>
 					<a href="https://youtu.be/hTfTKxbhBHc">Announcing Our 10th and Final RFL Member For 2021!</a>
 					<a href="https://youtu.be/89NbZ0oGmTQ">2021 State of the League Address</a>
 					<a href="https://youtu.be/oua0MqRtpLg">The Red Army's 2020 Punishment</a>
@@ -2563,210 +2564,210 @@
 		// daCount will keep track of the pick number from 1 to 150
 		while (daCount <= 150) {
 		// teamIndex tracks which team is currently up, if it's 1 than team 1 is up
-		if (teamIndex == 1 && !team1.isClaimed()) {
-		this.currSpot = team1.getButton(round);
-		randomSelect(team1);
-		if (daCount % 10 == 1) {
-		teamIndex = 2;
+		if (window.teamIndex == 1 && !window.team1.isClaimed()) {
+		window.currSpot = window.team1.getButton(round);
+		randomSelect(window.team1);
+		if (window.daCount % 10 == 1) {
+		window.teamIndex = 2;
 		} else {
 		// round keeps track of the current round of the draft we are in
-		round++;
+		window.round++;
 		}
-		daCount++;
-		} else if (teamIndex == 1 && team1.isClaimed()) {
-		daCount++;
-		if (round % 2 == 0) {
-		teamIndex = 1;
-		round++;
+		window.daCount++;
+		} else if (window.teamIndex == 1 && window.team1.isClaimed()) {
+		window.daCount++;
+		if (window.round % 2 == 0) {
+		window.teamIndex = 1;
+		window.round++;
 		} else {
-		teamIndex = 2;
+		window.teamIndex = 2;
 		}
 		// if the current team is claimed and does not have someone drafted
 		// at this spot yet, then break the loop to allow the team to make their pick.
-		if (!team1.getButton(round).matches("[a-zA-Z-.]+ [a-zA-Z-]+")) {
+		if (!window.team1.getButton(window.round).matches("[a-zA-Z-.]+ [a-zA-Z-]+")) {
 		break;
 		}
 		}
-		if (teamIndex == 2 && !team2.isClaimed()) {
-		this.currSpot = team2.getButton(round);
-		randomSelect(team2);
-		if (daCount % 10 == 2) {
-		teamIndex = 3;
+		if (window.teamIndex == 2 && !window.team2.isClaimed()) {
+		window.currSpot = window.team2.getButton(window.round);
+		randomSelect(window.team2);
+		if (window.daCount % 10 == 2) {
+		window.teamIndex = 3;
 		} else {
-		teamIndex = 1;
+		window.teamIndex = 1;
 		}
-		daCount++;
-		} else if (teamIndex == 2 && team2.isClaimed()) {
-		daCount++;
-		if (round % 2 == 0) {
-		teamIndex--;
+		window.daCount++;
+		} else if (window.teamIndex == 2 && window.team2.isClaimed()) {
+		window.daCount++;
+		if (window.round % 2 == 0) {
+		window.teamIndex--;
 		} else {
-		teamIndex++;
+		window.teamIndex++;
 		}
-		if (!team2.getButton(round).matches("[a-zA-Z-.]+ [a-zA-Z-]+")) {
+		if (!window.team2.getButton(window.round).matches("[a-zA-Z-.]+ [a-zA-Z-]+")) {
 		break;
 		}
 		}
-		if (teamIndex == 3 && !team3.isClaimed()) {
-		this.currSpot = team3.getButton(round);
-		randomSelect(team3);
-		if (daCount % 10 == 3) {
-		teamIndex = 4;
+		if (window.teamIndex == 3 && !window.team3.isClaimed()) {
+		window.currSpot = window.team3.getButton(window.round);
+		randomSelect(window.team3);
+		if (window.daCount % 10 == 3) {
+		window.teamIndex = 4;
 		} else {
-		teamIndex = 2;
+		window.teamIndex = 2;
 		}
-		daCount++;
-		} else if (teamIndex == 3 && team3.isClaimed()) {
-		daCount++;
-		if (round % 2 == 0) {
-		teamIndex--;
+		window.daCount++;
+		} else if (window.teamIndex == 3 && window.team3.isClaimed()) {
+		window.daCount++;
+		if (window.round % 2 == 0) {
+		window.teamIndex--;
 		} else {
-		teamIndex++;
+		window.teamIndex++;
 		}
-		if (!team3.getButton(round).matches("[a-zA-Z-.]+ [a-zA-Z-]+")) {
+		if (!window.team3.getButton(window.round).matches("[a-zA-Z-.]+ [a-zA-Z-]+")) {
 		break;
 		}
 		}
-		if (teamIndex == 4 && !team4.isClaimed()) {
-		this.currSpot = team4.getButton(round);
-		randomSelect(team4);
-		if (daCount % 10 == 4) {
-		teamIndex = 5;
+		if (window.teamIndex == 4 && !window.team4.isClaimed()) {
+		window.currSpot = window.team4.getButton(window.round);
+		randomSelect(window.team4);
+		if (window.daCount % 10 == 4) {
+		window.teamIndex = 5;
 		} else {
-		teamIndex = 3;
+		window.teamIndex = 3;
 		}
-		daCount++;
-		} else if (teamIndex == 4 && team4.isClaimed()) {
-		daCount++;
-		if (round % 2 == 0) {
-		teamIndex--;
+		window.daCount++;
+		} else if (window.teamIndex == 4 && window.team4.isClaimed()) {
+		window.daCount++;
+		if (window.round % 2 == 0) {
+		window.teamIndex--;
 		} else {
-		teamIndex++;
+		window.teamIndex++;
 		}
-		if (!team4.getButton(round).matches("[a-zA-Z-.]+ [a-zA-Z-]+")) {
+		if (!window.team4.getButton(window.round).matches("[a-zA-Z-.]+ [a-zA-Z-]+")) {
 		break;
 		}
 		}
-		if (teamIndex == 5 && !team5.isClaimed()) {
-		this.currSpot = team5.getButton(round);
-		randomSelect(team5);
-		if (daCount % 10 == 5) {
-		teamIndex = 6;
+		if (window.teamIndex == 5 && !window.team5.isClaimed()) {
+		window.currSpot = window.team5.getButton(window.round);
+		randomSelect(window.team5);
+		if (window.daCount % 10 == 5) {
+		window.teamIndex = 6;
 		} else {
-		teamIndex = 4;
+		window.teamIndex = 4;
 		}
-		daCount++;
-		} else if (teamIndex == 5 && team5.isClaimed()) {
-		daCount++;
-		if (round % 2 == 0) {
-		teamIndex--;
+		window.daCount++;
+		} else if (window.teamIndex == 5 && window.team5.isClaimed()) {
+		window.daCount++;
+		if (window.round % 2 == 0) {
+		window.teamIndex--;
 		} else {
-		teamIndex++;
+		window.teamIndex++;
 		}
-		if (!team5.getButton(round).matches("[a-zA-Z-.]+ [a-zA-Z-]+")) {
+		if (!window.team5.getButton(window.round).matches("[a-zA-Z-.]+ [a-zA-Z-]+")) {
 		break;
 		}
 		}
-		if (teamIndex == 6 && !team6.isClaimed()) {
-		this.currSpot = team6.getButton(round);
-		randomSelect(team6);
-		if (daCount % 10 == 6) {
-		teamIndex = 7;
+		if (window.teamIndex == 6 && !window.team6.isClaimed()) {
+		window.currSpot = window.team6.getButton(window.round);
+		randomSelect(window.team6);
+		if (window.daCount % 10 == 6) {
+		window.teamIndex = 7;
 		} else {
-		teamIndex = 5;
+		window.teamIndex = 5;
 		}
-		daCount++;
-		} else if (teamIndex == 6 && team6.isClaimed()) {
-		daCount++;
-		if (round % 2 == 0) {
-		teamIndex--;
+		window.daCount++;
+		} else if (window.teamIndex == 6 && window.team6.isClaimed()) {
+		window.daCount++;
+		if (window.round % 2 == 0) {
+		window.teamIndex--;
 		} else {
-		teamIndex++;
+		window.teamIndex++;
 		}
-		if (!team6.getButton(round).matches("[a-zA-Z-.]+ [a-zA-Z-]+")) {
+		if (!window.team6.getButton(window.round).matches("[a-zA-Z-.]+ [a-zA-Z-]+")) {
 		break;
 		}
 		}
-		if (teamIndex == 7 && !team7.isClaimed()) {
-		this.currSpot = team7.getButton(round);
-		randomSelect(team7);
-		if (daCount % 10 == 7) {
-		teamIndex = 8;
+		if (window.teamIndex == 7 && !window.team7.isClaimed()) {
+		window.currSpot = window.team7.getButton(window.round);
+		randomSelect(window.team7);
+		if (window.daCount % 10 == 7) {
+		window.teamIndex = 8;
 		} else {
-		teamIndex = 6;
+		window.teamIndex = 6;
 		}
-		daCount++;
-		} else if (teamIndex == 7 && team7.isClaimed()) {
-		daCount++;
-		if (round % 2 == 0) {
-		teamIndex--;
+		window.daCount++;
+		} else if (window.teamIndex == 7 && window.team7.isClaimed()) {
+		window.daCount++;
+		if (window.round % 2 == 0) {
+		window.teamIndex--;
 		} else {
-		teamIndex++;
+		window.teamIndex++;
 		}
-		if (!team7.getButton(round).matches("[a-zA-Z-.]+ [a-zA-Z-]+")) {
+		if (!window.team7.getButton(window.round).matches("[a-zA-Z-.]+ [a-zA-Z-]+")) {
 		break;
 		}
 		}
-		if (teamIndex == 8 && !team8.isClaimed()) {
-		this.currSpot = team8.getButton(round);
-		randomSelect(team8);
-		if (daCount % 10 == 8) {
-		teamIndex = 9;
+		if (window.teamIndex == 8 && !window.team8.isClaimed()) {
+		window.currSpot = window.team8.getButton(window.round);
+		randomSelect(window.team8);
+		if (window.daCount % 10 == 8) {
+		window.teamIndex = 9;
 		} else {
-		teamIndex = 7;
+		window.teamIndex = 7;
 		}
-		daCount++;
-		} else if (teamIndex == 8 && team8.isClaimed()) {
-		daCount++;
-		if (round % 2 == 0) {
-		teamIndex--;
+		window.daCount++;
+		} else if (window.teamIndex == 8 && window.team8.isClaimed()) {
+		window.daCount++;
+		if (window.round % 2 == 0) {
+		window.teamIndex--;
 		} else {
-		teamIndex++;
+		window.teamIndex++;
 		}
-		if (!team8.getButton(round).matches("[a-zA-Z-.]+ [a-zA-Z-]+")) {
+		if (!window.team8.getButton(window.round).matches("[a-zA-Z-.]+ [a-zA-Z-]+")) {
 		break;
 		}
 		}
-		if (teamIndex == 9 && !team9.isClaimed()) {
-		this.currSpot = team9.getButton(round);
-		randomSelect(team9);
-		if (daCount % 10 == 9) {
-		teamIndex = 10;
+		if (window.teamIndex == 9 && !window.team9.isClaimed()) {
+		window.currSpot = window.team9.getButton(window.round);
+		randomSelect(window.team9);
+		if (window.daCount % 10 == 9) {
+		window.teamIndex = 10;
 		} else {
-		teamIndex = 8;
+		window.teamIndex = 8;
 		}
-		daCount++;
-		} else if (teamIndex == 9 && team9.isClaimed()) {
-		daCount++;
-		if (round % 2 == 0) {
-		teamIndex--;
+		window.daCount++;
+		} else if (window.teamIndex == 9 && window.team9.isClaimed()) {
+		window.daCount++;
+		if (window.round % 2 == 0) {
+		window.teamIndex--;
 		} else {
-		teamIndex++;
+		window.teamIndex++;
 		}
-		if (!team9.getButton(round).matches("[a-zA-Z-.]+ [a-zA-Z-]+")) {
+		if (!window.team9.getButton(window.round).matches("[a-zA-Z-.]+ [a-zA-Z-]+")) {
 		break;
 		}
 		}
-		if (teamIndex == 10 && !team10.isClaimed()) {
-		this.currSpot = team10.getButton(round);
-		randomSelect(team10);
-		if (daCount % 10 == 1) {
-		teamIndex = 9;
+		if (window.teamIndex == 10 && !window.team10.isClaimed()) {
+		window.currSpot = window.team10.getButton(window.round);
+		randomSelect(window.team10);
+		if (window.daCount % 10 == 1) {
+		window.teamIndex = 9;
 		} else {
-		round++;
+		window.round++;
 		}
-		daCount++;
-		} else if (teamIndex == 10 && team10.isClaimed()) {
-		daCount++;
-		if (round % 2 == 0) {
-		teamIndex--;
+		window.daCount++;
+		} else if (window.teamIndex == 10 && window.team10.isClaimed()) {
+		window.daCount++;
+		if (window.round % 2 == 0) {
+		window.teamIndex--;
 		} else {
-		teamIndex = 10;
-		if (round != 15) {
-		round++;
+		window.teamIndex = 10;
+		if (window.round != 15) {
+		window.round++;
 		}
 		}
-		if (!team10.getButton(round).matches("[a-zA-Z-.]+ [a-zA-Z-]+")) {
+		if (!window.team10.getButton(window.round).matches("[a-zA-Z-.]+ [a-zA-Z-]+")) {
 		break;
 		}
 		}
