@@ -4,176 +4,7 @@
     <title>Sleepy Nick</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        /* Style the header */
-        header {
-
-            background-color: black;
-            
-        }
-
-        /* Create two columns/boxes that floats next to each other */
-        #nav {
-            
-            float: left;
-            width: 20%;
-            background: #ccc;
-            padding: 20px;
-        }
-
-            /* Style the list inside the menu */
-            #nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
-
-        #article {
-            
-            float: left;
-            padding: 20px;
-            width: 80%;
-            background-color: #f1f1f1;
-        }
-
-        /* Clear floats after the columns */
-        section::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Style the footer */
-        footer {
-            background-color: midnightblue;
-            padding: 10px;
-            text-align: center;
-            color: white;
-        }
-
-        .container {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-
-
-        .top-left {
-            position: absolute;
-            top: 16px;
-            left: 225px;
-            text-align: left;
-        }
-
-        /* Style the top navigation bar */
-        .topnav {
-            background-color: #333;
-            min-height: 48px;
-        }
-
-            /* Style the topnav links */
-            .topnav a {
-                float: left;
-                display: block;
-                color: #f2f2f2;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-
-                /* Change color on hover */
-                .topnav a:hover {
-                    background-color: red;
-                    color: black;
-                }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: black;
-        }
-
-        li {
-            float: left;
-        }
-
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
-            .dropdown .dropbtn {
-                font-size: 16px;
-                border: none;
-                outline: none;
-               
-                padding: 14px 16px;
-                background-color: black;
-                font-family: inherit;
-                margin: 0;
-            }
-
-            .navbar a:hover, .dropdown:hover .dropbtn {
-                background-color: red;
-            }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-            .dropdown-content a {
-                float: none;
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-                text-align: left;
-            }
-
-                .dropdown-content a:hover {
-                    background-color: #ddd;
-                }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        @media only screen and (max-width: 800px) {
-            /* For mobile phones: */
-            #nav {
-                text-align: center;
-                width: 100%;
-            }
-
-            #article, .footer {
-                width: 100%;
-            }
-        }
-
-        .sticky {
-            position: fixed;
-            top: 0;
-            width: 99%;
-        }
-
-            .sticky + .article {
-                padding-top: 60px;
-            }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -181,176 +12,176 @@
         <div class="container">
             <img src=".\Nick background.png" width="100%" />
 
-           <!-- <div class="top-left">
-                <h1 style="font-size:30px;">Sleepy Nick</h1>
-                4th place
-                <br />7-9-0
+            <!--<div class="top-left">
+                    <h1 style="font-size:30px;">Sleepy Nick</h1>
+                    6th place
+                    <br />8-9-0
 
-            </div>-->
+                </div> -->
 
-        </div>
-    </header>
+            </div>
+        </header>
 
-    <section>
-        <div class="topnav">
-            <ul>
-                <li><a href=".\index.html">Home</a></li>
-                <li><a target="_blank" href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
-                <li><a target="_blank" href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Teams</a>
-                    <div class="dropdown-content">
-                        <a href="./Dictator.html"><img src=".\Prof Pic1.png" width="20px" /> The Dictator</a>
-                        <a href="./Red Army.html"><img src=".\brian logo.png" width="20px" /> The Red Army</a>
-                        <a href="./Big Ounce.html"><img src=".\big ounce logo.png" width="20px" /> Big Ounce</a>
-                        <a href="./Gruden's Plan.html"><img src=".\gruden logo.png" width="20px" /> Gruden's Plan</a>
-                        <a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
-                        <a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Hurts Helicopter</a>
-                        <a href="./Red Wolf.html"><img src=".\jason logo.png" width="20px" /> Goofy God</a>
-                        <a href="./Mullet Man.html"><img src=".\Mullet Logo.jpg" width="20px" /> Mullet Man</a>
-                        <a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" /> Sleepy Nick</a>
-                        <a href="./Wack Attacks.html"><img src=".\zach logo.jpg" width="20px" /> Wack Attacks</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="./Past Teams.html">Former Teams</a>
-                </li>
-                <li>
-                    <a href="./draft.html">Drafts</a>
-                </li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Team Videos</a>
-                    <div class="dropdown-content">
-                        <a href="https://www.youtube.com/watch?v=Zk0qokoKDrA&feature=youtu.be">Nick's 2020 Official FF Team Name Annoucement</a>
-                        <a href="https://youtu.be/YEcnbCSbwrI">Nick's 2020 Press Conference</a>
-                    </div>
-                </li>
+        <section>
+            <div class="topnav">
+                <ul>
+                    <li><a href=".\index.html">Home</a></li>
+                    <li><a target="_blank" href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
+                    <li><a target="_blank" href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Teams</a>
+                        <div class="dropdown-content">
+                            <a href="./Dictator.html"><img src=".\Prof Pic1.png" width="20px" /> The Dictator</a>
+                            <a href="./Red Army.html"><img src=".\brian logo.png" width="20px" /> The Red Army</a>
+                            <a href="./Big Ounce.html"><img src=".\big ounce logo.png" width="20px" /> Big Ounce</a>
+                            <a href="./Gruden's Plan.html"><img src=".\gruden logo.png" width="20px" /> Gruden's Plan</a>
+                            <a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
+                            <a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Hurts Helicopter</a>
+                            <a href="./Red Wolf.html"><img src=".\jason logo.png" width="20px" /> Goofy God</a>
+                            <a href="./Mullet Man.html"><img src=".\Mullet Logo.png" width="20px" /> Mullet Man</a>
+                            <a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" /> Sleepy Nick</a>
+                            <a href="./Wack Attacks.html"><img src=".\zach logo.jpg" width="20px" /> Wack Attacks</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./Past Teams.html">Former Teams</a>
+                    </li>
+                    <li>
+                        <a href="./draft.html">Drafts</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Team Videos</a>
+                        <div class="dropdown-content">
+                            <a href="https://www.youtube.com/watch?v=Zk0qokoKDrA&feature=youtu.be">Nick's 2020 Official FF Team Name Annoucement</a>
+                            <a href="https://youtu.be/YEcnbCSbwrI">Nick's 2020 Press Conference</a>
+                        </div>
+                    </li>
 
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">League Videos</a>
-                    <div class="dropdown-content">
-                        <a href="https://youtu.be/I5AjigexrEU">2021 RFL Draft</a>
-                        <a href="https://youtu.be/hTfTKxbhBHc">Announcing Our 10th and Final RFL Member For 2021!</a>
-                        <a href="https://youtu.be/89NbZ0oGmTQ">2021 State of the League Address</a>
-                        <a href="https://youtu.be/oua0MqRtpLg">The Red Army's 2020 Punishment</a>
-                        <a href="https://youtu.be/5dfQiQEzpYM">2020 Waterbets</a>
-                        <a href="https://youtu.be/_btkqdhmESU">2020 Exit Interviews</a>
-                        <a href="https://youtu.be/Ap3etxqNsV4">Our 2020 Draft</a>
-                        <a href="https://youtu.be/gpnV7FCJTdg">Draft Day 2020 Hype Video</a>
-                        <a href="https://www.youtube.com/watch?v=801p3bd-SEk">2019 Exit Interviews</a>
-                        <a href="https://youtu.be/i6lJSjG6js8">Our 2019 Draft</a>
-                        <a href="https://youtu.be/YFUnB669-rE">2019 Commish Annoucement</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="./standings.html">Standings</a>
-                </li>
-                <li>
-                    <a href="./records.html">Records</a>
-                </li>
-                <li>
-                    <a href="./Hall of Fame.html">Hall of Fame</a>
-                </li>
-                <li>
-                    <a href="./Mock Draft.html">Mock Draft</a>
-                </li>
-            </ul>
-        </div>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">League Videos</a>
+                        <div class="dropdown-content">
+                            <a href="https://youtu.be/I5AjigexrEU">2021 RFL Draft</a>
+                            <a href="https://youtu.be/hTfTKxbhBHc">Announcing Our 10th and Final RFL Member For 2021!</a>
+                            <a href="https://youtu.be/89NbZ0oGmTQ">2021 State of the League Address</a>
+                            <a href="https://youtu.be/oua0MqRtpLg">The Red Army's 2020 Punishment</a>
+                            <a href="https://youtu.be/5dfQiQEzpYM">2020 Waterbets</a>
+                            <a href="https://youtu.be/_btkqdhmESU">2020 Exit Interviews</a>
+                            <a href="https://youtu.be/Ap3etxqNsV4">Our 2020 Draft</a>
+                            <a href="https://youtu.be/gpnV7FCJTdg">Draft Day 2020 Hype Video</a>
+                            <a href="https://www.youtube.com/watch?v=801p3bd-SEk">2019 Exit Interviews</a>
+                            <a href="https://youtu.be/i6lJSjG6js8">Our 2019 Draft</a>
+                            <a href="https://youtu.be/YFUnB669-rE">2019 Commish Annoucement</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./standings1.html">Standings</a>
+                    </li>
+                    <li>
+                        <a href="./records.html">Records</a>
+                    </li>
+                    <li>
+                        <a href="./Hall of Fame.html">Hall of Fame</a>
+                    </li>
+                    <li>
+                        <a href="./Mock Draft.html">Mock Draft</a>
+                    </li>
+                </ul>
+            </div>
 
-        <nav id="nav">
-            <h3>Roster</h3>
+            <nav id="nav">
+                <h3>Roster</h3>
 
-            <p>
-                QB: Kyler Murray
-                <br />RB: Ezekiel Elliot
-                <br />RB: David Montgomery
-                <br />WR: Stefon Diggs
-                <br />WR: Amari Cooper
-                <br />TE: Darren Waller
-                <br />FLEX: Melvin Gordon
-                <br />FLEX: Tee Higgins
-                <br />DST: San Francisco 49ers
-                <br />BN: A.J. Dillon
-                <br />BN: A.J. Green
-                <br />BN: Jakobi Meyers
-                <br />BN: Josh Reynolds
-                <br />BN: Jared Cook
-                <br />BN: Dallas Goedert
-                <br />RES: Corey Davis
-            </p>
+                <p>
+                    QB: Kyler Murray
+                    <br />RB: Ezekiel Elliot
+                    <br />RB: David Montgomery
+                    <br />WR: Stefon Diggs
+                    <br />WR: Amari Cooper
+                    <br />TE: Darren Waller
+                    <br />FLEX: Melvin Gordon
+                    <br />FLEX: Tee Higgins
+                    <br />DST: San Francisco 49ers
+                    <br />BN: A.J. Dillon
+                    <br />BN: A.J. Green
+                    <br />BN: Jakobi Meyers
+                    <br />BN: Josh Reynolds
+                    <br />BN: Jared Cook
+                    <br />BN: Dallas Goedert
+                    <br />RES: Corey Davis
+                </p>
 
-        </nav>
+            </nav>
 
-        <article id="article">
-            <h1>Basic Information</h1>
-            <p>
+            <article id="article">
+                <h1>Basic Information</h1>
+                <p>
 
-                <strong>Owner: </strong> Nick Sagun
-                <br />	<strong>Co-Manager: </strong>N/A
-                <br /> <strong>Year joined: </strong>2014, 2020
+                    <strong>Owner: </strong> Nick Sagun
+                    <br />	<strong>Co-Manager: </strong>N/A
+                    <br /> <strong>Year joined: </strong>2014, 2020
 
-            <p>
-                <strong>Former Co-Managers: </strong>N/A
-                <br /> <strong>Former Team Names:</strong> Lollipop Guild (2014), SuperNick's SideKicks (2015)
-            </p>
-            <p>
-                <strong>Championships:</strong> N/A
-                <br /><strong>Other Awards: </strong>2020 Worst Draft
-            <p>
-                <strong>Career Record: </strong>19-44-2
-                <br /><strong>Career Winning Percentage: </strong>29%
-                <br /><strong>Playoff Percentage: </strong>25%
-                <br /><strong>Finshes: </strong>7th, 7th, 4th, 6th
-            </p>
+                <p>
+                    <strong>Former Co-Managers: </strong>N/A
+                    <br /> <strong>Former Team Names:</strong> Lollipop Guild (2014), SuperNick's SideKicks (2015)
+                </p>
+                <p>
+                    <strong>Championships:</strong> N/A
+                    <br /><strong>Other Awards: </strong>2020 Worst Draft
+                <p>
+                    <strong>Career Record: </strong>19-44-2
+                    <br /><strong>Career Winning Percentage: </strong>29%
+                    <br /><strong>Playoff Percentage: </strong>25%
+                    <br /><strong>Finshes: </strong>7th, 7th, 4th, 6th
+                </p>
 
-            <h1>Biography</h1>
-            <p>
-                Sleepy Nick entered the league originally in 2014 and did not take this league very seriously. They spent very little time trying to improve their team and
-                ended the regular season with a mere 2 wins finishing the year in 7th place.
-            <p>
-                Now going into the 2015 season, experts estimated that Sleepy Nick would realize his mistakes that were made in the last season and improve upon his team
-                and finally take this league seriously. The experts were wrong. This year, Sleepy Nick found a way to take the league even less seriously as they failed
-                to ever set a starting lineup and ended the year with 0 wins and in 7th place once again.
-            <p>
-                Following the 2015 season, Sleepy Nick was removed from the league due to negligence. Sleepy Nick and owner Nick Sagun were not heard from again for nearly
-                4 years.
-            <p>
-                Leading up to the 2019 season, Nick Sagun reemerged onto to the scene when The Hurts Helicopter decided to bring him on as a co-manager. Here in his new role, Nick
-                helped The Hurts Helicopter finish the year in last place. Despite a poor finish, Nick seemed to finally be engaged in this league and ready to take it seriously.
+                <h1>Biography</h1>
+                <p>
+                    Sleepy Nick entered the league originally in 2014 and did not take this league very seriously. They spent very little time trying to improve their team and
+                    ended the regular season with a mere 2 wins finishing the year in 7th place.
+                <p>
+                    Now going into the 2015 season, experts estimated that Sleepy Nick would realize his mistakes that were made in the last season and improve upon his team
+                    and finally take this league seriously. The experts were wrong. This year, Sleepy Nick found a way to take the league even less seriously as they failed
+                    to ever set a starting lineup and ended the year with 0 wins and in 7th place once again.
+                <p>
+                    Following the 2015 season, Sleepy Nick was removed from the league due to negligence. Sleepy Nick and owner Nick Sagun were not heard from again for nearly
+                    4 years.
+                <p>
+                    Leading up to the 2019 season, Nick Sagun reemerged onto to the scene when The Hurts Helicopter decided to bring him on as a co-manager. Here in his new role, Nick
+                    helped The Hurts Helicopter finish the year in last place. Despite a poor finish, Nick seemed to finally be engaged in this league and ready to take it seriously.
 
-            <p>
-                Lucky enough for him, a spot would open for the 2020 season and Nick would become a top candidate. Some members of the FRC still questioned the commitment of
-                Nick due to his unfaithful past in this league. This prompted the first ever TIT interview where Nick's competence and commitment would be tested. Nick ultimately
-                passed the interview and was once again granted a spot in the RFL. He would declare that much like the haters would sleep on him; he would sleep on the haters. This
-                along with his narcoleptic tendencies prompted him to announce his new team name, "Sleepy Nick." Many teams did sleep on Sleepy Nick as despite a slew of
-                questionable decisions and a bad draft, Sleepy Nick would show that they are incredibly resilient and would just find ways to win games, despite an underwhelming roster.
-                This resilience allowed them to sneak into a playoff spot for the first time at a measly 7-7. However, they would show their true colors in the postseason and would lose
-                both games to finish the year in 4th place.
-            </p>
-        </article>
-    </section>
+                <p>
+                    Lucky enough for him, a spot would open for the 2020 season and Nick would become a top candidate. Some members of the FRC still questioned the commitment of
+                    Nick due to his unfaithful past in this league. This prompted the first ever TIT interview where Nick's competence and commitment would be tested. Nick ultimately
+                    passed the interview and was once again granted a spot in the RFL. He would declare that much like the haters would sleep on him; he would sleep on the haters. This
+                    along with his narcoleptic tendencies prompted him to announce his new team name, "Sleepy Nick." Many teams did sleep on Sleepy Nick as despite a slew of
+                    questionable decisions and a bad draft, Sleepy Nick would show that they are incredibly resilient and would just find ways to win games, despite an underwhelming roster.
+                    This resilience allowed them to sneak into a playoff spot for the first time at a measly 7-7. However, they would show their true colors in the postseason and would lose
+                    both games to finish the year in 4th place.
+                </p>
+            </article>
+        </section>
 
-    <script>
-        window.onscroll = function() {myFunction()};
+        <script>
+            window.onscroll = function() {myFunction()};
 
-        var navbar = document.getElementsByClassName("topnav").item(0);
-        var sticky = navbar.offsetTop;
+            var navbar = document.getElementsByClassName("topnav").item(0);
+            var sticky = navbar.offsetTop;
 
-        function myFunction() {
-        if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-        } else {
-        navbar.classList.remove("sticky");
-        }
-        }
-    </script>
+            function myFunction() {
+            if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+            } else {
+            navbar.classList.remove("sticky");
+            }
+            }
+        </script>
 
-    <footer>
-        <p><a href="./index.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
-    </footer>
+        <footer>
+            <p><a href="./index.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
+        </footer>
 
 
-    </p>
+        </p>
 
-</body>
+    </body>
 

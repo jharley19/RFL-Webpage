@@ -4,170 +4,7 @@
     <title>Mullet Man</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        #header{
-            background-color: black;
-        }
-        /* Create two columns/boxes that floats next to each other */
-        #nav {
-            float: left;
-            width: 20%;
-            background: #ccc;
-            padding: 20px;
-        }
-
-            /* Style the list inside the menu */
-            #nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
-
-        #article {
-            float: left;
-            padding: 20px;
-            width: 80%;
-            background-color: #f1f1f1;
-        }
-
-        /* Clear floats after the columns */
-        section::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Style the footer */
-        footer {
-            background-color: midnightblue;
-            padding: 10px;
-            text-align: center;
-            color: white;
-        }
-
-        .container {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-
-
-        .top-left {
-            position: absolute;
-            top: 16px;
-            left: 225px;
-            text-align: left;
-        }
-
-        /* Style the top navigation bar */
-        .topnav {
-            background-color: #333;
-            min-height: 48px;
-        }
-
-            /* Style the topnav links */
-            .topnav a {
-                float: left;
-                display: block;
-                color: #f2f2f2;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-
-                /* Change color on hover */
-                .topnav a:hover {
-                    background-color: red;
-                    color: black;
-                }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: black;
-        }
-
-        li {
-            float: left;
-        }
-
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
-            .dropdown .dropbtn {
-                font-size: 16px;
-                border: none;
-                outline: none;
-                color: white;
-                padding: 14px 16px;
-                background-color: black;
-                font-family: inherit;
-                margin: 0;
-            }
-
-            .navbar a:hover, .dropdown:hover .dropbtn {
-                background-color: red;
-            }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-            .dropdown-content a {
-                float: none;
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-                text-align: left;
-            }
-
-                .dropdown-content a:hover {
-                    background-color: #ddd;
-                }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        @media only screen and (max-width: 800px) {
-            /* For mobile phones: */
-            #nav {
-                text-align: center;
-                width: 100%;
-            }
-
-            #article, .footer {
-                width: 100%;
-            }
-        }
-
-        .sticky {
-            position: fixed;
-            top: 0;
-            width: 99%;
-        }
-
-            .sticky + .article {
-                padding-top: 60px;
-            }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -175,175 +12,177 @@
         <div class="container">
             <img src=".\mullet background.png" width="100%" />
 
-           <!-- <div class="top-left">
-                <h1 style="font-size:30px;">Mullet Man</h1>
-                7th place
-                <br />7-9
+            <!--<div class="top-left">
+                    <h1 style="font-size:30px;">Mullet Man</h1>
+                    5th place
+                    <br />10-7-0
 
-            </div>-->
+                </div>-->
 
-        </div>
-    </header>
+            </div>
+        </header>
 
-    <section>
-        <div class="topnav">
-            <ul>
-                <li><a href=".\index.html">Home</a></li>
-                <li><a target="_blank" href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
-                <li><a target="_blank" href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Teams</a>
-                    <div class="dropdown-content">
-                        <a href="./Dictator.html"><img src=".\Prof Pic1.png" width="20px" /> The Dictator</a>
-                        <a href="./Red Army.html"><img src=".\brian logo.png" width="20px" /> The Red Army</a>
-                        <a href="./Big Ounce.html"><img src=".\big ounce logo.png" width="20px" /> Big Ounce</a>
-                        <a href="./Gruden's Plan.html"><img src=".\gruden logo.png" width="20px" /> Gruden's Plan</a>
-                        <a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
-                        <a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Hurts Helicopter</a>
-                        <a href="./Red Wolf.html"><img src=".\jason logo.png" width="20px" /> Goofy God</a>
-                        <a href="./Mullet Man.html"><img src=".\Mullet Logo.jpg" width="20px" /> Mullet Man</a>
-                        <a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" /> Sleepy Nick</a>
-                        <a href="./Wack Attacks.html"><img src=".\zach logo.jpg" width="20px" /> Wack Attacks</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="./Past Teams.html">Former Teams</a>
-                </li>
-                <li>
-                    <a href="./draft.html">Drafts</a>
-                </li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Team Videos</a>
-                    <div class="dropdown-content">
-                       <a href="https://youtu.be/M2S4087mCtg">Mullet Man 2022 Press Conference</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">League Videos</a>
-                    <div class="dropdown-content">
-                        <a href="https://youtu.be/I5AjigexrEU">2021 RFL Draft</a>
-                        <a href="https://youtu.be/hTfTKxbhBHc">Announcing Our 10th and Final RFL Member For 2021!</a>
-                        <a href="https://youtu.be/89NbZ0oGmTQ">2021 State of the League Address</a>
-                        <a href="https://youtu.be/oua0MqRtpLg">The Red Army's 2020 Punishment</a>
-                        <a href="https://youtu.be/5dfQiQEzpYM">2020 Waterbets</a>
-                        <a href="https://youtu.be/_btkqdhmESU">2020 Exit Interviews</a>
-                        <a href="https://youtu.be/Ap3etxqNsV4">Our 2020 Draft</a>
-                        <a href="https://youtu.be/gpnV7FCJTdg">Draft Day 2020 Hype Video</a>
-                        <a href="https://www.youtube.com/watch?v=801p3bd-SEk">2019 Exit Interviews</a>
-                        <a href="https://youtu.be/i6lJSjG6js8">Our 2019 Draft</a>
-                        <a href="https://youtu.be/YFUnB669-rE">2019 Commish Annoucement</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="./standings.html">Standings</a>
-                </li>
-                <li>
-                    <a href="./records.html">Records</a>
-                </li>
-                <li>
-                    <a href="./Hall of Fame.html">Hall of Fame</a>
-                </li>
-                <li>
-                    <a href="./Mock Draft.html">Mock Draft</a>
-                </li>
-            </ul>
-        </div>
-        <nav id="nav">
+        <section>
+            <div class="topnav">
+                <ul>
+                    <li><a href=".\index.html">Home</a></li>
+                    <li><a target="_blank" href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
+                    <li><a target="_blank" href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Teams</a>
+                        <div class="dropdown-content">
+                            <a href="./Dictator.html"><img src=".\Prof Pic1.png" width="20px" /> The Dictator</a>
+                            <a href="./Red Army.html"><img src=".\brian logo.png" width="20px" /> The Red Army</a>
+                            <a href="./Big Ounce.html"><img src=".\big ounce logo.png" width="20px" /> Big Ounce</a>
+                            <a href="./Gruden's Plan.html"><img src=".\gruden logo.png" width="20px" /> Gruden's Plan</a>
+                            <a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
+                            <a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Hurts Helicopter</a>
+                            <a href="./Red Wolf.html"><img src=".\jason logo.png" width="20px" /> Goofy God</a>
+                            <a href="./Mullet Man.html"><img src=".\Mullet Logo.png" width="20px" /> Mullet Man</a>
+                            <a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" /> Sleepy Nick</a>
+                            <a href="./Wack Attacks.html"><img src=".\zach logo.jpg" width="20px" /> Wack Attacks</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./Past Teams.html">Former Teams</a>
+                    </li>
+                    <li>
+                        <a href="./draft.html">Drafts</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Team Videos</a>
+                        <div class="dropdown-content">
+                            <a href="https://youtu.be/M2S4087mCtg">Mullet Man 2022 Press Conference</a>
 
-            <h3>Roster</h3>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">League Videos</a>
+                        <div class="dropdown-content">
+                            <a href="https://youtu.be/I5AjigexrEU">2021 RFL Draft</a>
+                            <a href="https://youtu.be/hTfTKxbhBHc">Announcing Our 10th and Final RFL Member For 2021!</a>
+                            <a href="https://youtu.be/89NbZ0oGmTQ">2021 State of the League Address</a>
+                            <a href="https://youtu.be/oua0MqRtpLg">The Red Army's 2020 Punishment</a>
+                            <a href="https://youtu.be/5dfQiQEzpYM">2020 Waterbets</a>
+                            <a href="https://youtu.be/_btkqdhmESU">2020 Exit Interviews</a>
+                            <a href="https://youtu.be/Ap3etxqNsV4">Our 2020 Draft</a>
+                            <a href="https://youtu.be/gpnV7FCJTdg">Draft Day 2020 Hype Video</a>
+                            <a href="https://www.youtube.com/watch?v=801p3bd-SEk">2019 Exit Interviews</a>
+                            <a href="https://youtu.be/i6lJSjG6js8">Our 2019 Draft</a>
+                            <a href="https://youtu.be/YFUnB669-rE">2019 Commish Annoucement</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./standings1.html">Standings</a>
+                    </li>
+                    <li>
+                        <a href="./records.html">Records</a>
+                    </li>
+                    <li>
+                        <a href="./Hall of Fame.html">Hall of Fame</a>
+                    </li>
+                    <li>
+                        <a href="./Mock Draft.html">Mock Draft</a>
+                    </li>
+                </ul>
+            </div>
+            <nav id="nav">
 
-            <p>
-                QB: Matthew Stafford
-                <br />RB: Antonio Gibson
-                <br />RB: Cordarrelle Patterson
-                <br />WR: Cooper Kupp
-                <br />WR: Davante Adams
-                <br />TE: Noah Fant
-                <br />FLEX: Jaylen Waddle
-                <br />FLEX: Chase Edmonds
-                <br />DST: New Orleans Saints
-                <br />BN: Duke Johnson
-                <br />BN: Gabriel Davis
-                <br />BN: Brandon Aiyuk
-                <br />BN: Rashod Bateman
-                <br />BN: Jarvis Landry
-                <br />BN: Indianapolis Colts
-                <br />RES: J.D. McKissic
-            </p>
+                <h3>Roster</h3>
 
-        </nav>
+                <p>
+                    QB: Matthew Stafford
+                    <br />RB: Antonio Gibson
+                    <br />RB: Cordarrelle Patterson
+                    <br />WR: Cooper Kupp
+                    <br />WR: Davante Adams
+                    <br />TE: Noah Fant
+                    <br />FLEX: Jaylen Waddle
+                    <br />FLEX: Chase Edmonds
+                    <br />DST: New Orleans Saints
+                    <br />BN: Duke Johnson
+                    <br />BN: Gabriel Davis
+                    <br />BN: Brandon Aiyuk
+                    <br />BN: Rashod Bateman
+                    <br />BN: Jarvis Landry
+                    <br />BN: Indianapolis Colts
+                    <br />RES: J.D. McKissic
+                </p>
 
-        <article id="article">
-            <h1>Basic Information</h1>
-            <p>
+            </nav>
 
-                <strong>Owner: </strong> Billy Goodnow
-                <br />	<strong>Co-Manager: </strong> Alan Ashford
-                <br /> <strong>Year joined: </strong>2018
+            <article id="article">
+                <h1>Basic Information</h1>
+                <p>
 
-            <p>
-                <strong>Former Co-Managers: </strong>Ben Adams (2020-2021)
-                <br /> <strong>Former Team Names:</strong> Pepper Death44 (2018), sad boi hours (2019)
-            </p>
-            <p>
-                <strong>Championships:</strong> N/A
-                <br /><strong>Other Awards: </strong>2021 Toes Bowl Winner, 2020 Biggest Draft Bust, 2019 Best Week Performance, 2019 Toes Bowl Winner
-            <p>
-                <strong>Career Record: </strong>28-35
-                <br /><strong>Career Winning Percentage: </strong>44%
-                <br /><strong>Playoff Percentage: </strong>0%
-                <br /><strong>Finshes: </strong>9th, 5th, 7th, 5th
-            </p>
+                    <strong>Owner: </strong> Billy Goodnow
+                    <br />	<strong>Co-Manager: </strong> Alan Ashford
+                    <br /> <strong>Year joined: </strong>2018
 
-            <h1>Biography</h1>
-            <p>
-                The Mullet Man entered the league in 2018 and found great struggle from the start. Their first draft was a rough experience as they assembled a below
-                average roster and even swapped picks with Gruden's Plan where they received nothing in return other than more time to think about a pick. This translated
-                immediately as they started their season with five straight losses and would end the year at a pitiful 2-12 in 9th place. This was a rude awakening for
-                the Mullet Man. They soon realized that success in this league was going to be harder than they originally thought.
-            <p>
-                Now going into the 2019 season, the Mullet Man would be the only team to not select a keeper. This was an interesting strategy that caught much of the league
-                off guard. This strategy allowed The Mullet Man to have their best season in franchise history as they would finish the regular season just outside the
-                playoffs in 5th place at 7-7. They would go on to win the next two games and clinch the first overall pick for the 2020 season.
-            <p>
-                Coming into the 2020 season, the Mullet Man had the first overall pick and knew that they were going to select the running back from their favorite NFL
-                team, Christian McCaffery, since December. But before the draft, the Mullet Man decided to sign recently released Ben Adams on as their co-manager.
-                Their draft left many teams questioning their picks including selecting George Kittle in the second round, T.Y. Hilton in the fourth round, unknown rookie
-                Antonio Gibson in the ninth round, and of course the recently released Derrius Guice in the fifteenth round. This poor decision making combined with an
-                unfortunate early injury to Christian McCaffery spelled doom for the Mullet Man. In an attempt to stop their bleeding, the Mullet Man engaged in the most
-                trades in a single season in league history with 8 total deals made. This however could not stop The Mullet Man from missing the playoffs for the third
-                straight season. They would finish the regular season at 6-8 in 6th place. They would ultimately finish the year in 7th place. They are the only current
-                non-rookie team to never make the playoffs.
-            </p>
-            <p>
-                Entering the 2021 season, co-manager Ben Adams had drawn interest as the next franchise owner in the league, but he had failed to pass his interview. Ben then
-                displayed some disinterest in his current role on the Mullet Man and wanted to explore his options on the open market. He was very interested in signing with 
-                Sleepy Nick, where he thought he would have more control over the decision making, but the team was not interested in bringing on any further consultation. Ben would
-                then re-sign with the Mullet Man.
-            </p>
-        </article>
-    </section>
+                <p>
+                    <strong>Former Co-Managers: </strong>Ben Adams (2020-2021)
+                    <br /> <strong>Former Team Names:</strong> Pepper Death44 (2018), sad boi hours (2019)
+                </p>
+                <p>
+                    <strong>Championships:</strong> N/A
+                    <br /><strong>Other Awards: </strong>2021 Toes Bowl Winner, 2020 Biggest Draft Bust, 2019 Best Week Performance, 2019 Toes Bowl Winner
+                <p>
+                    <strong>Career Record: </strong>28-35
+                    <br /><strong>Career Winning Percentage: </strong>44%
+                    <br /><strong>Playoff Percentage: </strong>0%
+                    <br /><strong>Finshes: </strong>9th, 5th, 7th, 5th
+                </p>
 
-    <script>
-        window.onscroll = function() {myFunction()};
+                <h1>Biography</h1>
+                <p>
+                    The Mullet Man entered the league in 2018 and found great struggle from the start. Their first draft was a rough experience as they assembled a below
+                    average roster and even swapped picks with Gruden's Plan where they received nothing in return other than more time to think about a pick. This translated
+                    immediately as they started their season with five straight losses and would end the year at a pitiful 2-12 in 9th place. This was a rude awakening for
+                    the Mullet Man. They soon realized that success in this league was going to be harder than they originally thought.
+                <p>
+                    Now going into the 2019 season, the Mullet Man would be the only team to not select a keeper. This was an interesting strategy that caught much of the league
+                    off guard. This strategy allowed The Mullet Man to have their best season in franchise history as they would finish the regular season just outside the
+                    playoffs in 5th place at 7-7. They would go on to win the next two games and clinch the first overall pick for the 2020 season.
+                <p>
+                    Coming into the 2020 season, the Mullet Man had the first overall pick and knew that they were going to select the running back from their favorite NFL
+                    team, Christian McCaffery, since December. But before the draft, the Mullet Man decided to sign recently released Ben Adams on as their co-manager.
+                    Their draft left many teams questioning their picks including selecting George Kittle in the second round, T.Y. Hilton in the fourth round, unknown rookie
+                    Antonio Gibson in the ninth round, and of course the recently released Derrius Guice in the fifteenth round. This poor decision making combined with an
+                    unfortunate early injury to Christian McCaffery spelled doom for the Mullet Man. In an attempt to stop their bleeding, the Mullet Man engaged in the most
+                    trades in a single season in league history with 8 total deals made. This however could not stop The Mullet Man from missing the playoffs for the third
+                    straight season. They would finish the regular season at 6-8 in 6th place. They would ultimately finish the year in 7th place. They are the only current
+                    non-rookie team to never make the playoffs.
+                </p>
+                <p>
+                    Entering the 2021 season, co-manager Ben Adams had drawn interest as the next franchise owner in the league, but he had failed to pass his interview. Ben then
+                    displayed some disinterest in his current role on the Mullet Man and wanted to explore his options on the open market. He was very interested in signing with
+                    Sleepy Nick, where he thought he would have more control over the decision making, but the team was not interested in bringing on any further consultation. Ben would
+                    then re-sign with the Mullet Man.
+                </p>
 
-        var navbar = document.getElementsByClassName("topnav").item(0);
-        var sticky = navbar.offsetTop;
+            </article>
+        </section>
 
-        function myFunction() {
-        if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-        } else {
-        navbar.classList.remove("sticky");
-        }
-        }
-    </script>
+        <script>
+            window.onscroll = function() {myFunction()};
 
-    <footer>
-        <p><a href="./index.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
-    </footer>
+            var navbar = document.getElementsByClassName("topnav").item(0);
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+            if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+            } else {
+            navbar.classList.remove("sticky");
+            }
+            }
+        </script>
+
+        <footer>
+            <p><a href="./index.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
+        </footer>
 
 
-    </p>
+        </p>
 
-</body>
+    </body>

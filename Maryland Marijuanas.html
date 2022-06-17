@@ -4,175 +4,7 @@
     <title>Maryland Marijuanas</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        /* Style the header */
-        header {
-            background-color: black;
-       
-        }
-
-        /* Create two columns/boxes that floats next to each other */
-        #nav {
-            float: left;
-            width: 20%;
-            background: #ccc;
-            padding: 20px;
-        }
-
-            /* Style the list inside the menu */
-            #nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
-
-        #article {
-            float: left;
-            padding: 20px;
-            width: 80%;
-            background-color: #f1f1f1;
-        }
-
-        /* Clear floats after the columns */
-        section::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Style the footer */
-        footer {
-            background-color: midnightblue;
-            padding: 10px;
-            text-align: center;
-            color: white;
-        }
-
-        .container {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-
-
-        .top-left {
-            position: absolute;
-            top: 16px;
-            left: 225px;
-            text-align: left;
-        }
-
-
-        /* Style the top navigation bar */
-        .topnav {
-            background-color: #333;
-            min-height: 48px;
-        }
-
-            /* Style the topnav links */
-            .topnav a {
-                float: left;
-                display: block;
-                color: #f2f2f2;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-
-                /* Change color on hover */
-                .topnav a:hover {
-                    background-color: red;
-                    color: black;
-                }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: black;
-        }
-
-        li {
-            float: left;
-        }
-
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
-            .dropdown .dropbtn {
-                font-size: 16px;
-                border: none;
-                outline: none;
-                color: white;
-                padding: 14px 16px;
-                background-color: black;
-                font-family: inherit;
-                margin: 0;
-            }
-
-            .navbar a:hover, .dropdown:hover .dropbtn {
-                background-color: red;
-            }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-            .dropdown-content a {
-                float: none;
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-                text-align: left;
-            }
-
-                .dropdown-content a:hover {
-                    background-color: #ddd;
-                }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        @media only screen and (max-width: 800px) {
-            /* For mobile phones: */
-            #nav {
-                text-align: center;
-                width: 100%;
-            }
-
-            #article, .footer {
-                width: 100%;
-            }
-        }
-
-        .sticky {
-            position: fixed;
-            top: 0;
-            width: 99%;
-        }
-
-            .sticky + .article {
-                padding-top: 60px;
-            }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -181,182 +13,189 @@
             <img src=".\harry background.png" width="100%" />
 
             <!--<div class="top-left">
-                <h1 style="font-size:30px;">Maryland Marijuanas</h1>
-                3rd place
-                <br />9-7-0
+                    <h1 style="font-size:30px;">Maryland Marijuanas</h1>
+                    3rd place
+                    <br />10-7-0
 
-            </div>-->
+                </div>-->
 
-        </div>
-    </header>
+            </div>
+        </header>
 
-    <section>
-        <div class="topnav">
-            <ul>
-                <li><a href=".\index.html">Home</a></li>
-                <li><a target="_blank" href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
-                <li><a target="_blank" href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Teams</a>
-                    <div class="dropdown-content">
-                        <a href="./Dictator.html"><img src=".\Prof Pic1.png" width="20px" /> The Dictator</a>
-                        <a href="./Red Army.html"><img src=".\brian logo.png" width="20px" /> The Red Army</a>
-                        <a href="./Big Ounce.html"><img src=".\big ounce logo.png" width="20px" /> Big Ounce</a>
-                        <a href="./Gruden's Plan.html"><img src=".\gruden logo.png" width="20px" /> Gruden's Plan</a>
-                        <a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
-                        <a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Hurts Helicopter</a>
-                        <a href="./Red Wolf.html"><img src=".\jason logo.png" width="20px" /> Goofy God</a>
-                        <a href="./Mullet Man.html"><img src=".\Mullet Logo.jpg" width="20px" /> Mullet Man</a>
-                        <a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" /> Sleepy Nick</a>
-                        <a href="./Wack Attacks.html"><img src=".\zach logo.jpg" width="20px" /> Wack Attacks</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="./Past Teams.html">Former Teams</a>
-                </li>
-                <li>
-                    <a href="./draft.html">Drafts</a>
-                </li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Team Videos</a>
-                    <div class="dropdown-content">
-                        <a href="https://youtu.be/gVekvl79PMQ">Maryland Marijuanas' 2020 Press Conference</a>
-                    </div>
-                </li>
-
-
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">League Videos</a>
-                    <div class="dropdown-content">
-                        <a href="https://youtu.be/I5AjigexrEU">2021 RFL Draft</a>
-                        <a href="https://youtu.be/hTfTKxbhBHc">Announcing Our 10th and Final RFL Member For 2021!</a>
-                        <a href="https://youtu.be/89NbZ0oGmTQ">2021 State of the League Address</a>
-                        <a href="https://youtu.be/oua0MqRtpLg">The Red Army's 2020 Punishment</a>
-                        <a href="https://youtu.be/5dfQiQEzpYM">2020 Waterbets</a>
-                        <a href="https://youtu.be/_btkqdhmESU">2020 Exit Interviews</a>
-                        <a href="https://youtu.be/Ap3etxqNsV4">Our 2020 Draft</a>
-                        <a href="https://youtu.be/gpnV7FCJTdg">Draft Day 2020 Hype Video</a>
-                        <a href="https://www.youtube.com/watch?v=801p3bd-SEk">2019 Exit Interviews</a>
-                        <a href="https://youtu.be/i6lJSjG6js8">Our 2019 Draft</a>
-                        <a href="https://youtu.be/YFUnB669-rE">2019 Commish Annoucement</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="./standings.html">Standings</a>
-                </li>
-                <li>
-                    <a href="./records.html">Records</a>
-                </li>
-                <li>
-                    <a href="./Hall of Fame.html">Hall of Fame</a>
-                </li>
-                <li>
-                    <a href="./Mock Draft.html">Mock Draft</a>
-                </li>
-            </ul>
-        </div>
-        <nav id="nav">
-
-            <h3>Roster</h3>
-
-            <p>
-                QB: Josh Allen
-                <br />RB: Austin Ekeler
-                <br />RB: Aaron Jones
-                <br />WR: Terry McLaurin
-                <br />WR: Tyreek Hill
-                <br />TE: Rob Gronkowski
-                <br />FLEX: Brandin Cooks
-                <br />FLEX: Damien Harris
-                <br />DST: Buffalo Bills
-                <br />BN: Joe Burrow
-                <br />BN: Christian McCaffery
-                <br />BN: Odell Beckham Jr.
-                <br />BN: Cole Beasley
-                <br />BN: Marquise Brown
-                <br />BN: Zach Ertz
-                <br />RES: Leonard Fournette
-                <br />RES: Adam Thielen
-
-            </p>
+        <section>
+            <div class="topnav">
+                <ul>
+                    <li><a href=".\index.html">Home</a></li>
+                    <li><a target="_blank" href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
+                    <li><a target="_blank" href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Teams</a>
+                        <div class="dropdown-content">
+                            <a href="./Dictator.html"><img src=".\Prof Pic1.png" width="20px" /> The Dictator</a>
+                            <a href="./Red Army.html"><img src=".\brian logo.png" width="20px" /> The Red Army</a>
+                            <a href="./Big Ounce.html"><img src=".\big ounce logo.png" width="20px" /> Big Ounce</a>
+                            <a href="./Gruden's Plan.html"><img src=".\gruden logo.png" width="20px" /> Gruden's Plan</a>
+                            <a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
+                            <a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Hurts Helicopter</a>
+                            <a href="./Red Wolf.html"><img src=".\jason logo.png" width="20px" /> Goofy God</a>
+                            <a href="./Mullet Man.html"><img src=".\Mullet Logo.png" width="20px" /> Mullet Man</a>
+                            <a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" /> Sleepy Nick</a>
+                            <a href="./Wack Attacks.html"><img src=".\zach logo.jpg" width="20px" /> Wack Attacks</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./Past Teams.html">Former Teams</a>
+                    </li>
+                    <li>
+                        <a href="./draft.html">Drafts</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Team Videos</a>
+                        <div class="dropdown-content">
+                            <a href="https://youtu.be/gVekvl79PMQ">Maryland Marijuanas' 2020 Press Conference</a>
+                        </div>
+                    </li>
 
 
-        </nav>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">League Videos</a>
+                        <div class="dropdown-content">
+                            <a href="https://youtu.be/I5AjigexrEU">2021 RFL Draft</a>
+                            <a href="https://youtu.be/hTfTKxbhBHc">Announcing Our 10th and Final RFL Member For 2021!</a>
+                            <a href="https://youtu.be/89NbZ0oGmTQ">2021 State of the League Address</a>
+                            <a href="https://youtu.be/oua0MqRtpLg">The Red Army's 2020 Punishment</a>
+                            <a href="https://youtu.be/5dfQiQEzpYM">2020 Waterbets</a>
+                            <a href="https://youtu.be/_btkqdhmESU">2020 Exit Interviews</a>
+                            <a href="https://youtu.be/Ap3etxqNsV4">Our 2020 Draft</a>
+                            <a href="https://youtu.be/gpnV7FCJTdg">Draft Day 2020 Hype Video</a>
+                            <a href="https://www.youtube.com/watch?v=801p3bd-SEk">2019 Exit Interviews</a>
+                            <a href="https://youtu.be/i6lJSjG6js8">Our 2019 Draft</a>
+                            <a href="https://youtu.be/YFUnB669-rE">2019 Commish Annoucement</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./standings1.html">Standings</a>
+                    </li>
+                    <li>
+                        <a href="./records.html">Records</a>
+                    </li>
+                    <li>
+                        <a href="./Hall of Fame.html">Hall of Fame</a>
+                    </li>
+                    <li>
+                        <a href="./Mock Draft.html">Mock Draft</a>
+                    </li>
+                </ul>
+            </div>
+            <nav id="nav">
 
-        <article id="article">
-            <h1>Basic Information</h1>
-            <p>
+                <h3>Roster</h3>
 
-                <strong>Owner: </strong> Harry Heck
-                <br />	<strong>Co-Manager: </strong>N/A
-                <br /> <strong>Year joined: </strong>2016
+                <p>
+                    QB: Josh Allen
+                    <br />RB: Austin Ekeler
+                    <br />RB: Aaron Jones
+                    <br />WR: Terry McLaurin
+                    <br />WR: Tyreek Hill
+                    <br />TE: Rob Gronkowski
+                    <br />FLEX: Brandin Cooks
+                    <br />FLEX: Damien Harris
+                    <br />DST: Buffalo Bills
+                    <br />BN: Joe Burrow
+                    <br />BN: Christian McCaffery
+                    <br />BN: Odell Beckham Jr.
+                    <br />BN: Cole Beasley
+                    <br />BN: Marquise Brown
+                    <br />BN: Zach Ertz
+                    <br />RES: Leonard Fournette
+                    <br />RES: Adam Thielen
 
-            <p>
-                <strong>Former Co-Managers: </strong>Ben Adams (2020 offseason)
-                <br /> <strong>Former Team Names:</strong> Rockville Rampage (2016), Waldorf 69ers (2017), Daddy Brees Failing Me (2018)
-            <p>
-                <strong>Championships:</strong> N/A
-                <br /><strong>Other Awards: </strong>2021 First Place Regular Season, 2021 Most Points For, 2021 Best Draft, 2019 Comeback Player of the Year
-            <p>
-                <strong>Career Record: </strong>48-49
-                <br /><strong>Career Winning Percentage: </strong>49%
-                <br /><strong>Playoff Percentage: </strong>67%
-                <br /><strong>Finshes: </strong>4th, 8th, 8th, 2nd, 3rd, 3rd
-            </p>
-
-            <h1>Biography</h1>
-            <p>
-                The Maryland Marijuanas entered the league in 2016 and had a very impressive showing from the get-go. In his first season, they finished the regular season
-                at 11-3 in second place on the back of the Aaron Rodgers and Jordy Nelson stack. However, this dominance seemed to fade in playoffs as his team put up
-                two underwhelming performances and would end the year in 4th place.
-            <p>
-                This slide in the playoffs would continue in to the 2017 season as the Maryland Marijuanas put up one of the worst seasons in league history. The
-                Maryland Marijuanas would fail to get a single win until week 12 and would finish the year in last place at 1-13. This performance made the Maryland Marijuanas
-                become a laughingstock.
-            <p>
-                Coming off a bad year, the Maryland Marijuanas hoped to change this narrative in 2018. Again, they elected to make Drew Brees their quarterback and their team would
-                continue to underperform. This time they would finish the year at 6-8 and would lose both games in the postseason and finished again in eighth place.
-            <p>
-                Entering the 2019 season, the Maryland Marijuanas knew things needed to change. Now they would fully adopt a unique strategy that they hoped would
-                help improve their team. This plan was called the "no plan plan" where the drafter would conduct very little research prior to the draft and tries only
-                to draft Caucasian wide receivers. A strategy that seemed crazy to some, but it helped the Maryland Marijuanas reclaim their 2016 form. The Maryland Marijuanas
-                finished the regular season at 10-4 in second place. They would finally get their first playoff win in a narrow defeat of the Goofy God.
-                They then were set for their first championship match where they lost by nearly 40 points. Despite a disappointing finish, the Maryland Marijuanas
-                were acknowledged as the year's Comeback Player of the Year.
-            <p>
-                Even though last year was not the desired outcome, the Maryland Marijuanas came in to the 2020 season with the same strategy. This time however, they
-                elected to bring on Ben Adams as a co-manager. The Maryland Marijuanas
-                would make a season altering move when they decided to make a major trade with Gruden's Plan. This trade would be awarded the trade rape of the year
-                and not in the Maryland Marijuanas' favor. The Maryland Marijuanas would let their love for white receivers and their toxic relationship with Drew
-                Brees cloud their judgement as they would trade away Patrick Mahomes, Alvin Kamara, DeSean Jackson, and a 1st Round WWD pick for Drew Brees,
-                Adam Thielen, Todd Gurley, and Zach Ertz. Despite this terrible move, the Maryland Marijuanas would make the playoffs finishing the regular season
-                in third place at a mere 8-6. They would ironically lose in the first round thanks to the star players they had traded away, and the Maryland Marijuanas
-                ended their campaign in third place.
-            </p>
-        </article>
-    </section>
-
-    <script>
-        window.onscroll = function() {myFunction()};
-
-        var navbar = document.getElementsByClassName("topnav").item(0);
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-        if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-        } else {
-        navbar.classList.remove("sticky");
-        }
-        }
-    </script>
-
-    <footer>
-        <p><a href="./index.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
-    </footer>
+                </p>
 
 
-    </p>
+            </nav>
 
-</body>
- 
+            <article id="article">
+                <h1>Basic Information</h1>
+                <p>
+
+                    <strong>Owner: </strong> Harry Heck
+                    <br />	<strong>Co-Manager: </strong>N/A
+                    <br /> <strong>Year joined: </strong>2016
+
+                <p>
+                    <strong>Former Co-Managers: </strong>Ben Adams (2020 offseason)
+                    <br /> <strong>Former Team Names:</strong> Rockville Rampage (2016), Waldorf 69ers (2017), Daddy Brees Failing Me (2018)
+                <p>
+                    <strong>Championships:</strong> N/A
+                    <br /><strong>Other Awards: </strong>2021 First Place Regular Season, 2021 Most Points For, 2021 Best Draft, 2019 Comeback Player of the Year
+                <p>
+                    <strong>Career Record: </strong>48-49
+                    <br /><strong>Career Winning Percentage: </strong>49%
+                    <br /><strong>Playoff Percentage: </strong>67%
+                    <br /><strong>Finshes: </strong>4th, 8th, 8th, 2nd, 3rd, 3rd
+                </p>
+
+                <h1>Biography</h1>
+                <p>
+                    The Maryland Marijuanas entered the league in 2016 and had a very impressive showing from the get-go. In his first season, they finished the regular season
+                    at 11-3 in second place on the back of the Aaron Rodgers and Jordy Nelson stack. However, this dominance seemed to fade in playoffs as his team put up
+                    two underwhelming performances and would end the year in 4th place.
+                <p>
+                    This slide in the playoffs would continue in to the 2017 season as the Maryland Marijuanas put up one of the worst seasons in league history. The
+                    Maryland Marijuanas would fail to get a single win until week 12 and would finish the year in last place at 1-13. This performance made the Maryland Marijuanas
+                    become a laughingstock.
+                <p>
+                    Coming off a bad year, the Maryland Marijuanas hoped to change this narrative in 2018. Again, they elected to make Drew Brees their quarterback and their team would
+                    continue to underperform. This time they would finish the year at 6-8 and would lose both games in the postseason and finished again in eighth place.
+                <p>
+                    Entering the 2019 season, the Maryland Marijuanas knew things needed to change. Now they would fully adopt a unique strategy that they hoped would
+                    help improve their team. This plan was called the "no plan plan" where the drafter would conduct very little research prior to the draft and tries only
+                    to draft Caucasian wide receivers. A strategy that seemed crazy to some, but it helped the Maryland Marijuanas reclaim their 2016 form. The Maryland Marijuanas
+                    finished the regular season at 10-4 in second place. They would finally get their first playoff win in a narrow defeat of the Goofy God.
+                    They then were set for their first championship match where they lost by nearly 40 points. Despite a disappointing finish, the Maryland Marijuanas
+                    were acknowledged as the year's Comeback Player of the Year.
+                <p>
+                    Even though last year was not the desired outcome, the Maryland Marijuanas came in to the 2020 season with the same strategy. This time however, they
+                    elected to bring on Ben Adams as a co-manager. But shortly after this hire, Ben would be released due to a core disagreement about the vision for the team. The Maryland Marijuanas
+                    would make a season altering move when they decided to make a major trade with Gruden's Plan. This trade would be awarded the trade rape of the year
+                    and not in the Maryland Marijuanas' favor. The Maryland Marijuanas would let their love for white receivers and their toxic relationship with Drew
+                    Brees cloud their judgement as they would trade away Patrick Mahomes, Alvin Kamara, DeSean Jackson, and a 1st Round WWD pick for Drew Brees,
+                    Adam Thielen, Todd Gurley, and Zach Ertz. Despite this terrible move, the Maryland Marijuanas would make the playoffs finishing the regular season
+                    in third place at a mere 8-6. They would ironically lose in the first round thanks to the star players they had traded away, and the Maryland Marijuanas
+                    ended their campaign in third place.
+                </p>
+                <p>
+                    Coming into the 2021 season, the Maryland Marijuanas looked to avenge a rather embarrassing 2020 season. They would kick off the season on the right note with the
+                    best draft in league history, selecting 11 top players at their positions. This allowed them to win six out of their first eight matches and accumulate the most points
+                    in a single season in league history. The Maryland Marijuanas would enter the playoffs as the one seed and had the task of facing The Dictator in the first round. The Maryland
+                    Marijuanas would suffer a heartbreaking loss to the league's most experienced playoff team. For the third year in a row, the Maryland Marijuanas would leave the playoffs
+                    empty-handed.
+                </p>
+            </article>
+        </section>
+
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var navbar = document.getElementsByClassName("topnav").item(0);
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+            if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+            } else {
+            navbar.classList.remove("sticky");
+            }
+            }
+        </script>
+
+        <footer>
+            <p><a href="./index.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
+        </footer>
+
+
+        </p>
+
+    </body>
+

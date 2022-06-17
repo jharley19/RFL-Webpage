@@ -4,175 +4,7 @@
     <title>Big Ounce</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        /* Style the header */
-        header {
-            background-color: black;
- 
-        }
-
-        /* Create two columns/boxes that floats next to each other */
-        #nav {
-            float: left;
-            width: 20%;
-            background: #ccc;
-            padding: 20px;
-        }
-
-            /* Style the list inside the menu */
-            #nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
-
-        #article {
-            float: left;
-            padding: 20px;
-            width: 80%;
-            background-color: #f1f1f1;
-        }
-
-        /* Clear floats after the columns */
-        section::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Style the footer */
-        footer {
-            background-color: midnightblue;
-            padding: 10px;
-            text-align: center;
-            color: white;
-        }
-
-        .container {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-
-
-        .top-left {
-            position: absolute;
-            top: 16px;
-            left: 225px;
-            text-align: left;
-        }
-
-
-        /* Style the top navigation bar */
-        .topnav {
-            background-color: #333;
-            min-height: 48px;
-        }
-
-            /* Style the topnav links */
-            .topnav a {
-                float: left;
-                display: block;
-                color: #f2f2f2;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-
-                /* Change color on hover */
-                .topnav a:hover {
-                    background-color: red;
-                    color: black;
-                }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: black;
-        }
-
-        li {
-            float: left;
-        }
-
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
-            .dropdown .dropbtn {
-                font-size: 16px;
-                border: none;
-                outline: none;
-                color: white;
-                padding: 14px 16px;
-                background-color: black;
-                font-family: inherit;
-                margin: 0;
-            }
-
-            .navbar a:hover, .dropdown:hover .dropbtn {
-                background-color: red;
-            }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-            .dropdown-content a {
-                float: none;
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-                text-align: left;
-            }
-
-                .dropdown-content a:hover {
-                    background-color: #ddd;
-                }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        @media only screen and (max-width: 800px) {
-            /* For mobile phones: */
-            #nav {
-                text-align: center;
-                width: 100%;
-            }
-
-            #article, .footer {
-                width: 100%;
-            }
-        }
-
-        .sticky {
-            position: fixed;
-            top: 0;
-            width: 97.6%;
-        }
-
-            .sticky + .article {
-                padding-top: 60px;
-            }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -180,7 +12,7 @@
         <div class="container">
             <img src=".\brando background.png" width="100%" />
 
-           <!-- <div class="top-left">
+           <!--<div class="top-left">
                 <h1 style="font-size:30px;">Big Ounce</h1>
                 8th place
                 <br />5-11-0
@@ -206,7 +38,7 @@
                         <a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
                         <a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Hurts Helicopter</a>
                         <a href="./Red Wolf.html"><img src=".\jason logo.png" width="20px" /> Goofy God</a>
-                        <a href="./Mullet Man.html"><img src=".\Mullet Logo.jpg" width="20px" /> Mullet Man</a>
+                        <a href="./Mullet Man.html"><img src=".\Mullet Logo.png" width="20px" /> Mullet Man</a>
                         <a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" /> Sleepy Nick</a>
                         <a href="./Wack Attacks.html"><img src=".\zach logo.jpg" width="20px" /> Wack Attacks</a>
                     </div>
@@ -226,6 +58,7 @@
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">League Videos</a>
                     <div class="dropdown-content">
+                        <a href="https://youtu.be/I5AjigexrEU">2021 RFL Draft</a>
                         <a href="https://youtu.be/hTfTKxbhBHc">Announcing Our 10th and Final RFL Member For 2021!</a>
                         <a href="https://youtu.be/89NbZ0oGmTQ">2021 State of the League Address</a>
                         <a href="https://youtu.be/oua0MqRtpLg">The Red Army's 2020 Punishment</a>
@@ -239,7 +72,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="./standings.html">Standings</a>
+                    <a href="./standings1.html">Standings</a>
                 </li>
                 <li>
                     <a href="./records.html">Records</a>
@@ -258,22 +91,21 @@
 
             <p>
                 QB: Tom Brady
-                <br />RB: Derrick Henry
+                <br />RB: D'Andre Swift
                 <br />RB: Joe Mixon
                 <br />WR: A.J. Brown
-                <br />WR: Chase Claypool
-                <br />TE: T.J. Hockenson
-                <br />FLEX: D'Andre Swift
-                <br />FLEX: Kareem Hunt
-                <br />DST: San Francisco 49ers
-                <br />BN: David Johnson
-                <br />BN: Nyheim Hines
-                <br />BN: Robby Anderson
-                <br />BN: Cole Beasely
+                <br />WR: Hunter Renfrow
+                <br />TE: Gerald Everett
+                <br />FLEX: Chase Claypool
+                <br />FLEX: Clyde Edwards-Helaire
+                <br />DST: Philadelphia Eagles
+                <br />BN: Darrel Williams
+                <br />BN: Samaje Perine
+                <br />BN: DeVante Parker
+                <br />BN: Josh Palmer
                 <br />BN: Michael Gallup
-                <br />BN: A.J. Green
-                <br />RES: Curtis Samuel
-                <br />RES: Will Fuller V
+                <br />BN: Miami Dolphins
+                <br />RES: Derrick Henry
             </p>
 
         </nav>
@@ -295,10 +127,10 @@
                 <br /><strong>Other Awards: </strong>2020 Worst Draft, 2020 Biggest Trade Rape, 2019 Highest Scoring Team,
                 2019 Regular Season First Place, 2019 Worst Draft
             <p>
-                <strong>Career Record: </strong>50-29
-                <br /><strong>Career Winning Percentage: </strong>63%
-                <br /><strong>Playoff Percentage: </strong>60%
-                <br /><strong>Finshes: </strong>2nd, 5th, 1st, 1st, 8th
+                <strong>Career Record: </strong>59-37
+                <br /><strong>Career Winning Percentage: </strong>61%
+                <br /><strong>Playoff Percentage: </strong>67%
+                <br /><strong>Finshes: </strong>2nd, 5th, 1st, 1st, 8th, 4th
             </p>
 
             <h1>Biography</h1>
@@ -326,6 +158,13 @@
                 seemed to be nearly impossible. After a poor draft and some early injuries to their top picks, Big Ounce struggled all season and spent most of
                 the year in last place. With some help from their first overall Waiver Wire Draft picks, Big Ounce finally was able to climb out of the Panzerkampfwagen
                 Bowl and would lose both games in the Toes Bowl bracket to finish at 8th on the season.
+            </p>
+            <p>
+                The 2021 season presented an opportunity to avenge a rather uncharacteristic 2020 season. Big Ounce, however, still struggled at the draft selecting only 5 top players
+                at their positions along with bums like David Johnson. Big Ounce would also deal with numerous injuries with most of their top selections, including Derrick Henry
+                who was carrying Big Ounce through the first part of their season before falling to a season-ending injury. Despite all this hardship, Big Ounce was able to finish the regular season
+                in 2nd place. In the playoffs, they would fall in the first round to the eventual champion, The Hurts Helicopter, despite putting up 139.88 points. Big Ounce would then finish the season in
+                4th place.
             </p>
         </article>
     </section>

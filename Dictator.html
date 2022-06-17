@@ -4,187 +4,7 @@
 	<title>The Dictator</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-		* {
-			box-sizing: border-box;
-		}
-
-		body {
-			font-family: Arial, Helvetica, sans-serif;
-			
-		}
-
-		/* Style the header */
-		header {
-			
-			background-color: black;
-		}
-        .header h1 {
-            font-size: 100000px;
-        }
-
-
-		/* Create two columns/boxes that floats next to each other */
-        #nav {
-            float: left;
-            width: 20%;
-            background: #ccc;
-            padding: 20px;
-            /*height: 1343.5px;*/
-        }
-
-			/* Style the list inside the menu */
-			#nav ul {
-				list-style-type: none;
-				padding: 0;
-			}
-
-        article {
-            
-            float: left;
-            padding: 20px;
-            width: 80%;
-            background-color: #f1f1f1;
-        }
-
-		/* Clear floats after the columns */
-		section::after {
-			content: "";
-			display: table;
-			clear: both;
-		}
-
-		/* Style the footer */
-        footer {
-            
-            background-color: midnightblue;
-            padding: 10px;
-            text-align: center;
-            color: white;
-        }
-
-        .container {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-
-
-        .top-left {
-            position: absolute;
-            top: 16px;
-            left: 225px;
-			text-align: left;
-        }
-
-        /* Style the top navigation bar */
-        .topnav {
-            background-color: #333;
-            min-height: 48px;
-        }
-
-            /* Style the topnav links */
-            .topnav a {
-                float: left;
-                display: block;
-                color: #f2f2f2;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-
-                /* Change color on hover */
-                .topnav a:hover {
-                    background-color: red;
-                    color: black;
-                }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: black;
-
-        }
-
-        li {
-            float: left;
-        }
-
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
-            .dropdown .dropbtn {
-                font-size: 16px;
-                border: none;
-                outline: none;
-                color: white;
-                padding: 14px 16px;
-                background-color: black;
-                font-family: inherit;
-                margin: 0;
-                
-            }
-
-            .navbar a:hover, .dropdown:hover .dropbtn {
-                background-color: red;
-
-            }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            max-height: 500px; /* you can change as you need it */
-            overflow: auto; /* to get scroll */
-        }
-
-            .dropdown-content a {
-                float: none;
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-                text-align: left;
-            }
-
-                .dropdown-content a:hover {
-                    background-color: #ddd;
-                }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        @media only screen and (max-width: 800px) {
-            /* For mobile phones: */
-            #nav {
-                text-align: center;
-                width: 100%;
-            }
-
-            #article, .footer {
-                width: 100%;
-            }
-		
-        }
-
-        .sticky {
-            position: fixed;
-            top: 0;
-            width: 99%;
-        }
-
-            .sticky + .article {
-                padding-top: 60px;
-            }
-	</style>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -193,14 +13,14 @@
 			<picture>
 				<source srcset=".\Prof Pic1.png" media="(max-width: 800px)">
 				<source srcset=".\Dictator Background.png" media="(max-width: 1500px)">
-				
+
 				<img src=".\Dictator Background.png" width="100%" />
 			</picture>
-			
+
 			<!--<div class="top-left">
 				<h1 style="font-size:30px;">The Dictator</h1>
-				9th place
-				<br />6-9-0
+				2nd place
+				<br />9-8-0
 
 			</div>-->
 
@@ -228,7 +48,7 @@
 						<a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
 						<a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Hurts Helicopter</a>
 						<a href="./Red Wolf.html"><img src=".\jason logo.png" width="20px" /> Goofy God</a>
-						<a href="./Mullet Man.html"><img src=".\Mullet Logo.jpg" width="20px" /> Mullet Man</a>
+						<a href="./Mullet Man.html"><img src=".\Mullet Logo.png" width="20px" /> Mullet Man</a>
 						<a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" /> Sleepy Nick</a>
 						<a href="./Wack Attacks.html"><img src=".\zach logo.jpg" width="20px" /> Wack Attacks</a>
 					</div>
@@ -287,8 +107,8 @@
 						<a href="https://youtu.be/OfOGPQEGZh4">Week 6 - Rc Diss</a>
 						<a href="https://youtu.be/2_hcxXoJ9Vg">Week 5 - Zane and Nick Diss</a>
 						<a href="https://youtu.be/ZQNBoLxqJ8Q">Week 4 - Harry Diss</a>
-						<a href="https://youtu.be/ZQNBoLxqJ8Q">Week 3 - Billy STOOPID</a>
-						<a href="https://youtu.be/ZQNBoLxqJ8Q">Week 1 - Brian Diss</a>
+						<a href="https://youtu.be/xzk2Izw5Zm0">Week 3 - Billy STOOPID</a>
+						<a href="https://youtu.be/0AHpexMrBg4">Week 1 - Brian Diss</a>
 						<a href="https://youtu.be/HMGv7kffJ0o">Fantasy Football 2019 Team Name Annoucement!</a>
 						<a href="https://youtu.be/4uP-ISyg8Ow">2018 Fantasy Football Recap</a>
 						<a href="https://youtu.be/xk-7IEV-u1g">2017 Fantasy Football Champion</a>
@@ -314,7 +134,7 @@
 					</div>
 				</li>
 				<li>
-					<a href="./standings.html">Standings</a>
+					<a href="./standings1.html">Standings</a>
 				</li>
 				<li>
 					<a href="./records.html">Records</a>
@@ -353,129 +173,144 @@
 		</nav>
 
 		<article id="article">
-			<!--<video id="titantron" width="320" height="240" controls autoplay loop>
-		<source src="C:\Users\jharl\OneDrive\Documents\Website\Dictator Titantron.mp4" type="video/mp4">
-		<source src="C:\Users\jharl\OneDrive\Documents\Website\Dictator Titantron.ogg" type="video/ogg">
-	</video> -->
+			<video id="video1" width="320" height="240" onclick="playPause()" autoplay>
+				<source src="./Dictator Vid.mp4" type="video/mp4">
 
-			<h1>Basic Information</h1>
-			<p>
+				Your browser does not support the video tag.
+			</video>
+			
 
-				<strong>Owner: </strong> Jeremy Harley
-				<br />	<strong>Co-Manager: </strong>Scabby Katie
-				<br /> <strong>Year joined: </strong>2013
+				<h1>Basic Information</h1>
+				<p>
+					<strong>Owner: </strong> Jeremy Harley
+					<br />	<strong>Co-Manager: </strong>Scabby Katie
+					<br /> <strong>Year joined: </strong>2013
 
-			<p>
-				<strong>Former Co-Managers: </strong>N/A
-				<br /> <strong>Former Team Names:</strong> Avalanche (2013), Do you even lift bro (2014), The Work (2015), FaZe Harambe (2016), The Power of Scabby Katie (2017),
-				Fuck Cam Newton (2018), The Lord of the Light (2019)
-			</p>
-			<p>
-				<strong>Championships:</strong> 2013, 2015, 2017
-				<br /><strong>Other Awards: </strong>2021 Comeback Player of the Year, 2021 Biggest Trade Rape, 2021 Best League Video, 2020 Best Undrafted Pickup, 
-				2020 Best Team Name Announcement Video, 2020 Best In-Season Video,
-				2020 Panzerkampfwagen Bowl Survivor, 2019 Worst Draft, 2019 Best Undrafted Pickup,
-				2019 Best League Music Video, 2019 Best Non-Music Video, 2018 Highest Scoring Team, 2018 Worst Draft,
-				2017 Highest Scoring Team, 2016 Regular Season First Place, 2016 Highest Scoring Team, 2015 Regular Season First Place,
-				2014 Best Player Performance, 2014 Highest Scoring Team, 2013 Regular Season First Place, 2013 Highest Scoring Team,
-				2013 Best Week Performance
-			<p>
-				<strong>Career Record: </strong>93-50
-				<br /><strong>Career Winning Percentage: </strong>65%
-				<br /><strong>Playoff Percentage: </strong>78%
-				<br /><strong>Finshes: </strong>1st, 2nd, 1st, 3rd, 1st, 3rd, 6th, 9th, 2nd
-			</p>
+				<p>
+					<strong>Former Co-Managers: </strong>N/A
+					<br /> <strong>Former Team Names:</strong> Avalanche (2013), Do you even lift bro (2014), The Work (2015), FaZe Harambe (2016), The Power of Scabby Katie (2017),
+					Fuck Cam Newton (2018), The Lord of the Light (2019)
+				</p>
+				<p>
+					<strong>Championships:</strong> 2013, 2015, 2017
+					<br /><strong>Other Awards: </strong>2021 Comeback Player of the Year, 2021 Biggest Trade Rape, 2021 Best League Video, 2020 Best Undrafted Pickup,
+					2020 Best Team Name Announcement Video, 2020 Best In-Season Video,
+					2020 Panzerkampfwagen Bowl Survivor, 2019 Worst Draft, 2019 Best Undrafted Pickup,
+					2019 Best League Music Video, 2019 Best Non-Music Video, 2018 Highest Scoring Team, 2018 Worst Draft,
+					2017 Highest Scoring Team, 2016 Regular Season First Place, 2016 Highest Scoring Team, 2015 Regular Season First Place,
+					2014 Best Player Performance, 2014 Highest Scoring Team, 2013 Regular Season First Place, 2013 Highest Scoring Team,
+					2013 Best Week Performance
+				<p>
+					<strong>Career Record: </strong>93-50
+					<br /><strong>Career Winning Percentage: </strong>65%
+					<br /><strong>Playoff Percentage: </strong>78%
+					<br /><strong>Finshes: </strong>1st, 2nd, 1st, 3rd, 1st, 3rd, 6th, 9th, 2nd
+				</p>
 
-			<h1>Biography</h1>
-			<p>
-				The Dictator is acknowledged as the founding team of the RFL. Since the league's inception,
-				the owner of The Dictator, Jeremy Harley, has also ruled as the league's commissioner.
-			<p>
-				In 2013, The Dictator would claim the inaugural championship posting the most points for on the season and set a record for the most points for on
-				a week with 156.48 points, a record that would stand for five years until half-ppr was introduced into the league.
-			<p>
-				The next year, The Dictator looked
-				to go back-to-back and again ended the season with the most points for, but this time in second place at 12-2. They would make the championship game and
-				would ultimately fall to one of the strongest teams in league history, The Huntingtown Hurricanes owned by childhood friend Zachary Przybocki. The following year The Dictator sought
-				revenge.
-			<p>
-				In the 2015 season, for the first time The Dictator did not finish the season with the most points, as their rival the Huntingtown Hurricanes would. However, The Dictator
-				finished the regular season in first place at 11-3. Again, The Dictator would reach the championship game for the third consecutive year and again would
-				meet their rival The Huntingtown Hurricanes in the championship. This time The Dictator would come away with the win to achieve their second championship.
-			<p>
-				The 2016 season would see The Dictator reassert his dominance as they would finish the regular season again in first place for the third time in four years
-				and would have the highest point total for the third time in four years. However, his team would disappoint in the first round and The Dictator would fail to make
-				the championship game for the first time in league history.
-			<p>
-				The Dictator then went into the 2017 seeking to rise back to the top. Despite finishing the season
-				with the highest point total for the fourth time in five years, The Dictator only snuck into the playoffs at 8-6 on the season. With a decisive win in the first
-				round, The Dictator would make it back to the championship for the fourth time in five years. In the championship, he would face the Cookie Charizards
-				owned by the lucky Tyler Ulmschneider. The Dictator would be trailing by 11.40 points going into Monday Night Football and the only player they had left was Texans wide receiver
-				DeAndre Hopkins. However, the Texans had nothing to play for and third string quarterback T.J. Yates was playing. Hopkins was not doing much all game
-				and the Texans were down 27-0 in the middle of the 4th quarter. They were driving down the field and Hopkins needed a touchdown for The Dictator to win this game. On first
-				and goal, Yates threw a fade to Hopkins in the back of the end zone and Hopkins made an insane one-handed bobble catch that allowed The Dictator to win their
-				third championship in just five years. The force that The Dictator accredited their 2017 Championship was their lucky charm Scabby Katie. By being nice to a
-				girl that was covered in scabs (and would eat them) and giving her high fives, The Dictator noticed that his team's performance would improve.
-			<p>
-				In 2018,
-				Scabby Katie became more than just a lucky charm to The Dictator, as she became a goddess.
-				This devotion allowed The Dictator to have the highest scoring team on the season, despite also
-				having the worst draft. However, their playoff run came up short as they lost in the first round and
-				finished in 3rd place thanks to a variety of untimely injuries on some of their biggest stars. The Dictator grew angry and blamed their shortcoming
-				on Scabby Katie, as they even burned her picture. During the offseason on a stroll with Lord Brian, The Dictator discovered an interesting message
-				which he interpreted as proclaiming the Lord of Light as the true fantasy god.
-			<p>
-				Thus in 2019, The Dictator devoted their season to The Lord of Light. As a part of his devotion to the Lord of Light, The Dictator decided to
-				spit straight fire and over the course of the season recorded a diss track for every other team in the league, including the award winning
-				"Mike Diss," which was even removed from YouTube. Despite his unwavering devotion to the Lord of Light,
-				The Dictator was left in the darkness and would miss the playoffs for the first time in league history and they finished the season in 6th place.
-			<p>
-				After contemplating retirement, The Dictator realized that there is no fantasy god, there is only him and his glory. To help bear the load,
-				The Dictator brought on an intern whom he dubbed "The Dictern." The Dictator would release a weekly propaganda show entitled "7 Minutes of Hate"
-				where The Dictator would comment on major league stories and discuss the state of their team. The Dictator struggled throughout the year
-				and would end the season with their worst performance in league history and ended up in the Panzerkampfwagen Bowl where they would defeat
-				The Red Army and avoid an embarrassing league punishment. The poor performance prompted The Dictator to fire The Dictern.
-			<p>
-				At the conclusion of the year,
-				it was discovered that The Dictern had purposefully sabotaged The Dictator's 2020 season and now plans to do the same for their 2021 season.
-				Meanwhile, The Dictator has entered therapy and has discovered a major breakthrough while looking at some inkblots. This led him to take a pilgrimage to the
-				holy land, where three years before he had burned the picture (thus the soul) of Scabby Katie. Upon arrival, The Dictator would deliver an emotional apology
-				and would beg for Scabby Katie's forgiveness. After breaking down in tears, a baseball bat appeared and began emitting a sound. The Dictator cautiously approached
-				and realized that this bat now possessed the soul of his beloved Scabby Katie. Just as he began to grab the bat, his wrist was slashed by his former employee, The Dictern.
-				The Dictern expressed that he wanted revenge for the treatment he experienced while working for The Dictator and that he desired to kill The Dictator and become the new
-				Dictator. Before he would pull the trigger, the Dictern elected to torture The Dictator by spearing the end of his rifle into the left eye of The Dictator. As The Dictator
-				began to cry out in pain, the baseball bat began to twitch more and more. Eventually, the bat would fly through the air, striking the Dictern and knocking him to the ground, and
-				the bat would land in the hand of a now standing Dictator. The Dictern would retreat into the woods in fear as The Dictator would collapse due to the injuries had sustained.
-				Luckily, the Dictffcer was concerned with The Dictator leaving by himself and had followed him. Now the Dictffcer was able to bring the unconscious Dictator back to their
-				headquarters, where The Dictator would be healed and given a new look. The iconic shirt and tie was ditched in favor of a bullet proof vest and an eye patch, a look that now
-				represents a time of war for The Dictator. But before he could move his focus to the other teams in the league, he wanted to neutralize the threat of the Dictern. A search party
-				went out and the Dictffcer would find the Dictern as he was regrouping and plotting a bombing on The Dictator's headquarters. The Dictern was brought in front of The Dictator to
-				pay for his crimes. Despite the Dictern's pleading and begging, The Dictator sentenced the Dictern to death, which The Dictator carried out himself with the use of Scabby Katie. Now with
-				that chapter of his life out of the way, The Dictator, alongside Scabby Katie, looked to finally reclaim what is rightfully theirs.
-			</p>
+				<h1>Biography</h1>
+				<p>
+					The Dictator is acknowledged as the founding team of the RFL. Since the league's inception,
+					the owner of The Dictator, Jeremy Harley, has also ruled as the league's commissioner.
+				<p>
+					In 2013, The Dictator would claim the inaugural championship posting the most points for on the season and set a record for the most points for on
+					a week with 156.48 points, a record that would stand for five years until half-ppr was introduced into the league.
+				<p>
+					The next year, The Dictator looked
+					to go back-to-back and again ended the season with the most points for, but this time in second place at 12-2. They would make the championship game and
+					would ultimately fall to one of the strongest teams in league history, The Huntingtown Hurricanes owned by childhood friend Zachary Przybocki. The following year The Dictator sought
+					revenge.
+				<p>
+					In the 2015 season, for the first time The Dictator did not finish the season with the most points, as their rival the Huntingtown Hurricanes would. However, The Dictator
+					finished the regular season in first place at 11-3. Again, The Dictator would reach the championship game for the third consecutive year and again would
+					meet their rival The Huntingtown Hurricanes in the championship. This time The Dictator would come away with the win to achieve their second championship.
+				<p>
+					The 2016 season would see The Dictator reassert his dominance as they would finish the regular season again in first place for the third time in four years
+					and would have the highest point total for the third time in four years. However, his team would disappoint in the first round and The Dictator would fail to make
+					the championship game for the first time in league history.
+				<p>
+					The Dictator then went into the 2017 seeking to rise back to the top. Despite finishing the season
+					with the highest point total for the fourth time in five years, The Dictator only snuck into the playoffs at 8-6 on the season. With a decisive win in the first
+					round, The Dictator would make it back to the championship for the fourth time in five years. In the championship, he would face the Cookie Charizards
+					owned by the lucky Tyler Ulmschneider. The Dictator would be trailing by 11.40 points going into Monday Night Football and the only player they had left was Texans wide receiver
+					DeAndre Hopkins. However, the Texans had nothing to play for and third string quarterback T.J. Yates was playing. Hopkins was not doing much all game
+					and the Texans were down 27-0 in the middle of the 4th quarter. They were driving down the field and Hopkins needed a touchdown for The Dictator to win this game. On first
+					and goal, Yates threw a fade to Hopkins in the back of the end zone and Hopkins made an insane one-handed bobble catch that allowed The Dictator to win their
+					third championship in just five years. The force that The Dictator accredited their 2017 Championship was their lucky charm Scabby Katie. By being nice to a
+					girl that was covered in scabs (and would eat them) and giving her high fives, The Dictator noticed that his team's performance would improve.
+				<p>
+					In 2018,
+					Scabby Katie became more than just a lucky charm to The Dictator, as she became a goddess.
+					This devotion allowed The Dictator to have the highest scoring team on the season, despite also
+					having the worst draft. However, their playoff run came up short as they lost in the first round and
+					finished in 3rd place thanks to a variety of untimely injuries on some of their biggest stars. The Dictator grew angry and blamed their shortcoming
+					on Scabby Katie, as they even burned her picture. During the offseason on a stroll with Lord Brian, The Dictator discovered an interesting message
+					which he interpreted as proclaiming the Lord of Light as the true fantasy god.
+				<p>
+					Thus in 2019, The Dictator devoted their season to The Lord of Light. As a part of his devotion to the Lord of Light, The Dictator decided to
+					spit straight fire and over the course of the season recorded a diss track for every other team in the league, including the award winning
+					"Mike Diss," which was even removed from YouTube. Despite his unwavering devotion to the Lord of Light,
+					The Dictator was left in the darkness and would miss the playoffs for the first time in league history and they finished the season in 6th place.
+				<p>
+					After contemplating retirement, The Dictator realized that there is no fantasy god, there is only him and his glory. To help bear the load,
+					The Dictator brought on an intern whom he dubbed "The Dictern." The Dictator would release a weekly propaganda show entitled "7 Minutes of Hate"
+					where The Dictator would comment on major league stories and discuss the state of their team. The Dictator struggled throughout the year
+					and would end the season with their worst performance in league history and ended up in the Panzerkampfwagen Bowl where they would defeat
+					The Red Army and avoid an embarrassing league punishment. The poor performance prompted The Dictator to fire The Dictern.
+				<p>
+					After the 2020 season,
+					it was discovered that The Dictern had purposefully sabotaged The Dictator's 2020 season and now plans to do the same for their 2021 season.
+					Meanwhile, The Dictator has entered therapy and has discovered a breakthrough while looking at some inkblots. This led him to take a pilgrimage to the
+					holy land, where three years before he had burned the picture (thus the soul) of Scabby Katie. Upon arrival, The Dictator would deliver an emotional apology
+					and would beg for Scabby Katie's forgiveness. After breaking down in tears, a baseball bat appeared and began emitting a sound. The Dictator cautiously approached
+					and realized that this bat now possessed the soul of his beloved Scabby Katie. Just as he began to grab the bat, his wrist was slashed by his former employee, The Dictern.
+					The Dictern expressed that he wanted revenge for the treatment he experienced while working for The Dictator and that he desired to kill The Dictator and become the new
+					Dictator. Before he would pull the trigger, the Dictern elected to torture The Dictator by spearing the end of his rifle into the left eye of The Dictator. As The Dictator
+					began to cry out in pain, and the baseball bat began to twitch more and more. Eventually, the bat would fly through the air, striking the Dictern and knocking him to the ground, and
+					the bat would land in the hand of a now-standing Dictator. The Dictern would retreat into the woods in fear as The Dictator would collapse due to the injuries had sustained.
+					Luckily, the Dictffcer was concerned with The Dictator leaving by himself and had followed him. Now the Dictffcer was able to bring the unconscious Dictator back to their
+					headquarters, where The Dictator would be healed and given a new look. The iconic shirt and tie were ditched in favor of a bulletproof vest and an eye patch, a look that now
+					represents a time of war for The Dictator. But before he could move his focus to the other teams in the league, he wanted to neutralize the threat of the Dictern. A search party
+					went out and the Dictffcer would find the Dictern as he was regrouping and plotting a bombing on The Dictator's headquarters. The Dictern was brought in front of The Dictator to
+					pay for his crimes. Despite the Dictern's pleading and begging, The Dictator sentenced the Dictern to death, which The Dictator carried out himself with the use of Scabby Katie. Now with
+					that chapter of his life out of the way, The Dictator, alongside Scabby Katie, looked to finally reclaim what is rightfully theirs. The Dictator would amass one of their better drafts
+					in recent seasons, however, two of their players drafted would tear their ACLs before the season even began (JK Dobbins and Gus Edwards). Because of these injuries, The Dictator would struggle
+					early on but after many favorable trades, they would add Keenan Allen, Jalen Hurts, and Nick Chubb to their squad. This new look helped The Dictator to win three straight games at the end
+					of the regular season and would allow them to sneak into a playoff spot for the first time since 2018. In the playoffs, they would sneak by the Maryland Marijuanas as Alvin Kamara got just enough
+					points on Monday Night Football to punch The Dictator's ticket into their first championship game since 2017. They would eventually lose this game and fall just short of reclaiming what
+					was assumed to be rightfully theirs.
+				</p>
 		</article>
-	</section>
+			</section>
 
-	<script>
-		window.onscroll = function() {myFunction()};
+			<script>
+				window.onscroll = function() {myFunction()};
 
-		var navbar = document.getElementsByClassName("topnav").item(0);
-		var sticky = navbar.offsetTop;
+				var navbar = document.getElementsByClassName("topnav").item(0);
+				var sticky = navbar.offsetTop;
 
-		function myFunction() {
-		if (window.pageYOffset >= sticky) {
-		navbar.classList.add("sticky")
-		} else {
-		navbar.classList.remove("sticky");
-		}
-		}
-	</script>
+				var myVideo = document.getElementById("video1"); 
 
-	<footer>
-		<p><a href="./index.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
-	</footer>
+				function playPause() { 
+				  if (myVideo.paused) 
+					myVideo.play(); 
+				  else 
+					myVideo.pause(); 
+				} 
+
+				function myFunction() {
+				if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+				} else {
+				navbar.classList.remove("sticky");
+				}
+				}
+			</script>
+
+			<footer>
+				<p><a href="./index.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
+			</footer>
 
 
-	</p>
+			</p>
 
 </body>

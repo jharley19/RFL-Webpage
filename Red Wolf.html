@@ -4,167 +4,7 @@
     <title>Goofy God</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        /* Style the header */
-        header {
-            background-color: black;
-        }
-
-        /* Create two columns/boxes that floats next to each other */
-        #nav {
-            float: left;
-            width: 20%;
-            background: #ccc;
-            padding: 20px;
-        }
-
-            /* Style the list inside the menu */
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
-
-        #article {
-            float: left;
-            padding: 20px;
-            width: 80%;
-            background-color: #f1f1f1;
-        }
-
-        /* Clear floats after the columns */
-        section::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Style the footer */
-        footer {
-            background-color: midnightblue;
-            padding: 10px;
-            text-align: center;
-            color: white;
-        }
-
-
-        /* Style the top navigation bar */
-        .topnav {
-            background-color: #333;
-            min-height: 48px;
-        }
-
-            /* Style the topnav links */
-            .topnav a {
-                float: left;
-                display: block;
-                color: #f2f2f2;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-
-                /* Change color on hover */
-                .topnav a:hover {
-                    background-color: red;
-                    color: black;
-                }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: black;
-        }
-
-        li {
-            float: left;
-        }
-
-        .top-left {
-            position: absolute;
-            top: 16px;
-            left: 225px;
-            text-align: left;
-            color: white;
-        }
-
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
-            .dropdown .dropbtn {
-                font-size: 16px;
-                border: none;
-                outline: none;
-                color: white;
-                padding: 14px 16px;
-                background-color: black;
-                font-family: inherit;
-                margin: 0;
-            }
-
-            .navbar a:hover, .dropdown:hover .dropbtn {
-                background-color: red;
-            }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-            .dropdown-content a {
-                float: none;
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-                text-align: left;
-            }
-
-                .dropdown-content a:hover {
-                    background-color: #ddd;
-                }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        @media only screen and (max-width: 800px) {
-            /* For mobile phones: */
-            #nav {
-                text-align: center;
-                width: 100%;
-            }
-
-            #article, .footer {
-                width: 100%;
-            }
-        }
-
-        .sticky {
-            position: fixed;
-            top: 0;
-            width: 99%;
-        }
-
-            .sticky + .article {
-                padding-top: 60px;
-            }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -172,180 +12,180 @@
         <div class="container">
             <img src=".\jason background.png" width="100%" />
 
-         <!--<div class="top-left">
-                 <h1 style="font-size:30px;">Goofy God</h1>
-                 5th place
-                 <br />7-9
-        </div>-->
+            <!--<div class="top-left">
+                     <h1 style="font-size:30px;">Goofy God</h1>
+                     10th place
+                     <br />6-10 -->
+            </div>
 
-    </header>
-    <div class="topnav">
-        <ul>
-            <li><a href=".\index.html">Home</a></li>
-            <li><a target="_blank" href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
-            <li><a target="_blank" href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Teams</a>
-                <div class="dropdown-content">
-                    <a href="./Dictator.html"><img src=".\Prof Pic1.png" width="20px" /> The Dictator</a>
-                    <a href="./Red Army.html"><img src=".\brian logo.png" width="20px" /> The Red Army</a>
-                    <a href="./Big Ounce.html"><img src=".\big ounce logo.png" width="20px" /> Big Ounce</a>
-                    <a href="./Gruden's Plan.html"><img src=".\gruden logo.png" width="20px" /> Gruden's Plan</a>
-                    <a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
-                    <a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Hurts Helicopter</a>
-                    <a href="./Red Wolf.html"><img src=".\jason logo.png" width="20px" /> Goofy God</a>
-                    <a href="./Mullet Man.html"><img src=".\Mullet Logo.jpg" width="20px" /> Mullet Man</a>
-                    <a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" /> Sleepy Nick</a>
-                    <a href="./Wack Attacks.html"><img src=".\zach logo.jpg" width="20px" /> Wack Attacks</a>
-                </div>
-            </li>
-            <li>
-                <a href="./Past Teams.html">Former Teams</a>
-            </li>
-            <li>
-                <a href="./draft.html">Drafts</a>
-            </li>
+        </header>
+        <div class="topnav">
+            <ul>
+                <li><a href=".\index.html">Home</a></li>
+                <li><a target="_blank" href="https://fantasy.nfl.com/league/4294191">League Home</a></li>
+                <li><a target="_blank" href="https://docs.google.com/document/d/1Ordo6iEAwmNMPma8bL7XhKjpG39hDVXmTds-g_Evo_Y/edit?usp=sharing">Constitution</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Teams</a>
+                    <div class="dropdown-content">
+                        <a href="./Dictator.html"><img src=".\Prof Pic1.png" width="20px" /> The Dictator</a>
+                        <a href="./Red Army.html"><img src=".\brian logo.png" width="20px" /> The Red Army</a>
+                        <a href="./Big Ounce.html"><img src=".\big ounce logo.png" width="20px" /> Big Ounce</a>
+                        <a href="./Gruden's Plan.html"><img src=".\gruden logo.png" width="20px" /> Gruden's Plan</a>
+                        <a href="./Maryland Marijuanas.html"><img src=".\weed logo.jpg" width="20px" /> Maryland Marijuanas</a>
+                        <a href="./Wentz Wagon.html"><img src=".\wentz logo.png" width="20px" /> The Hurts Helicopter</a>
+                        <a href="./Red Wolf.html"><img src=".\jason logo.png" width="20px" /> Goofy God</a>
+                        <a href="./Mullet Man.html"><img src=".\Mullet Logo.png" width="20px" /> Mullet Man</a>
+                        <a href="./Sleepy Nick.html"><img src=".\nick logo.png" width="20px" /> Sleepy Nick</a>
+                        <a href="./Wack Attacks.html"><img src=".\zach logo.jpg" width="20px" /> Wack Attacks</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="./Past Teams.html">Former Teams</a>
+                </li>
+                <li>
+                    <a href="./draft.html">Drafts</a>
+                </li>
 
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Team Videos</a>
-                <div class="dropdown-content">
-                    <a href="https://youtu.be/P7_FmVH7S04">Jason sweeps The Dictator in 2019</a>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Team Videos</a>
+                    <div class="dropdown-content">
+                        <a href="https://youtu.be/P7_FmVH7S04">Jason sweeps The Dictator in 2019</a>
 
-                    <a href="https://youtu.be/6bHGWW_3DP0">Fear The Many Faced God</a>
+                        <a href="https://youtu.be/6bHGWW_3DP0">Fear The Many Faced God</a>
 
-                    <a href="https://youtu.be/djZ-xDCc-4o">Jason's 2020 Fantasy Team Annoucement</a>
-                </div>
-            </li>
-
-
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">League Videos</a>
-                <div class="dropdown-content">
-                    <a href="https://youtu.be/I5AjigexrEU">2021 RFL Draft</a>
-                    <a href="https://youtu.be/hTfTKxbhBHc">Announcing Our 10th and Final RFL Member For 2021!</a>
-                    <a href="https://youtu.be/89NbZ0oGmTQ">2021 State of the League Address</a>
-                    <a href="https://youtu.be/oua0MqRtpLg">The Red Army's 2020 Punishment</a>
-                    <a href="https://youtu.be/5dfQiQEzpYM">2020 Waterbets</a>
-                    <a href="https://youtu.be/_btkqdhmESU">2020 Exit Interviews</a>
-                    <a href="https://youtu.be/Ap3etxqNsV4">Our 2020 Draft</a>
-                    <a href="https://youtu.be/gpnV7FCJTdg">Draft Day 2020 Hype Video</a>
-                    <a href="https://www.youtube.com/watch?v=801p3bd-SEk">2019 Exit Interviews</a>
-                    <a href="https://youtu.be/i6lJSjG6js8">Our 2019 Draft</a>
-                    <a href="https://youtu.be/YFUnB669-rE">2019 Commish Annoucement</a>
-                </div>
-            </li>
-            <li>
-                <a href="./standings.html">Standings</a>
-            </li>
-            <li>
-                <a href="./records.html">Records</a>
-            </li>
-            <li>
-                <a href="./Hall of Fame.html">Hall of Fame</a>
-            </li>
-            <li>
-                <a href="./Mock Draft.html">Mock Draft</a>
-            </li>
-        </ul>
-    </div>
-    <section>
-        <nav id="nav">
-
-            <h3>Roster</h3>
-
-            <p>
-                QB: Lamar Jackson
-                <br />RB: James Conner
-                <br />RB: Tony Pollard
-                <br />WR: Tyler Boyd
-                <br />WR: Kendrick Bourne
-                <br />TE: Mark Andrews
-                <br />FLEX: Mike Davis
-                <br />FLEX: Marquez Callaway
-                <br />DST: Green Bay Packers
-                <br />BN: Tyler Huntley
-                <br />BN: Justin Jackson
-                <br />BN: Jordan Howard
-                <br />BN: Dare Ogunbowale
-                <br />BN: Allen Lazard
-                <br />BN: Tennesse Titans
-                <br />RES: Carson Wentz
-                <br />RES: Tim Patrick
+                        <a href="https://youtu.be/djZ-xDCc-4o">Jason's 2020 Fantasy Team Annoucement</a>
+                    </div>
+                </li>
 
 
-            </p>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">League Videos</a>
+                    <div class="dropdown-content">
+                        <a href="https://youtu.be/I5AjigexrEU">2021 RFL Draft</a>
+                        <a href="https://youtu.be/hTfTKxbhBHc">Announcing Our 10th and Final RFL Member For 2021!</a>
+                        <a href="https://youtu.be/89NbZ0oGmTQ">2021 State of the League Address</a>
+                        <a href="https://youtu.be/oua0MqRtpLg">The Red Army's 2020 Punishment</a>
+                        <a href="https://youtu.be/5dfQiQEzpYM">2020 Waterbets</a>
+                        <a href="https://youtu.be/_btkqdhmESU">2020 Exit Interviews</a>
+                        <a href="https://youtu.be/Ap3etxqNsV4">Our 2020 Draft</a>
+                        <a href="https://youtu.be/gpnV7FCJTdg">Draft Day 2020 Hype Video</a>
+                        <a href="https://www.youtube.com/watch?v=801p3bd-SEk">2019 Exit Interviews</a>
+                        <a href="https://youtu.be/i6lJSjG6js8">Our 2019 Draft</a>
+                        <a href="https://youtu.be/YFUnB669-rE">2019 Commish Annoucement</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="./standings1.html">Standings</a>
+                </li>
+                <li>
+                    <a href="./records.html">Records</a>
+                </li>
+                <li>
+                    <a href="./Hall of Fame.html">Hall of Fame</a>
+                </li>
+                <li>
+                    <a href="./Mock Draft.html">Mock Draft</a>
+                </li>
+            </ul>
+        </div>
+        <section>
+            <nav id="nav">
 
-        </nav>
+                <h3>Roster</h3>
 
-        <article id="article">
-            <h1>Basic Information</h1>
-            <p>
-
-                <strong>Owner: </strong> Jason Rowland
-                <br />	<strong>Co-Manager: </strong>N/A
-                <br /> <strong>Year joined: </strong>2018
-
-            <p>
-                <strong>Former Co-Managers: </strong>N/A
-                <br /> <strong>Former Team Names:</strong> High Quality H2O (2018), The Many Faced God (2019), The Red Wolf of Wall Street (2020)
-            <p>
-                <strong>Championships:</strong> N/A
-                <br /><strong>Other Awards: </strong>2021 Last Place, 2021 Worst Draft, 2020 First Overall Pick Winner
-            <p>
-                <strong>Career Record: </strong>32-32
-                <br /><strong>Career Winning Percentage: </strong>50%
-                <br /><strong>Playoff Percentage: </strong>50%
-                <br /><strong>Finshes: </strong>4th, 4th, 5th, 10th
-            </p>
-
-            <h1>Biography</h1>
-            <p>
-                The Goofy God entered the league in 2018 and was a force to be reckoned with from the start. In their first season, they would make the playoffs
-                in third place at 10-4 thanks in large part to a five-game winning streak to end the season. Coming in hot in the playoffs, their winning streak would
-                come to screeching halt as they put up only 58.86 points losing to the eventual champion Big Ounce. They would lose again in the third-place game to finish
-                in fourth place.
-            <p>
-                Now going into the 2019 season, The Goofy God decided to keep stud running back, Saquon Barkley, looking to improve from last year's fourth place
-                performance. This season was very similar to their previous one as they struggled at first but would finish the year in third place at 9-5 thanks to now a six-game
-                winning streak to end the season. Now in the playoffs, the Goofy God looked to keep their streak alive and win their first playoff game. This
-                time they narrowly lost to The Maryland Marijuanas and then lost again in third place game to finish in fourth place for the second straight season.
-            <p>
-                Coming into the 2020 season, Goofy God was painted as the Marvin Lewis of the league in that they could always make the playoffs but could
-                never win a game. The Goofy God then contemplated quitting, but after illegally consuming some alcohol, he decided that he was "not fucking leaving."
-                To accompany this new culture, they changed their name to "The Red Wolf of Wall Street." The good news is this culture change allowed The Goofy God
-                to finally get a different result, but not a better one. Their top draft picks were riddled with injuries and their team struggled throughout the season. They
-                narrowly escaped the Panzerkampfwagen Bowl at 5-9 and finished the regular season in 7th place. This time in the postseason, the Goofy God
-                shined, and they would go on to claim the first overall pick for the 2021 season.
-            </p>
-            <p>
-                Entering the 2021 season, the Goofy God wanted another new look. However, this time they wanted a name and a brand that would stand the test of time. After some heavy contemplation
-                in the Buffalo Wild Wings parking lot at 1 o'clock in the morning following the season opening Hall of Fame game, they would land on a new team name: "Goofy God." This new name 
-                not only is representative of him denying a bad bitch because she is "too goofy", but also incorporates his favorite rap artist Eminem, since Eminem refers to himself as the "Rap God."
-                A third meaning in the name is seen in its initials: "GG," as the Goofy God is notorious for always saying "GG" in the group chat before the game is even over. 
-            </p>
-        </article>
-    </section>
-
-    <script>
-        window.onscroll = function() {myFunction()};
-
-        var navbar = document.getElementsByClassName("topnav").item(0);
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-        if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-        } else {
-        navbar.classList.remove("sticky");
-        }
-        }
-    </script>
-
-    <footer>
-        <p><a href="./index.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
-    </footer>
+                <p>
+                    QB: Lamar Jackson
+                    <br />RB: James Conner
+                    <br />RB: Tony Pollard
+                    <br />WR: Tyler Boyd
+                    <br />WR: Kendrick Bourne
+                    <br />TE: Mark Andrews
+                    <br />FLEX: Mike Davis
+                    <br />FLEX: Marquez Callaway
+                    <br />DST: Green Bay Packers
+                    <br />BN: Tyler Huntley
+                    <br />BN: Justin Jackson
+                    <br />BN: Jordan Howard
+                    <br />BN: Dare Ogunbowale
+                    <br />BN: Allen Lazard
+                    <br />BN: Tennesse Titans
+                    <br />RES: Carson Wentz
+                    <br />RES: Tim Patrick
 
 
-    </p>
+                </p>
 
-</body>
+            </nav>
+
+            <article id="article">
+                <h1>Basic Information</h1>
+                <p>
+
+                    <strong>Owner: </strong> Jason Rowland
+                    <br />	<strong>Co-Manager: </strong>N/A
+                    <br /> <strong>Year joined: </strong>2018
+
+                <p>
+                    <strong>Former Co-Managers: </strong>N/A
+                    <br /> <strong>Former Team Names:</strong> High Quality H2O (2018), The Many Faced God (2019), The Red Wolf of Wall Street (2020)
+                <p>
+                    <strong>Championships:</strong> N/A
+                    <br /><strong>Other Awards: </strong>2021 Last Place, 2021 Worst Draft, 2020 First Overall Pick Winner
+                <p>
+                    <strong>Career Record: </strong>32-32
+                    <br /><strong>Career Winning Percentage: </strong>50%
+                    <br /><strong>Playoff Percentage: </strong>50%
+                    <br /><strong>Finshes: </strong>4th, 4th, 5th, 10th
+                </p>
+
+                <h1>Biography</h1>
+                <p>
+                    The Goofy God entered the league in 2018 and was a force to be reckoned with from the start. In their first season, they would make the playoffs
+                    in third place at 10-4 thanks in large part to a five-game winning streak to end the season. Coming in hot in the playoffs, their winning streak would
+                    come to screeching halt as they put up only 58.86 points losing to the eventual champion Big Ounce. They would lose again in the third-place game to finish
+                    in fourth place.
+                <p>
+                    Now going into the 2019 season, The Goofy God decided to keep stud running back, Saquon Barkley, looking to improve from last year's fourth place
+                    performance. This season was very similar to their previous one as they struggled at first but would finish the year in third place at 9-5 thanks to now a six-game
+                    winning streak to end the season. Now in the playoffs, the Goofy God looked to keep their streak alive and win their first playoff game. This
+                    time they narrowly lost to The Maryland Marijuanas and then lost again in third place game to finish in fourth place for the second straight season.
+                <p>
+                    Coming into the 2020 season, Goofy God was painted as the Marvin Lewis of the league in that they could always make the playoffs but could
+                    never win a game. The Goofy God then contemplated quitting, but after illegally consuming some alcohol, he decided that he was "not fucking leaving."
+                    To accompany this new culture, they changed their name to "The Red Wolf of Wall Street." The good news is this culture change allowed The Goofy God
+                    to finally get a different result, but not a better one. Their top draft picks were riddled with injuries and their team struggled throughout the season. They
+                    narrowly escaped the Panzerkampfwagen Bowl at 5-9 and finished the regular season in 7th place. This time in the postseason, the Goofy God
+                    shined, and they would go on to claim the first overall pick for the 2021 season.
+                </p>
+                <p>
+                    Entering the 2021 season, the Goofy God wanted another new look. However, this time they wanted a name and a brand that would stand the test of time. After some heavy contemplation
+                    in the Buffalo Wild Wings parking lot at 1 o'clock in the morning following the season opening Hall of Fame game, they would land on a new team name: "Goofy God." This new name
+                    not only is representative of him denying a bad bitch because she is "too goofy", but also incorporates his favorite rap artist Eminem, since Eminem refers to himself as the "Rap God."
+                    A third meaning in the name is seen in its initials: "GG," as the Goofy God is notorious for always saying "GG" in the group chat before the game is even over.
+                </p>
+            </article>
+        </section>
+
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var navbar = document.getElementsByClassName("topnav").item(0);
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+            if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+            } else {
+            navbar.classList.remove("sticky");
+            }
+            }
+        </script>
+
+        <footer>
+            <p><a href="./index.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
+        </footer>
+
+
+        </p>
+
+    </body>
