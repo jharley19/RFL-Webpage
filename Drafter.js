@@ -442,37 +442,48 @@ var json = {"status": "Success", "meta": {"type": "PPR", "teams": 10, "rounds": 
 					
 					let removedName = document.getElementById(curr).value;
 					var removedObj; 
+					var teamNumber;
 					
 					if(team1.some(x=> x.name == removedName)){
 						removedObj = team1.find(x=> x == removedName);
 						team1 = team1.filter( x => x.name != removedName);
+						teamNumber = 1;
 					} else if(team2.some(x=> x.name== removedName)){
 						removedObj = team2.find(x => x.name == removedName);
 						team2 = team2.filter( x => x.name != removedName);
+						teamNumber = 2;
 					} else if(team3.some(x=> x.name == removedName)){
 						removedObj = team3.find(x => x.name == removedName);
 						team3 = team3.filter( x => x.name != removedName);
+						teamNumber = 3;
 					} else if(team4.some(x=> x.name == removedName)){
 						removedObj = team4.find(x => x.name == removedName);
 						team4 = team4.filter( x => x.name != removedName);
+						teamNumber = 4;
 					} else if(team5.some(x=> x.name == removedName)){
 						removedObj = team5.find(x => x.name == removedName);
 						team5 = team5.filter( x => x.name != removedName);
+						teamNumber = 5;
 					} else if(team6.some(x=> x.name == removedName)){
 						removedObj = team6.find(x => x.name == removedName);
 						team6 = team6.filter( x => x.name != removedName);
+						teamNumber = 6;
 					} else if(team7.some(x=> x.name == removedName)){
 						removedObj = team7.find(x => x.name == removedName);
 						team7 = team7.filter( x => x.name != removedName);
+						teamNumber = 7;
 					} else if(team8.some(x=> x.name == removedName)){
 						removedObj = team8.find(x => x.name == removedName);
 						team8 = team8.filter( x => x.name != removedName);
+						teamNumber = 8;
 					} else if(team9.some(x=> x.name == removedName)){
 						removedObj = team9.find(x => x.name == removedName);
 						team9 = team9.filter( x => x.name != removedName);
+						teamNumber = 9;
 					} else if(team10.some(x=> x.name == removedName)){
 						removedObj = team10.find(x => x.name == removedName);
 						team10 = team10.filter( x => x.name != removedName);
+						teamNumber = 10;
 					} 
 				
 					if (removedObj.pos == "QB"){
@@ -496,9 +507,16 @@ var json = {"status": "Success", "meta": {"type": "PPR", "teams": 10, "rounds": 
 						flex.push(removedObj);
 					}
 
+					if(teamNumber == myteam){
+						//removedObj = team10.find(x => x.name == removedName);
+						drafters[myteam-1] = drafters[myteam-1].filter( x => x.name != removedName);
+					}
+					
+
 					document.getElementById(curr).innerText = removedObj.draftedAt;
 					document.getElementById(curr).value = removedObj.draftedAt;
-					updateADP();
+					sortPlayers();
+					displayRoster();
 					chooseDisplay();
 					
 				}
@@ -664,13 +682,7 @@ var json = {"status": "Success", "meta": {"type": "PPR", "teams": 10, "rounds": 
 
 		if(!draftStarted){
 			updateADP();
-			players.sort(function(a, b){return a.adp - b.adp});
-			qbs.sort(function(a, b){return a.adp - b.adp});
-			rbs.sort(function(a, b){return a.adp - b.adp});
-			wrs.sort(function(a, b){return a.adp - b.adp});
-			tes.sort(function(a, b){return a.adp - b.adp});
-			flex.sort(function(a, b){return a.adp - b.adp});
-			dst.sort(function(a, b){return a.adp - b.adp});
+			sortPlayers();
 			updateBye();
 		}
 		let select = "<button id='all' onclick='displayAll()'>ALL</button><button id='qb' onclick='displayQB()'>QB</button>";
@@ -1059,7 +1071,12 @@ var json = {"status": "Success", "meta": {"type": "PPR", "teams": 10, "rounds": 
 
 				if(autoset){
 					picked.draftedAt = autocurrspot;
-					if(team1Picks.some(x=> x  == autocurrspot)){
+					
+					if(drafterPicks[myteam-1].some(x=> x == autocurrspot)){
+						drafters[myteam-1].push(picked);
+						displayRoster();
+					}
+					else if(team1Picks.some(x=> x  == autocurrspot)){
 						team1.push(picked);
 					} else if(team2Picks.some(x=> x == autocurrspot)){
 						team2.push(picked);
@@ -1081,6 +1098,7 @@ var json = {"status": "Success", "meta": {"type": "PPR", "teams": 10, "rounds": 
 						team10.push(picked);
 					} 
 
+					
 					
 					document.getElementById(autocurrspot).innerHTML =  draftedPlayer;
 					document.getElementById(autocurrspot).value =  draftedPlayer;
@@ -1192,6 +1210,7 @@ var json = {"status": "Success", "meta": {"type": "PPR", "teams": 10, "rounds": 
 					drafting();
 				} else {
 					autoset =false;
+					
 					chooseDisplay();
 				}
 			}
@@ -1713,6 +1732,16 @@ var json = {"status": "Success", "meta": {"type": "PPR", "teams": 10, "rounds": 
 						p1.bye = 14;
 					}
 			}
+		}
+
+		function sortPlayers(){
+			players.sort(function(a, b){return a.adp - b.adp});
+			qbs.sort(function(a, b){return a.adp - b.adp});
+			rbs.sort(function(a, b){return a.adp - b.adp});
+			wrs.sort(function(a, b){return a.adp - b.adp});
+			tes.sort(function(a, b){return a.adp - b.adp});
+			flex.sort(function(a, b){return a.adp - b.adp});
+			dst.sort(function(a, b){return a.adp - b.adp});
 		}
 		
 
