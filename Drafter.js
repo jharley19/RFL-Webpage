@@ -443,8 +443,9 @@ var json = {"status": "Success", "meta": {"type": "PPR", "teams": 10, "rounds": 
 					var removedObj; 
 					var teamNumber;
 					
-					if(team1.some(x=> x.name == removedName)){
-						removedObj = team1.find(x=> x == removedName);
+					
+					if(team1.some(x=> x.name == removedName)){		
+						removedObj = team1.find(x=> x.name == removedName);
 						team1 = team1.filter( x => x.name != removedName);
 						teamNumber = 1;
 					} else if(team2.some(x=> x.name== removedName)){
