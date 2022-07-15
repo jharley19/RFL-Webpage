@@ -298,7 +298,7 @@ var json = {"status": "Success", "meta": {"type": "PPR", "teams": 10, "rounds": 
 	baiyuk,juju,dhop,mt,hrenfrow,gpickens,gdavis,arob,bcooks,jdot,cclay,ktoney,ckirk,tlock,mgallup,dbell,athielen,apierce,jmetch,rmoore,
 	rwoods,wrob,jtol,alaz,jmeyers,dchark,rgage,tboyd,kennyg,mhard,kshakir,lshen,obj,tthor,dpj,mvs,jland,vjeff,kjo,ncoll,tpat,
 	jpalm,dpark,csam,jcrow,rander,kpitt,mandrews,tkelce,gkittle,dwaller,thock,dschultz,dgoedert,muth,dknox,mgesicki,nfant,ckmet,zertz,tmcbride,alo,ismith,hhenry,
-	dnjoku,jwoods,thigbee,eengram,rgronk,rtonyan,brev,gdulc,gever,hhurst,lthomas,ahoop,atraut,ttrem,cju,jsmith,macox,dpar,hbryant,
+	dnjoku,jwoods,thigbee,eengram,rtonyan,brev,gdulc,gever,hhurst,lthomas,ahoop,atraut,ttrem,cju,jsmith,macox,dpar,hbryant,
 	buf,lar,sf,dal,lac,pit,tb,ne,no,bal,ind,gb,den,phi,cin,ten,wsh,cle,kc,mia,az,lv,sea,min,car,nyg,nyj,jac,hou,det,chi,atl];
 
 	let qbs = [mahomes, jallen, rodgers, lamar, dak, herbert, kyler, brady, hurts, 
@@ -320,7 +320,7 @@ var json = {"status": "Success", "meta": {"type": "PPR", "teams": 10, "rounds": 
 	jpalm,dpark,csam,jcrow,rander];
 
 	let tes = [kpitt,mandrews,tkelce,gkittle,dwaller,thock,dschultz,dgoedert,muth,dknox,mgesicki,nfant,ckmet,zertz,tmcbride,alo,ismith,hhenry,
-	dnjoku,jwoods,thigbee,eengram,rgronk,rtonyan,brev,gdulc,gever,hhurst,lthomas,ahoop,atraut,ttrem,cju,jsmith,macox,dpar,hbryant];
+	dnjoku,jwoods,thigbee,eengram,rtonyan,brev,gdulc,gever,hhurst,lthomas,ahoop,atraut,ttrem,cju,jsmith,macox,dpar,hbryant];
 
 	let flex = [jt,najee,javonte, cmc, swift, ekeler,breece,mixon,dalvin,henry,kamara,chubb,saquon,gibson,akers,walker,dobbins,
 	etienne,dmont,ajones,jacobs,fournette,zeke,mitchell,conner,dillon,jamescook,ceh,dharris,miles,pollard,pierce,hunt,rawhite,
@@ -331,7 +331,7 @@ var json = {"status": "Success", "meta": {"type": "PPR", "teams": 10, "rounds": 
 	baiyuk,juju,dhop,mt,hrenfrow,gpickens,gdavis,arob,bcooks,jdot,cclay,ktoney,ckirk,tlock,mgallup,dbell,athielen,apierce,jmetch,rmoore,
 	rwoods,wrob,jtol,alaz,jmeyers,dchark,rgage,tboyd,kennyg,mhard,kshakir,lshen,obj,tthor,dpj,mvs,jland,vjeff,kjo,ncoll,tpat,
 	jpalm,dpark,csam,jcrow,rander,kpitt,mandrews,tkelce,gkittle,dwaller,thock,dschultz,dgoedert,muth,dknox,mgesicki,nfant,ckmet,zertz,tmcbride,alo,ismith,hhenry,
-	dnjoku,jwoods,thigbee,eengram,rgronk,rtonyan,brev,gdulc,gever,hhurst,lthomas,ahoop,atraut,ttrem,cju,jsmith,macox,dpar,hbryant];
+	dnjoku,jwoods,thigbee,eengram,rtonyan,brev,gdulc,gever,hhurst,lthomas,ahoop,atraut,ttrem,cju,jsmith,macox,dpar,hbryant];
 
 	let dst = [buf,lar,sf,dal,lac,pit,tb,ne,no,bal,ind,gb,den,phi,cin,ten,wsh,cle,kc,mia,az,lv,sea,min,car,nyg,nyj,jac,hou,det,chi,atl];
 	
