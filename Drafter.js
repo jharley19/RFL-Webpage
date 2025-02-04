@@ -142,6 +142,7 @@ var json = {"status": "Success", "meta": {"type": "Half-PPR", "teams": 10, "roun
 	let ncoll = { name:"Nico Collins", pos: "WR", team: "Texans", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
 	let jpalm = { name:"Joshua Palmer", pos: "WR", team: "Chargers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
 	let rrice = { name:"Rashee Rice", pos: "WR", team: "Chiefs", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
+	let doubs = { name:"Romeo Doubs", pos: "WR", team: "Packers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
 	
 	let kpitt = { name:"Kyle Pitts", pos: "TE", team: "Falcons", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
 	let mandrews = { name:"Mark Andrews", pos: "TE", team: "Ravens", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
