@@ -206,7 +206,7 @@ var json = {"status": "Success", "meta": {"type": "Half-PPR", "teams": 10, "roun
 		darnold,geno,tyrod,dalton,
 		purdy,stroud,byoung,jt,najee,javonte,cmc,swift,ekeler,breece,mixon,henry,kamara,chubb,saquon,gibson,akers,walker,dobbins,
 		etienne,dmont,ajones,jacobs,mitchell,conner,dillon,jamescook,ceh,miles,pollard,pierce,hunt,rawhite,
-		singletary,rhamondre,cordarrelle,allgeier,bijan,mattison,gibbs,brob,chuba,tank,
+		singletary,rhamondre,allgeier,bijan,mattison,gibbs,brob,chuba,tank,
 		khalil,gainwell,kyren,kendre,gus,achane,mostert,charbonnet,
 		pacheco,chase,jjeff,kupp,lamb,ajb,deebo,tae,waddle,diggs,tyreek,dk,tee,london,diontae,moore,burks,pittman,tmclaurin,gwilson,
 		cgodwin,jjeudy,mevans,dsmith,colave,kallen,jameson,emoore,mbrown,amonra,acooper,rbateman,cwatson,dmooney,mwilly,csutton,
@@ -223,7 +223,7 @@ var json = {"status": "Success", "meta": {"type": "Half-PPR", "teams": 10, "roun
 
 	let rbs = [jt,najee,javonte,cmc,swift,ekeler,breece,mixon,henry,kamara,chubb,saquon,gibson,akers,walker,dobbins,
 	etienne,dmont,ajones,jacobs,mitchell,conner,dillon,jamescook,ceh,miles,pollard,pierce,hunt,rawhite,
-	singletary,rhamondre,cordarrelle,allgeier,bijan,mattison,gibbs,brob,chuba,tank,
+	singletary,rhamondre,allgeier,bijan,mattison,gibbs,brob,chuba,tank,
 	khalil,gainwell,kyren,kendre,gus,achane,mostert,charbonnet,
 	pacheco];
 
@@ -238,7 +238,7 @@ var json = {"status": "Success", "meta": {"type": "Half-PPR", "teams": 10, "roun
 
 	let flex = [jt,najee,javonte,cmc,swift,ekeler,breece,mixon,henry,kamara,chubb,saquon,gibson,akers,walker,dobbins,
 		etienne,dmont,ajones,jacobs,mitchell,conner,dillon,jamescook,ceh,miles,pollard,pierce,hunt,rawhite,
-		singletary,rhamondre,cordarrelle,allgeier,bijan,mattison,gibbs,brob,chuba,tank,
+		singletary,rhamondre,allgeier,bijan,mattison,gibbs,brob,chuba,tank,
 		khalil,gainwell,kyren,kendre,gus,achane,mostert,charbonnet,
 		pacheco,chase,jjeff,kupp,lamb,ajb,deebo,tae,waddle,diggs,tyreek,dk,tee,london,diontae,moore,burks,pittman,tmclaurin,gwilson,
 		cgodwin,jjeudy,mevans,dsmith,colave,kallen,jameson,emoore,mbrown,amonra,acooper,rbateman,cwatson,dmooney,mwilly,csutton,
