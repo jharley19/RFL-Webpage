@@ -210,8 +210,8 @@ var json = {"status": "Success", "meta": {"type": "Half-PPR", "teams": 10, "roun
 		khalil,gainwell,kyren,kendre,gus,achane,mostert,charbonnet,
 		pacheco,chase,jjeff,kupp,lamb,ajb,deebo,tae,waddle,diggs,tyreek,dk,tee,london,diontae,moore,burks,pittman,tmclaurin,gwilson,
 		cgodwin,jjeudy,mevans,dsmith,colave,kallen,jameson,emoore,mbrown,amonra,acooper,rbateman,cwatson,dmooney,mwilly,csutton,
-		baiyuk,juju,dhop,gpickens,gdavis,arob,bcooks,ckirk,tlock,athielen,apierce,jmetch,rmoore,
-		rwoods,wrob,jtol,alaz,jmeyers,tboyd,kshakir,ncoll,
+		baiyuk,juju,dhop,gpickens,gdavis,bcooks,ckirk,tlock,athielen,apierce,jmetch,rmoore,
+		wrob,jtol,alaz,jmeyers,tboyd,kshakir,ncoll,
 		jpalm,jsn,jaddy,qj,zflow,rrice,doubs,kpitt,mandrews,tkelce,gkittle,dwaller,thock,dschultz,dgoedert,muth,dknox,mgesicki,nfant,ckmet,zertz,tmcbride,hhenry,
 		dnjoku,thigbee,eengram,gdulc,jsmith,kincaid,laporta,mayer,
 	buf,lar,sf,dal,lac,pit,tb,ne,no,bal,ind,gb,den,phi,cin,ten,wsh,cle,kc,mia,az,lv,sea,min,car,nyg,nyj,jac,hou,det,chi,atl];
@@ -229,8 +229,8 @@ var json = {"status": "Success", "meta": {"type": "Half-PPR", "teams": 10, "roun
 
 	let wrs = [chase,jjeff,kupp,lamb,ajb,deebo,tae,waddle,diggs,tyreek,dk,tee,london,diontae,moore,burks,pittman,tmclaurin,gwilson,
 	cgodwin,jjeudy,mevans,dsmith,colave,kallen,jameson,emoore,mbrown,amonra,acooper,rbateman,cwatson,dmooney,mwilly,csutton,
-	baiyuk,juju,dhop,gpickens,gdavis,arob,bcooks,ckirk,tlock,athielen,apierce,jmetch,rmoore,
-	rwoods,wrob,jtol,alaz,jmeyers,tboyd,kshakir,ncoll,
+	baiyuk,juju,dhop,gpickens,gdavis,bcooks,ckirk,tlock,athielen,apierce,jmetch,rmoore,
+	wrob,jtol,alaz,jmeyers,tboyd,kshakir,ncoll,
 	jpalm,jsn,jaddy,qj,zflow,rrice,doubs];
 
 	let tes = [kpitt,mandrews,tkelce,gkittle,dwaller,thock,dschultz,dgoedert,muth,dknox,mgesicki,nfant,ckmet,zertz,tmcbride,hhenry,
@@ -242,8 +242,8 @@ var json = {"status": "Success", "meta": {"type": "Half-PPR", "teams": 10, "roun
 		khalil,gainwell,kyren,kendre,gus,achane,mostert,charbonnet,
 		pacheco,chase,jjeff,kupp,lamb,ajb,deebo,tae,waddle,diggs,tyreek,dk,tee,london,diontae,moore,burks,pittman,tmclaurin,gwilson,
 		cgodwin,jjeudy,mevans,dsmith,colave,kallen,jameson,emoore,mbrown,amonra,acooper,rbateman,cwatson,dmooney,mwilly,csutton,
-		baiyuk,juju,dhop,gpickens,gdavis,arob,bcooks,ckirk,tlock,athielen,apierce,jmetch,rmoore,
-		rwoods,wrob,jtol,alaz,jmeyers,tboyd,kshakir,ncoll,
+		baiyuk,juju,dhop,gpickens,gdavis,bcooks,ckirk,tlock,athielen,apierce,jmetch,rmoore,
+		wrob,jtol,alaz,jmeyers,tboyd,kshakir,ncoll,
 		jpalm,jsn,jaddy,qj,zflow,rrice,doubs,kpitt,mandrews,tkelce,gkittle,dwaller,thock,dschultz,dgoedert,muth,dknox,mgesicki,nfant,ckmet,zertz,tmcbride,hhenry,
 		dnjoku,thigbee,eengram,gdulc,jsmith,kincaid,laporta,mayer];
 
