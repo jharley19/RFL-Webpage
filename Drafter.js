@@ -1,251 +1,44 @@
 
-	let mahomes = { name:"Patrick Mahomes", pos: "QB", team: "Chiefs", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let jallen = { name:"Josh Allen", pos: "QB", team: "Bills", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let rodgers = { name:"Aaron Rodgers", pos: "QB", team: "Jets", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let lamar = { name:"Lamar Jackson", pos: "QB", team: "Ravens", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let dak = { name:"Dak Prescott", pos: "QB", team: "Cowboys", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let herbert = { name:"Justin Herbert", pos: "QB", team: "Chargers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let kyler = { name:"Kyler Murray", pos: "QB", team: "Cardinals", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let arich = { name:"Anthony Richardson", pos: "QB", team: "Colts", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let hurts = { name:"Jalen Hurts", pos: "QB", team: "Eagles", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let burrow = { name:"Joe Burrow", pos: "QB", team: "Bengals", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let stafford = { name:"Matthew Stafford", pos: "QB", team: "Rams", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let byoung = { name:"Bryce Young", pos: "QB", team: "Panthers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let cousins = { name:"Kirk Cousins", pos: "QB", team: "Falcons", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let baker = { name:"Baker Mayfield", pos: "QB", team: "Buccaneers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let tlaw = { name:"Trevor Lawrence", pos: "QB", team: "Jaguars", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};	
-	let watson = { name:"Deshaun Watson", pos: "QB", team: "Browns", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let russell = { name:"Russell Wilson", pos: "QB", team: "Steelers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let fields = { name:"Justin Fields", pos: "QB", team: "Steelers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let carr = { name:"Derek Carr", pos: "QB", team: "Saints", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let tua = { name:"Tua Tagovailoa", pos: "QB", team: "Dolphins", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let stroud = { name:"C.J. Stroud", pos: "QB", team: "Texans", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let goff = { name:"Jared Goff", pos: "QB", team: "Lions", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let love = { name:"Jordan Love", pos: "QB", team: "Packers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let darnold = { name:"Sam Darnold", pos: "QB", team: "Vikings", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let geno = { name:"Geno Smith", pos: "QB", team: "Seahawks", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let tyrod = { name:"Tyrod Taylor", pos: "QB", team: "Jets", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let dalton = { name:"Andy Dalton", pos: "QB", team: "Panthers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let purdy = { name:"Brock Purdy", pos: "QB", team: "49ers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	
-	let jt = { name:"Jonathan Taylor", pos: "RB", team: "Colts", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let najee = { name:"Najee Harris", pos: "RB", team: "Steelers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let javonte = { name:"Javonte Williams", pos: "RB", team: "Broncos", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let cmc = { name:"Christian McCaffrey", pos: "RB", team: "49ers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let swift = { name:"D'Andre Swift", pos: "RB", team: "Bears", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let ekeler = { name:"Austin Ekeler", pos: "RB", team: "Commanders", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let breece = { name:"Breece Hall", pos: "RB", team: "Jets", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let mixon = { name:"Joe Mixon", pos: "RB", team: "Texans", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let henry = { name:"Derrick Henry", pos: "RB", team: "Ravens", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let kamara = { name:"Alvin Kamara", pos: "RB", team: "Saints", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let chubb = { name:"Nick Chubb", pos: "RB", team: "Browns", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let saquon = { name:"Saquon Barkley", pos: "RB", team: "Eagles", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let gibson = { name:"Antonio Gibson", pos: "RB", team: "Patriots", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let akers = { name:"Cam Akers", pos: "RB", team: "Vikings", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let walker = { name:"Kenneth Walker III", pos: "RB", team: "Seahawks", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let dobbins = { name:"J.K. Dobbins", pos: "RB", team: "Chargers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let etienne = { name:"Travis Etienne", pos: "RB", team: "Jaguars", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let dmont = { name:"David Montgomery", pos: "RB", team: "Lions", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let ajones = { name:"Aaron Jones", pos: "RB", team: "Vikings", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let jacobs = { name:"Josh Jacobs", pos: "RB", team: "Packers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let mitchell = { name:"Elijah Mitchell", pos: "RB", team: "49ers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let conner = { name:"James Conner", pos: "RB", team: "Cardinals", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let dillon = { name:"A.J. Dillon", pos: "RB", team: "Packers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let jamescook = { name:"James Cook", pos: "RB", team: "Bills", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let ceh = { name:"Clyde Edwards-Helaire", pos: "RB", team: "Chiefs", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let miles = { name:"Miles Sanders", pos: "RB", team: "Panthers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let pollard = { name:"Tony Pollard", pos: "RB", team: "Titans", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let pierce = { name:"Dameon Pierce", pos: "RB", team: "Texans", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let hunt = { name:"Kareem Hunt", pos: "RB", team: "Chiefs", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let rawhite = { name:"Rachaad White", pos: "RB", team: "Buccaneers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let singletary = { name:"Devin Singletary", pos: "RB", team: "Giants", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let rhamondre = { name:"Rhamondre Stevenson", pos: "RB", team: "Patriots", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let allgeier = { name:"Tyler Allgeier", pos: "RB", team: "Falcons", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let gibbs = { name:"Jahmyr Gibbs", pos: "RB", team: "Lions", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let mattison = { name:"Alexander Mattison", pos: "RB", team: "Raiders", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let pacheco = { name:"Isiah Pacheco", pos: "RB", team: "Chiefs", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let brob = { name:"Brian Robinson", pos: "RB", team: "Commanders", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let chuba = { name:"Chuba Hubbard", pos: "RB", team: "Panthers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let khalil = { name:"Khalil Herbert", pos: "RB", team: "Bears", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let gainwell = { name:"Kenneth Gainwell", pos: "RB", team: "Eagles", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let kyren = { name:"Kyren Williams", pos: "RB", team: "Rams", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let charbonnet = { name:"Zach Cahrbonnet", pos: "RB", team: "Texans", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let gus = { name:"Gus Edwards", pos: "RB", team: "Chargers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let achane = { name:"De'Von Achane", pos: "RB", team: "Dolphins", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let mostert = { name:"Raheem Mostert", pos: "RB", team: "Dolphins", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let kendre = { name:"Kendre Miller", pos: "RB", team: "Saints", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let tank = { name:"Tank Bigsby", pos: "RB", team: "Jaguars", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let jwar = { name:"Jaylen Warren", pos: "RB", team: "Steelers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let bijan = { name: "Bijan Robinson", pos: "RB", team: "Falcons", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00 };
+	let players = [];
+	let qbs = [];
+	let rbs = [];
+	let wrs = [];
+	let tes = [];
+	let flex = [];
+	let dst = [];
 
-	let chase = { name:"Ja'Marr Chase", pos: "WR", team: "Bengals", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let jjeff = { name:"Justin Jefferson", pos: "WR", team: "Vikings", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let kupp = { name:"Cooper Kupp", pos: "WR", team: "Rams", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let lamb = { name:"CeeDee Lamb", pos: "WR", team: "Cowboys", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let ajb = { name:"A.J. Brown", pos: "WR", team: "Eagles", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let deebo = { name:"Deebo Samuel", pos: "WR", team: "49ers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let tae = { name:"Davante Adams", pos: "WR", team: "Jets", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let waddle = { name:"Jaylen Waddle", pos: "WR", team: "Dolphins", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let diggs = { name:"Stefon Diggs", pos: "WR", team: "Texans", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let tyreek = { name:"Tyreek Hill", pos: "WR", team: "Dolphins", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let dk = { name:"D.K. Metcalf", pos: "WR", team: "Seahawks", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let tee = { name:"Tee Higgins", pos: "WR", team: "Bengals", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let london = { name:"Drake London", pos: "WR", team: "Falcons", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let diontae = { name:"Diontae Johnson", pos: "WR", team: "FA", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let moore = { name:"D.J. Moore", pos: "WR", team: "Bears", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let burks = { name:"Treylon Burks", pos: "WR", team: "Titans", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let pittman = { name:"Michael Pittman Jr.", pos: "WR", team: "Colts", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let tmclaurin = { name:"Terry McLaurin", pos: "WR", team: "Commanders", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let gwilson = { name:"Garrett Wilson", pos: "WR", team: "Jets", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let cgodwin = { name:"Chris Godwin", pos: "WR", team: "Buccaneers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let jjeudy = { name:"Jerry Jeudy", pos: "WR", team: "Browns", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let mevans = { name:"Mike Evans", pos: "WR", team: "Buccaneers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let dsmith = { name:"DeVonta Smith", pos: "WR", team: "Eagles", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let colave = { name:"Chris Olave", pos: "WR", team: "Saints", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let kallen = { name:"Keenan Allen", pos: "WR", team: "Bears", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let jameson = { name:"Jameson Williams", pos: "WR", team: "Lions", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let emoore = { name:"Elijah Moore", pos: "WR", team: "Browns", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let mbrown = { name:"Marquise Brown", pos: "WR", team: "Chiefs", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let amonra = { name:"Amon-Ra St. Brown", pos: "WR", team: "Lions", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let acooper = { name:"Amari Cooper", pos: "WR", team: "Browns", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let rbateman = { name:"Rashod Bateman", pos: "WR", team: "Ravens", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let cwatson = { name:"Christian Watson", pos: "WR", team: "Packers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let dmooney = { name:"Darnell Mooney", pos: "WR", team: "Falcons", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let mwilly = { name:"Mike Williams", pos: "WR", team: "Steelers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let csutton = { name:"Courtland Sutton", pos: "WR", team: "Broncos", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let baiyuk = { name:"Brandon Aiyuk", pos: "WR", team: "49ers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let juju = { name:"JuJu Smith-Schuster", pos: "WR", team: "Chiefs", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let dhop = { name:"DeAndre Hopkins", pos: "WR", team: "Chiefs", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let gpickens = { name:"George Pickens", pos: "WR", team: "Steelers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let gdavis = { name:"Gabriel Davis", pos: "WR", team: "Jaguars", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let bcooks = { name:"Brandin Cooks", pos: "WR", team: "Cowboys", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let ckirk = { name:"Christian Kirk", pos: "WR", team: "Jaguars", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let tlock = { name:"Tyler Lockett", pos: "WR", team: "Seahawks", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let jsn = { name:"Jaxon Smith-Njigba", pos: "WR", team: "Seahawks", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let athielen = { name:"Adam Thielen", pos: "WR", team: "Panthers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let apierce = { name:"Alex Pierce", pos: "WR", team: "Colts", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let jmetch = { name:"John Metchie", pos: "WR", team: "Texans", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let rmoore = { name:"Rondale Moore", pos: "WR", team: "Cardinals", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let cridley = { name:"Calvin Ridley", pos: "WR", team: "Titans", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let wrob = { name:"Wan'Dale Robinson", pos: "WR", team: "Giants", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let jtol = { name:"Jalen Tolbert", pos: "WR", team: "Cowboys", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let alaz = { name:"Allen Lazard", pos: "WR", team: "Jets", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let jmeyers = { name:"Jakobi Meyers", pos: "WR", team: "Raiders", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let tboyd = { name:"Tyler Boyd", pos: "WR", team: "Titans", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let jaddy = { name:"Jordan Addison", pos: "WR", team: "Vikings", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let kshakir = { name:"Khalil Shakir", pos: "WR", team: "Bills", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let qj = { name:"Quentin Johnston", pos: "WR", team: "Chargers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let zflow = { name:"Zay Flowers", pos: "WR", team: "Ravens", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let ncoll = { name:"Nico Collins", pos: "WR", team: "Texans", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let jpalm = { name:"Joshua Palmer", pos: "WR", team: "Chargers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let rrice = { name:"Rashee Rice", pos: "WR", team: "Chiefs", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let doubs = { name:"Romeo Doubs", pos: "WR", team: "Packers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	
-	let kpitt = { name:"Kyle Pitts", pos: "TE", team: "Falcons", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let mandrews = { name:"Mark Andrews", pos: "TE", team: "Ravens", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let tkelce = { name:"Travis Kelce", pos: "TE", team: "Chiefs", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let gkittle = { name:"George Kittle", pos: "TE", team: "49ers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let thock = { name:"T.J. Hockenson", pos: "TE", team: "Vikings", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let dschultz = { name:"Dalton Schultz", pos: "TE", team: "Texans", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let dgoedert = { name:"Dallas Goedert", pos: "TE", team: "Eagles", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let muth = { name:"Pat Freiermuth", pos: "TE", team: "Steelers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let dknox = { name:"Dawson Knox", pos: "TE", team: "Bills", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let mgesicki = { name:"Mike Gesicki", pos: "TE", team: "Bengals", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let nfant = { name:"Noah Fant", pos: "TE", team: "Seahawks", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let ckmet = { name:"Cole Kmet", pos: "TE", team: "Bears", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let zertz = { name:"Zach Ertz", pos: "TE", team: "Commanders", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let tmcbride = { name:"Trey McBride", pos: "TE", team: "Cardinals", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let hhenry = { name:"Hunter Henry", pos: "TE", team: "Patriots", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let dnjoku = { name:"David Njoku", pos: "TE", team: "Browns", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let thigbee = { name:"Tyler Higbee", pos: "TE", team: "Rams", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let eengram = { name:"Evan Engram", pos: "TE", team: "Jaguars", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let kincaid = { name:"Dalton Kincaid", pos: "TE", team: "Bills", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let gdulc = { name:"Greg Dulcich", pos: "TE", team: "Broncos", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let jsmith = { name:"Jonnu Smith", pos: "TE", team: "Dolphins", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let laporta= { name:"Sam LaPorta", pos: "TE", team: "Lions", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let mayer = { name:"Michael Mayer", pos: "TE", team: "Raiders", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
+	function initializePlayers() {
+		fetch('adp-data.json')
+			.then(function(res) {
+				if (!res.ok) throw new Error('Failed to load adp-data.json');
+				return res.json();
+			})
+			.then(function(data) {
+				if (!data || !Array.isArray(data.players)) return;
+				data.players.forEach(function(p) {
+					if (p.position === 'PK') return;
+					var pos = p.position === 'DEF' ? 'DST' : p.position;
+					var player = {
+						name: p.name,
+						pos: pos,
+						team: p.team,
+						adp: p.adp_formatted,
+						bye: p.bye,
+						draftedAt: 0.00
+					};
+					players.push(player);
+					if (pos === 'QB') qbs.push(player);
+					else if (pos === 'RB') { rbs.push(player); flex.push(player); }
+					else if (pos === 'WR') { wrs.push(player); flex.push(player); }
+					else if (pos === 'TE') { tes.push(player); flex.push(player); }
+					else if (pos === 'DST') dst.push(player);
+				});
+				displayAll();
+			})
+			.catch(function(err) { console.error('Player load error:', err); });
+	}
 
-	let buf = { name:"Buffalo Defense", pos: "DST", team: "Bills", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let lar = { name:"LA Rams Defense", pos: "DST", team: "Rams", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let sf = { name:"San Francisco Defense", pos: "DST", team: "49ers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let dal = { name:"Dallas Defense", pos: "DST", team: "Cowboys", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let lac = { name:"LA Chargers Defense", pos: "DST", team: "Chargers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let pit = { name:"Pittsburgh Defense", pos: "DST", team: "Steelers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let tb = { name:"Tampa Bay Defense", pos: "DST", team: "Buccaneers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let ne = { name:"New England Defense", pos: "DST", team: "Patriots", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let no = { name:"New Orleans Defense", pos: "DST", team: "Saints", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let bal = { name:"Baltimore Defense", pos: "DST", team: "Ravens", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let ind = { name:"Indianapolis Defense", pos: "DST", team: "Colts", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let gb = { name:"Green Bay Defense", pos: "DST", team: "Packers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let den = { name:"Denver Defense", pos: "DST", team: "Broncos", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let phi = { name:"Philadelphia Defense", pos: "DST", team: "Eagles", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let cin = { name:"Cincinnati Defense", pos: "DST", team: "Bengals", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let ten = { name:"Tennessee Defense", pos: "DST", team: "Titans", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let wsh = { name:"Washington Defense", pos: "DST", team: "Commanders", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let cle = { name:"Cleveland Defense", pos: "DST", team: "Browns", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let kc = { name:"Kansas City Defense", pos: "DST", team: "Chiefs", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let mia = { name:"Miami Defense", pos: "DST", team: "Dolphins", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let az = { name:"Arizona Defense", pos: "DST", team: "Cardinals", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let lv = { name:"Las Vegas Defense", pos: "DST", team: "Raiders", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let sea = { name:"Seattle Defense", pos: "DST", team: "Seahawks", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let min = { name:"Minnesota Defense", pos: "DST", team: "Vikings", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let car = { name:"Carolina Defense", pos: "DST", team: "Panthers", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let nyg = { name:"NY Giants Defense", pos: "DST", team: "Giants", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let nyj = { name:"NY Jets Defense", pos: "DST", team: "Jets", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let jac = { name:"Jackonsville Defense", pos: "DST", team: "Jaguars", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let hou = { name:"Houston Defense", pos: "DST", team: "Texans", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let det = { name:"Detriot Defense", pos: "DST", team: "Lions", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let chi = { name:"Chicago Defense", pos: "DST", team: "Bears", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
-	let atl = { name:"Atlanta Defense", pos: "DST", team: "Falcons", week1: null, week2: null, week3: null, adp: 21.03, bye: 9, draftedAt: 0.00};
 
-	let players = [mahomes,jallen,rodgers,lamar,dak,herbert,kyler,hurts,
-		burrow,stafford,cousins,baker,tlaw,watson,russell,fields,
-		carr,tua,goff,love,
-		darnold,geno,tyrod,dalton,
-		purdy,stroud,byoung,jt,najee,javonte,cmc,swift,ekeler,breece,mixon,henry,kamara,chubb,saquon,gibson,akers,walker,dobbins,
-		etienne,dmont,ajones,jacobs,mitchell,conner,dillon,jamescook,ceh,miles,pollard,pierce,hunt,rawhite,
-		singletary,rhamondre,allgeier,bijan,mattison,gibbs,brob,chuba,tank,
-		khalil,gainwell,kyren,kendre,gus,achane,mostert,charbonnet,
-		pacheco,chase,jjeff,kupp,lamb,ajb,deebo,tae,waddle,diggs,tyreek,dk,tee,london,diontae,moore,burks,pittman,tmclaurin,gwilson,
-		cgodwin,jjeudy,mevans,dsmith,colave,kallen,jameson,emoore,mbrown,amonra,acooper,rbateman,cwatson,dmooney,mwilly,csutton,
-		baiyuk,juju,dhop,gpickens,gdavis,bcooks,ckirk,tlock,athielen,apierce,jmetch,rmoore,
-		wrob,jtol,alaz,jmeyers,tboyd,kshakir,ncoll,
-		jpalm,jsn,jaddy,qj,zflow,rrice,doubs,kpitt,mandrews,tkelce,gkittle,dwaller,thock,dschultz,dgoedert,muth,dknox,mgesicki,nfant,ckmet,zertz,tmcbride,hhenry,
-		dnjoku,thigbee,eengram,gdulc,jsmith,kincaid,laporta,mayer,
-	buf,lar,sf,dal,lac,pit,tb,ne,no,bal,ind,gb,den,phi,cin,ten,wsh,cle,kc,mia,az,lv,sea,min,car,nyg,nyj,jac,hou,det,chi,atl];
-
-	let qbs = [mahomes,jallen,rodgers,lamar,dak,herbert,kyler,hurts,
-	burrow,stafford,cousins,baker,tlaw,watson,russell,fields,
-	carr,tua,goff,love,darnold,geno,tyrod,dalton,
-	purdy,stroud,byoung];
-
-	let rbs = [jt,najee,javonte,cmc,swift,ekeler,breece,mixon,henry,kamara,chubb,saquon,gibson,akers,walker,dobbins,
-	etienne,dmont,ajones,jacobs,mitchell,conner,dillon,jamescook,ceh,miles,pollard,pierce,hunt,rawhite,
-	singletary,rhamondre,allgeier,bijan,mattison,gibbs,brob,chuba,tank,
-	khalil,gainwell,kyren,kendre,gus,achane,mostert,charbonnet,
-	pacheco];
-
-	let wrs = [chase,jjeff,kupp,lamb,ajb,deebo,tae,waddle,diggs,tyreek,dk,tee,london,diontae,moore,burks,pittman,tmclaurin,gwilson,
-	cgodwin,jjeudy,mevans,dsmith,colave,kallen,jameson,emoore,mbrown,amonra,acooper,rbateman,cwatson,dmooney,mwilly,csutton,
-	baiyuk,juju,dhop,gpickens,gdavis,bcooks,ckirk,tlock,athielen,apierce,jmetch,rmoore,
-	wrob,jtol,alaz,jmeyers,tboyd,kshakir,ncoll,
-	jpalm,jsn,jaddy,qj,zflow,rrice,doubs];
-
-	let tes = [kpitt,mandrews,tkelce,gkittle,dwaller,thock,dschultz,dgoedert,muth,dknox,mgesicki,nfant,ckmet,zertz,tmcbride,hhenry,
-	dnjoku,thigbee,eengram,gdulc,jsmith,kincaid,laporta,mayer];
-
-	let flex = [jt,najee,javonte,cmc,swift,ekeler,breece,mixon,henry,kamara,chubb,saquon,gibson,akers,walker,dobbins,
-		etienne,dmont,ajones,jacobs,mitchell,conner,dillon,jamescook,ceh,miles,pollard,pierce,hunt,rawhite,
-		singletary,rhamondre,allgeier,bijan,mattison,gibbs,brob,chuba,tank,
-		khalil,gainwell,kyren,kendre,gus,achane,mostert,charbonnet,
-		pacheco,chase,jjeff,kupp,lamb,ajb,deebo,tae,waddle,diggs,tyreek,dk,tee,london,diontae,moore,burks,pittman,tmclaurin,gwilson,
-		cgodwin,jjeudy,mevans,dsmith,colave,kallen,jameson,emoore,mbrown,amonra,acooper,rbateman,cwatson,dmooney,mwilly,csutton,
-		baiyuk,juju,dhop,gpickens,gdavis,bcooks,ckirk,tlock,athielen,apierce,jmetch,rmoore,
-		wrob,jtol,alaz,jmeyers,tboyd,kshakir,ncoll,
-		jpalm,jsn,jaddy,qj,zflow,rrice,doubs,kpitt,mandrews,tkelce,gkittle,dwaller,thock,dschultz,dgoedert,muth,dknox,mgesicki,nfant,ckmet,zertz,tmcbride,hhenry,
-		dnjoku,thigbee,eengram,gdulc,jsmith,kincaid,laporta,mayer];
-
-	let dst = [buf,lar,sf,dal,lac,pit,tb,ne,no,bal,ind,gb,den,phi,cin,ten,wsh,cle,kc,mia,az,lv,sea,min,car,nyg,nyj,jac,hou,det,chi,atl];
 	
 	let team1Picks = ['1.01','2.1','3.01','4.1','5.01','6.1','7.01','8.1','9.01','10.1','11.01','12.1','13.01','14.1','15.01'];
 	let team2Picks = ['1.02','2.09','3.02','4.09','5.02','6.09','7.02','8.09','9.02','10.09','11.02','12.09','13.02','14.09','15.02'];
@@ -291,14 +84,8 @@
 	var autopickedteam = [];
 	var currSpot = 'empty';
 
-	var week6 = ['Lions', 'Raiders', 'Titans', 'Texans'];
-	var week7 = ['Bills', 'Vikings', 'Eagles', 'Rams'];
-	var week8 = ['Chiefs', 'Chargers'];
-	var week9 = ['Browns', 'Cowboys', 'Broncos', 'Giants', 'Steelers','49ers'];
-	var week10 = ['Ravens','Bengals','Patriots','Jets'];
-	var week11 = ['Jaguars', 'Dolphins', 'Seahawks','Buccaneers'];
-	var week13 = ['Cardinals', 'Panthers'];
-	var week14 = ['Falcons','Bears','Packers','Colts','Saints','Commanders'];
+
+
 
 	function startFunction() {
 		if (!draftStarted){
@@ -594,9 +381,7 @@
 		
 
 		if(!draftStarted){
-			updateADP();
 			sortPlayers();
-			updateBye();
 		}
 		let select = "<button id='all' onclick='displayAll()'>ALL</button><button id='qb' onclick='displayQB()'>QB</button>";
 		select += "<button id='rb' onclick='displayRB()'>RB</button><button id='wr' onclick='displayWR()'>WR</button>";
@@ -1620,49 +1405,6 @@
 		return myDst.length >= 1;
 	  }
 
-	  function updateADP() {
-	fetch('adp-data.json')
-		.then(function(res) {
-			if (!res.ok) throw new Error('Failed to load adp-data.json');
-			return res.json();
-		})
-		.then(function(data) {
-			if (!data || !Array.isArray(data.players)) return;
-			data.players.forEach(function(api) {
-				players.forEach(function(x) {
-					if (x.name === api.name && api.adp_formatted != null) {
-						x.adp = api.adp_formatted;
-					}
-				});
-			});
-			sortPlayers();
-			chooseDisplay();
-		})
-		.catch(function(err) { console.error('ADP load error:', err); });
-}
-
-	  function updateBye(){
-			players.forEach(byeByeBye);
-			function byeByeBye(p1){
-					if(week6.find(x => x == p1.team)){
-						p1.bye = 6;
-					} else if (week7.find(x => x == p1.team)){
-						p1.bye = 7;
-					} else if (week8.find(x => x == p1.team)){
-						p1.bye = 8;
-					} else if (week9.find(x => x == p1.team)){
-						p1.bye = 9;
-					} else if (week10.find(x => x == p1.team)){
-						p1.bye = 10;
-					} else if (week11.find(x => x == p1.team)){
-						p1.bye = 11;
-					} else if (week13.find(x => x == p1.team)){
-						p1.bye = 13;
-					} else if (week14.find(x => x == p1.team)){
-						p1.bye = 14;
-					}
-			}
-		}
 
 		function sortPlayers(){
 			players.sort(function(a, b){return parseFloat(a.adp||999) - parseFloat(b.adp||999)});
