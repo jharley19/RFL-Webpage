@@ -8,7 +8,7 @@
 	let dst = [];
 
 	function initializePlayers() {
-		fetch('adp-data.json')
+		fetch('./adp-data.json')
 			.then(function(res) {
 				if (!res.ok) throw new Error('Failed to load adp-data.json');
 				return res.json();

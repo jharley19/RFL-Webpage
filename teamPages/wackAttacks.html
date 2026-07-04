@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wack Attacks</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: black;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 20%;
+            background: #ccc;
+            padding: 20px;
+        }
+
+            /* Style the list inside the menu */
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 80%;
+            background-color: #f1f1f1;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: midnightblue;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .topleft {
+            position: absolute;
+            top: 44px;
+            left: 80px;
+            font-size: 18px;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            background-color: #333;
+            min-height: 48px;
+        }
+
+            /* Style the topnav links */
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                /* Change color on hover */
+                .topnav a:hover {
+                    background-color: red;
+                    color: black;
+                }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        li {
+            float: left;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+            .dropdown .dropbtn {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                padding: 14px 16px;
+                background-color: black;
+                font-family: inherit;
+                margin: 0;
+            }
+
+            .navbar a:hover, .dropdown:hover .dropbtn {
+                background-color: red;
+            }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 97.6%;
+        }
+
+            .sticky + .article {
+                padding-top: 60px;
+            }
+
+        .top-left {
+            position: absolute;
+            top: 16px;
+            left: 225px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src=".\zach background.png" width="100%" />
+
+            <!--<div class="top-left">
+             <h1 style="font-size:30px;">Wack Attacks</h1>
+             7th place
+             <br />8-9-0 -->
+
+         </div>
+
+            </div>
+        </header>
+
+        <section>
+            <script>
+                window.pageVideosLabel = "Team Videos";
+                window.pageVideosContent = `N/A`;
+            </script>
+            <div id="topnav-container"></div>
+            <script src="nav.js"></script>
+
+            <nav>
+                <h3>Roster</h3>
+
+                <p>
+
+                    QB: Dak Prescott
+                    <br />RB: D'Andre Swift
+                    <br />RB: Breece Hall
+                    <br />WR: Amon-Ra St. Brown
+                    <br />WR: Nico Collins
+                    <br />TE: Travis Kelce
+                    <br />FLEX: Aaron Jones
+                    <br />FLEX: Rhamondre Stevenson
+                    <br />DST: Seattle Seahawks
+                    <br />BN: Baker Mayfield
+                    <br />BN: Tony Pollard
+                    <br />BN: Tyjae Spears
+                    <br />BN: Jayden Reed
+                    <br />BN: Keon Coleman
+                    <br />BN: Kayshon Boutte
+                </p>
+
+            </nav>
+
+            <article>
+                <h1>Basic Information</h1>
+                <p>
+
+                    <strong>Owner: </strong> Zach Zalovick
+                    <br />	<strong>Co-Manager: </strong>N/A
+                    <br /> <strong>Year joined: </strong>2021
+
+                <p>
+                    <strong>Former Co-Managers: </strong>N/A
+                    <br /> <strong>Former Team Names:</strong> N/A
+                </p>
+                <p>
+                    <strong>Championships:</strong> 2024
+                    <br /><strong>Other Awards: </strong>2025 Biggest Draft Steal (Dynasty),
+                    2024 Best Draft, 2024 Biggest Draft Steal,
+                    2021 Biggest Draft Steal, 2021 Best Week Performance
+                <p>
+                    <strong>Career Record: </strong>42-43
+                    <br /><strong>Career Winning Percentage: </strong>49%
+                    <br /><strong>Playoff Percentage: </strong>20%
+                    <br /><strong>Finshes: </strong>7th, 8th, 6th, 1st, 7th
+                </p>
+
+                <h1>Biography</h1>
+                <p>
+                    The Wack Attacks entered the RFL in 2021 following the league’s most extensive search for a new manager to date. Owner Zach Zalovick had no prior affiliation 
+                    with the league, but his close friendship with congressman Michael Boswell Jr. earned him an interview opportunity. After a last-minute cancellation by Adam Fenton, 
+                    Zach was given the green light to interview on short notice. He famously left a wedding early and postponed time with his little boo thang just for the chance to 
+                    join the league. The sacrifice paid off, as Zach crushed the interview and made a strong impression on the commissioner and league leadership. The Wack Attacks’ inaugural 
+                    draft got off to a shaky start when they selected Chris Carson in the third round, only for him to suffer a career-ending injury in Week 4. However, the draft also 
+                    delivered a massive steal in the sixth round with Cooper Kupp, who emerged as the WR1. Behind Kupp’s dominance, the Wack Attacks put together a respectable first 
+                    season. Entering Week 15, they were 7–7 and still alive in the playoff race, and coming off a 200.14 point performance, a league record at the time. Unfortunately, 
+                    they vanished in the regular season finale, losing to the Maryland Marijuanas due to duds from Ja’Marr Chase and Mike Evans. The loss sent them to the Toes Bowl, 
+                    where they were soundly defeated by Sleepy Nick after poor performances from Tyler Johnson and Darrell Henderson. The Wack Attacks finished 7th in their first season, 
+                    heading into the offseason with plenty of unanswered questions.
+                </p>
+                <p>
+                    In 2022, the Wack Attacks entered their sophomore season with optimism, but the year quickly unraveled. The team struggled for consistency and by rivalry week, the 
+                    inaugural Egg Bowl against Gruden’s Plan, they sat at 6–8, in 8th place, and officially eliminated from playoff contention. Despite the disappointment, 
+                    the Wack Attacks delivered a statement win in the Egg Bowl, powered by big performances from Trevor Lawrence, Derrick Henry, and George Kittle. That momentum 
+                    carried them into the Toes Bowl, where they faced The Red Army. In a back-and-forth matchup, the Wack Attacks came up short after duds from DeAndre Hopkins and 
+                    Adam Thielen, finishing the season in 8th place.
+                </p>
+                <p>
+                    After missing the playoffs in back-to-back seasons, the Wack Attacks entered 2023 desperate for a breakthrough. Instead, the season was defined by decline, 
+                    as first-round pick Cooper Kupp failed to live up to expectations, signaling the end of his fantasy dominance. The blow proved too much to overcome, and the 
+                    Wack Attacks struggled throughout the year. They entered rivalry week at 7–7, still clinging to playoff hopes, but suffered a heartbreaking 0.44 point loss to 
+                    Gruden’s Plan after a goose egg from Gabe Davis. Sent to the Toes Bowl for the third straight year, the Wack Attacks finally earned their first postseason 
+                    victory, demolishing The Dictator behind a historic 51.50 point performance from Amari Cooper. Their run ended in the Toes Bowl final, however, as duds from 
+                    Derrick Henry and Gabe Davis doomed them in a loss to The Red Army. They finished 6th, once again entering the offseason searching for answers.
+                </p>
+                <p>
+                    With the second overall pick in hand, 2024 marked a turning point for the franchise. The Wack Attacks crushed the draft, selecting ten players who finished 
+                    among the top at their respective positions, creating the strongest roster in team history. That foundation translated directly to success. By rivalry week, 
+                    they were 8–6 and sitting in third place, firmly in the playoff hunt. In a must-win Egg Bowl match against Gruden’s Plan, the Wack Attacks survived by 0.54 points, 
+                    thanks to a massive 42.80 point performance from Davante Adams and T.J. Hockenson’s failure to catch a final pass on Monday Night Football. The win clinched the 
+                    first playoff berth in franchise history. In the opening round, the Wack Attacks once again faced Gruden’s Plan and completed the sweep, riding strong play from 
+                    Jayden Daniels to advance to the championship. In the title game against Big Ounce, the matchup went back and forth before Jayden Daniels erupted for 36.78 points, 
+                    leading the Wack Attacks to their first RFL championship. After years of frustration, the franchise had finally reached the pinnacle of success.
+                </p>
+                <p>
+                    Entering 2025 as defending champions, expectations were sky-high. The Wack Attacks started strong, winning four of their first six games, but momentum faded late. 
+                    By rivalry week, they had slipped to 6–8 and 7th place, eliminated from playoff contention but safely clear of the Panzerkampfwagen Bowl. 
+                    In the fourth edition of the Egg Bowl, they delivered a dominant win over Gruden’s Plan, highlighted by a 41.40 point performance from Amon-Ra St. Brown. 
+                    However, their postseason struggles returned in the Toes Bowl, where they were blown out by The Red Army in the first round after disastrous performances from 
+                    Travis Kelce and Breece Hall. The Wack Attacks finished 7th in their fifth season, closing the year with lingering questions despite their recent championship success.
+                </p>
+        </section>
+
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var navbar = document.getElementsByClassName("topnav").item(0);
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+            if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+            } else {
+            navbar.classList.remove("sticky");
+            }
+            }
+        </script>
+
+        <footer>
+            <p><a href="./index.html"><img src=".\RFL LOGO.png" width="100px" /></a></p>
+        </footer>
+
+
+        </p>
+
+    </body>
+
