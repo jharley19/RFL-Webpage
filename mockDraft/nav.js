@@ -12,7 +12,7 @@
     var navHTML =
         '<div class="topnav"><ul>' +
         '<li><a href="../index.html">Home</a></li>' +
-        '<li><a target="_blank" href="https://fantasy.nfl.com/league/4294191">League Home</a></li>' +
+        '<li><a target="_blank" href="https://sleeper.com/leagues/1318775731773272064">League Home</a></li>' +
         '<li class="dropdown">' +
             '<a href="javascript:void(0)" class="dropbtn">Constitutions</a>' +
             '<div class="dropdown-content">' +
@@ -23,16 +23,16 @@
         '<li class="dropdown">' +
             '<a href="javascript:void(0)" class="dropbtn">Teams</a>' +
             '<div class="dropdown-content">' +
-                '<a href="../Dictator.html"><img src="../Prof Pic1.png" width="20px" /> The Dictator</a>' +
-                '<a href="../Red Army.html"><img src="../brian logo.png" width="20px" /> The Red Army</a>' +
-                '<a href="../Big Ounce.html"><img src="../big ounce logo.png" width="20px" /> Big Ounce</a>' +
-                '<a href="../Gruden\'s Plan.html"><img src="../gruden logo.png" width="20px" /> Gruden\'s Plan</a>' +
-                '<a href="../Maryland Marijuanas.html"><img src="../weed logo.jpg" width="20px" /> Maryland Marijuanas</a>' +
-                '<a href="../Wentz Wagon.html"><img src="../wentz logo.png" width="20px" /> The Hurts Helicopter</a>' +
-                '<a href="../Red Wolf.html"><img src="../jason logo.png" width="20px" /> Goofy God</a>' +
-                '<a href="../Mullet Man.html"><img src="../Mullet Logo.png" width="20px" /> Mullet Man</a>' +
-                '<a href="../Sleepy Nick.html"><img src="../nick logo.png" width="20px" /> Sleepy Nick</a>' +
-                '<a href="../Wack Attacks.html"><img src="../zach logo.jpg" width="20px" /> Wack Attacks</a>' +
+                '<a href="../teamPages/dictator.html"><img src="../teamPages/teamLogos/dictatorLogo.png" width="20px" /> The Dictator</a>' +
+                '<a href="../teamPages/redArmy.html"><img src="../teamPages/teamLogos/redArmyLogo.png" width="20px" /> The Red Army</a>' +
+                '<a href="../teamPages/bigOunce.html"><img src="../teamPages/teamLogos/bigOunceLogo.png" width="20px" /> Big Ounce</a>' +
+                '<a href="../teamPages/grudensPlan.html"><img src="../teamPages/teamLogos/grudensPlanLogo.png" width="20px" /> Gruden\'s Plan</a>' +
+                '<a href="../teamPages/marijuanas.html"><img src="../teamPages/teamLogos/marijuanasLogo.jpg" width="20px" /> Maryland Marijuanas</a>' +
+                '<a href="../teamPages/hurtsHelicopter.html"><img src="../teamPages/teamLogos/hurtsHelicopterLogo.png" width="20px" /> The Hurts Helicopter</a>' +
+                '<a href="../teamPages/goofyGod.html"><img src="../teamPages/teamLogos/goofyGodLogo.png" width="20px" /> Goofy God</a>' +
+                '<a href="../teamPages/mulletMan.html"><img src="../teamPages/teamLogos/mulletManLogo.png" width="20px" /> Mullet Man</a>' +
+                '<a href="../teamPages/sleepyNick.html"><img src="../teamPages/teamLogos/sleepyNickLogo.png" width="20px" /> Sleepy Nick</a>' +
+                '<a href="../teamPages/wackAttacks.html"><img src="../teamPages/teamLogos/wackAttacksLogo.jpg" width="20px" /> Wack Attacks</a>' +
             '</div>' +
         '</li>' +
         '<li><a href="../Past Teams.html">Former Teams</a></li>' +
@@ -55,7 +55,7 @@
             '</div>' +
         '</li>' +
         '<li><a href="../standings1.html">Standings</a></li>' +
-        '<li><a href="../records.html">Records</a></li>' +
+        '<li><a href="../records/records.html">Records</a></li>' +
         '<li><a href="./mockDraft.html">Mock Draft</a></li>' +
         '</ul></div>';
 
