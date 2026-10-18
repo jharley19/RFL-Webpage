@@ -33,55 +33,14 @@
 
                 <h3>Roster</h3>
 
-                <p>
-                    QB: Joe Burrow
-                    <br />RB: Saquon Barkley
-                    <br />RB: Jahmyr Gibbs
-                    <br />WR: Terry McLaurin
-                    <br />WR: Ladd McConkey
-                    <br />TE: Pat Freiermuth
-                    <br />FLEX: James Cook
-                    <br />FLEX: DK Metcalf
-                    <br />DST: Washington Commanders
-                    <br />BN: Baker Mayfield
-                    <br />BN: Tyjae Spears
-                    <br />BN: Michael Pittman Jr.
-                    <br />BN: Adam Thielen
-                    <br />BN: Khalil Shakir
-                    <br />BN: Detroit Lions
-                    <br />RES: Chris Godwin
-
-                </p>
+                <p id="team-roster"></p>
 
 
             </nav>
 
             <article id="article">
                 <h1>Basic Information</h1>
-                <p>
-
-                    <strong>Owner: </strong> Harry Heck
-                    <br />	<strong>Co-Manager: </strong>N/A
-                    <br /> <strong>Year joined: </strong>2016
-
-                <p>
-                    <strong>Former Co-Managers: </strong>Ben Adams (2020 offseason), Michael Heck (2023-2024)
-                    <br /> <strong>Former Team Names:</strong> Rockville Rampage (2016), Waldorf 69ers (2017), Daddy Brees Failing Me (2018)
-                <p>
-                    <strong>Championships:</strong> 2025
-                    <br /><strong>Other Awards: </strong> 2025 Best Week Performance, 2025 Biggest Draft Steal (Dynasty),
-                    2024 Toes Bowl Champion, 2024 Biggest Trade Rape (Dynasty)
-                    2023 Best Week Performance, 
-                    2022 Best Player Performance, 
-                    2021 First Place Regular Season, 2021 Most Points For, 2021 Best Draft, 
-                    2019 Comeback Player of the Year, 
-                    2017 Last Place
-                <p>
-                    <strong>Career Record: </strong>88-77
-                    <br /><strong>Career Winning Percentage: </strong>53%
-                    <br /><strong>Playoff Percentage: </strong>60%
-                    <br /><strong>Finshes: </strong>4th, 8th, 8th, 2nd, 3rd, 3rd, 6th, 4th, 5th, 1st
-                </p>
+                <div id="team-info"></div>
 
                 <h1>Biography</h1>
                 <p>
@@ -198,5 +157,12 @@
 
         </p>
 
-    </body>
+    <script src="../data/teams.js"></script>
+        <script>
+            RFL.ready.then(function () {
+                RFL.renderTeamInfo(document.getElementById('team-info'), 'marijuanas');
+                RFL.renderRoster(document.getElementById('team-roster'), 'marijuanas');
+            });
+        </script>
+        </body>
 

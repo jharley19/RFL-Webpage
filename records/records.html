@@ -225,103 +225,17 @@
 <div class="stat"><span class="k">Most Regular Season First Places</span><span class="v">4</span><span class="s">The Dictator (2013, 2015, 2016, 2022)</span></div>
 <div class="stat"><span class="k">Most Toes Bowl Wins</span><span class="v">5</span><span class="s">The Red Army (2014, 2015, 2016, 2022, 2023)</span></div>
 <div class="stat"><span class="k">Most Panzerkampfwagen Bowl Wins</span><span class="v">2</span><span class="s">The Red Army (2019,2021)</span></div>
-<div class="stat"><span class="k">Most Wins</span><span class="v">120</span><span class="s">The Dictator</span></div>
-<div class="stat"><span class="k">Most Losses</span><span class="v">104</span><span class="s">The Red Army</span></div>
+<div class="stat"><span class="k">Most Wins</span><span class="v" id="stat-most-wins"></span><span class="s" id="stat-most-wins-team"></span></div>
+<div class="stat"><span class="k">Most Losses</span><span class="v" id="stat-most-losses"></span><span class="s" id="stat-most-losses-team"></span></div>
 <div class="stat"><span class="k">Most Scoring Titles</span><span class="v">5</span><span class="s">The Dictator (2013, 2014, 2016, 2017, 2018)</span></div>
 </div>
 <div class="grid">
-<table>
-                <tr>
-                    <th>Most Wins Top 10</th>
-                    <th>Wins</th>
-                </tr>
-                <tr>
-                    <td>1. The Dictator</td>
-                    <td>126</td>
-                </tr>
-                <tr>
-                    <td>2. The Red Army</td>
-                    <td>98</td>
-                </tr>
-                <tr>
-                    <td>3. Big Ounce</td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                    <td>4. Maryland Marijuanas</td>
-                    <td>88</td>
-                </tr>
-                <tr>
-                    <td>5. The Hurts Helicopter</td>
-                    <td>76</td>
-                </tr>
-                <tr>
-                    <td>6. Goofy God</td>
-                    <td>66</td>
-                </tr>
-                <tr>
-                    <td>7. Mullet Man</td>
-                    <td>65</td>
-                </tr>
-                <tr>
-                    <td>8. Gruden's Plan</td>
-                    <td>59</td>
-                </tr>
-                <tr>
-                    <td>9. Sleepy Nick</td>
-                    <td>53</td>
-                </tr>
-                <tr>
-                    <td>10. Babylon</td>
-                    <td>38</td>
-                </tr>
-            </table>
-<table>
-                <tr>
-                    <th>Most Losses Top 10</th>
-                    <th>Losses</th>
-                </tr>
-                <tr>
-                    <td>1. The Red Army</td>
-                    <td>112</td>
-                </tr>
-                <tr>
-                    <td>2. Gruden's Plan</td>
-                    <td>86</td>
-                </tr>
-                <tr>
-                    <td>3. The Dictator</td>
-                    <td>84</td>
-                </tr>
-                <tr>
-                    <td>4. Maryland Marijuanas</td>
-                    <td>77</td>
-                </tr>
-                <tr>
-                    <td>5. Sleepy Nick</td>
-                    <td>76</td>
-                </tr>
-                <tr>
-                    <td>6. Big Ounce</td>
-                    <td>73</td>
-                </tr>
-                <tr>
-                    <td>7. The Hurts Helicopter</td>
-                    <td>71</td>
-                </tr>
-                <tr>
-                    <td>T-8. Mullet Man</td>
-                    <td>65</td>
-                </tr>
-                <tr>
-                    <td>T-8. Goofy God</td>
-                    <td>65</td>
-                </tr>
-                <tr>
-                    <td>10. Benskins</td>
-                    <td>36</td>
-                </tr>
-            </table>
+<table id="alltime-wins">
+<tr><th>Most Wins Top 10</th><th>Wins</th></tr>
+</table>
+<table id="alltime-losses">
+<tr><th>Most Losses Top 10</th><th>Losses</th></tr>
+</table>
 </div></section>
 <section><h2>Single Season</h2>
 <div class="stats">
@@ -1826,6 +1740,25 @@
 </div></section>
 </main>
 
+    <script src="../data/teams.js"></script>
+    <script>
+        RFL.ready.then(function () {
+            function fill(tableId, field) {
+                var table = document.getElementById(tableId);
+                RFL.top(field, 10).forEach(function (r) {
+                    var tr = table.insertRow();
+                    tr.insertCell().textContent = r.rank + '. ' + r.team.name;
+                    tr.insertCell().textContent = r.value;
+                });
+                var best = RFL.top(field, 1)[0];
+                var key = field === 'wins' ? 'most-wins' : 'most-losses';
+                document.getElementById('stat-' + key).textContent = best.value;
+                document.getElementById('stat-' + key + '-team').textContent = best.team.name;
+            }
+            fill('alltime-wins', 'wins');
+            fill('alltime-losses', 'losses');
+        });
+    </script>
     <script>
         window.onscroll = function() {myFunction()};
 

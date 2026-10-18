@@ -207,57 +207,14 @@
             <script src="nav.js"></script>
             <nav>
                 <h3>Roster</h3>
-                <p>
-                    QB: Trevor Lawerence
-                    <br />RB: Bijan Robinson
-                    <br />RB: Samaje Perine
-                    <br />WR: Tee Higgins
-                    <br />WR: Tetairoa McMillan
-                    <br />TE: Brenton Strange
-                    <br />FLEX: Ladd McConkey
-                    <br />FLEX: Marvin Harrison Jr.
-                    <br />DST: Tampa Bay Buccaneers
-                    <br />BN: Tre Tucker
-                    <br />BN: Jerry Jeudy
-                    <br />BN: Dalton Schultz
-
-                </p>
+                <p id="team-roster"></p>
 
 
             </nav>
 
             <article>
                 <h1>Basic Information</h1>
-                <p>
-
-                    <strong>Owner: </strong> Brian Levesque
-                    <br />	<strong>Co-Manager: </strong>N/A
-                    <br /> <strong>Year joined: </strong>2013
-
-                <p>
-                    <strong>Former Co-Managers: </strong>N/A
-                    <br /> <strong>Former Team Names:</strong> Team USA (2013), That Awesome Team (2014), Waldorf Ice Penguins (2015), Fusion FC (2016), Krippled United (2017),
-                    Melvin and the Shitmunks (2018), Cookie Charizards (2019)
-                </p>
-                <p>
-                    <strong>Championships:</strong> N/A
-                    <br /><strong>Other Awards: </strong> 
-                    2024 Biggest Draft Bust,
-                    2023 Worst Draft, 2023 Toes Bowl Winner, 
-                    2022 Toes Bowl Winner, 
-                    2021 Panzerkampfwagen Bowl Survivor, 2021 Worst Draft, 
-                    2020 Best Draft, 2020 Last Place, 
-                    2019 Panzerkampfwagen Bowl Survivor, 
-                    2018 Best Draft, 2017 Best Week Performance, 
-                    2016 Toes Bowl Winner, 
-                    2015 Toes Bowl Winner, 
-                    2014 Toes Bowl Winner
-                <p>
-                    <strong>Career Record: </strong>98-112
-                    <br /><strong>Career Winning Percentage: </strong>47%
-                    <br /><strong>Playoff Percentage: </strong>15%
-                    <br /><strong>Finshes: </strong>4th, 5th, 5th, 5th, 4th, 6th, 9th, 10th, 9th, 5th, 5th, 8th, 6th
-                </p>
+                <div id="team-info"></div>
 
                 <h1>Biography</h1>
                 <p>
@@ -388,4 +345,11 @@
 
         </p>
 
-    </body>
+    <script src="../data/teams.js"></script>
+        <script>
+            RFL.ready.then(function () {
+                RFL.renderTeamInfo(document.getElementById('team-info'), 'redArmy');
+                RFL.renderRoster(document.getElementById('team-roster'), 'redArmy');
+            });
+        </script>
+        </body>

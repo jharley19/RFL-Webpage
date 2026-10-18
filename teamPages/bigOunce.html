@@ -25,55 +25,15 @@
 
             <h3>Roster</h3>
 
-            <p>
-                QB: Josh Allen
-                <br />RB: Derrick Henry
-                <br />RB: David Montgomery
-                <br />WR: Mike Evans
-                <br />WR: Puka Nacua
-                <br />TE: George Kittle
-                <br />FLEX: Michael Wilson
-                <br />FLEX: Jaylen Waddle
-                <br />DST: Detroit Lions
-                <br />BN: Lamar Jackson
-                <br />BN: Tyrone Tracy
-                <br />BN: Jauan Jennings
-                <br />BN: Wan'Dale Robinson
-                <br />BN: Jordan Addison
-                <br />BN: Harold Fannin
-            </p>
+            <p id="team-roster"></p>
 
         </nav>
 
         <article id="article">
             <h1>Basic Information</h1>
-            <p>
+                <div id="team-info"></div>
 
-                <strong>Owner: </strong> Brandon Harley
-                <br />	<strong>Co-Manager: </strong>Alexis Garcia (2019-present)
-                <br /> <strong>Year joined: </strong>2013, 2017
-
-            <p>
-                <strong>Former Co-Managers: </strong>N/A
-                <br /> <strong>Former Team Names:</strong> Big Ounce Pro Street (2017-2018), Big Ounce Back to Back (2019), Big Ounce Three Peat (2020)
-            </p>
-            <p>
-                <strong>Championships:</strong> 2018, 2019
-                <br /><strong>Other Awards: </strong>2025 Toes Bowl Champion, 2025 Best Undrafted Pickup (Dynasty), 
-                2024 Best Week Performance, 2024 Comeback Player of the Year, 
-                2023 Panzerkampfwagen Bowl Survivor, 2023 Biggest Draft Bust, 
-                2022 Best Undrafted Pickup, 
-                2020 Worst Draft, 2020 Biggest Trade Rape, 
-                2019 Highest Scoring Team, 2019 Regular Season First Place, 2019 Biggest Draft Steal, 
-                2017 Best Player Performance, 2017 Toes Bowl Champion
-            <p>
-                <strong>Career Record: </strong>90-73
-                <br /><strong>Career Winning Percentage: </strong>55%
-                <br /><strong>Playoff Percentage: </strong>50%
-                <br /><strong>Finshes: </strong>2nd, 5th, 1st, 1st, 8th, 4th, 7th, 9th, 2nd, 5th
-            </p>
-
-            <h1>Biography</h1>
+                <h1>Biography</h1>
             <p>
                 Big Ounce began its first reign during the league’s inaugural 2013 season, finishing with a strong 10–3 record and earning second place. 
                 After a first-round victory, Big Ounce advanced to the league’s first-ever championship match, where they ultimately fell to the top-seeded The Dictator. 
@@ -149,5 +109,12 @@
 
     </p>
 
-</body>
+<script src="../data/teams.js"></script>
+        <script>
+            RFL.ready.then(function () {
+                RFL.renderTeamInfo(document.getElementById('team-info'), 'bigOunce');
+                RFL.renderRoster(document.getElementById('team-roster'), 'bigOunce');
+            });
+        </script>
+        </body>
 
