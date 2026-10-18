@@ -33,52 +33,13 @@
             <nav id="nav">
                 <h3>Roster</h3>
 
-                <p>
-                    QB: Jalen Hurts
-                    <br />RB: Jonathan Taylor
-                    <br />RB: Jaylen Warren
-                    <br />WR: Justin Jefferson
-                    <br />WR: Chris Olave
-                    <br />TE: Juwan Johnson
-                    <br />FLEX: Rico Dowdle
-                    <br />FLEX: Brian Thomas Jr.
-                    <br />DST: Houston Texans
-                    <br />BN: Jacoby Brissett
-                    <br />BN: Chuba Hubbard
-                    <br />BN: Emmanuel Wilson
-                    <br />BN: Luther Burden
-                    <br />BN: Dallas Goedert
-                    <br />BN: Los Angeles Rams
-                    <br />RES: Rashee Rice
-                    <br />RES: Trey Benson
-                </p>
+                <p id="team-roster"></p>
 
             </nav>
 
             <article id="article">
                 <h1>Basic Information</h1>
-                <p>
-
-                    <strong>Owner: </strong> Nick Sagun
-                    <br />	<strong>Co-Manager: </strong>N/A
-                    <br /> <strong>Year joined: </strong>2014, 2020
-
-                <p>
-                    <strong>Former Co-Managers: </strong>N/A
-                    <br /> <strong>Former Team Names:</strong> Lollipop Guild (2014), SuperNick's SideKicks (2015)
-                </p>
-                <p>
-                    <strong>Championships:</strong> N/A
-                    <br /><strong>Other Awards: </strong>2025 Comeback Player of the Year,
-                    2024 Worst Draft, 2024 Last Place,
-                    2022 Comeback Player of the Year, 
-                    2020 Worst Draft
-                <p>
-                    <strong>Career Record: </strong>53-76-2
-                    <br /><strong>Career Winning Percentage: </strong>40%
-                    <br /><strong>Playoff Percentage: </strong>38%
-                    <br /><strong>Finshes: </strong>7th, 7th, 4th, 6th, 1st, 7th, 10th, 2nd
-                </p>
+                <div id="team-info"></div>
 
                 <h1>Biography</h1>
                 <p>
@@ -173,5 +134,12 @@
 
         </p>
 
-    </body>
+    <script src="../data/teams.js"></script>
+        <script>
+            RFL.ready.then(function () {
+                RFL.renderTeamInfo(document.getElementById('team-info'), 'sleepyNick');
+                RFL.renderRoster(document.getElementById('team-roster'), 'sleepyNick');
+            });
+        </script>
+        </body>
 

@@ -33,52 +33,13 @@
             <nav id="nav">
                 <h3>Roster</h3>
 
-                <p>
-                    QB: Lamar Jackson
-                    <br />RB: Josh Jacobs
-                    <br />RB: Breece Hall
-                    <br />WR: Garrett Wilson
-                    <br />WR: George Pickens
-                    <br />TE: Mark Andrews
-                    <br />FLEX: Cooper Kupp
-                    <br />FLEX: Rachaad White
-                    <br />DST: New York Jets
-                    <br />BN: Isaiah Davis
-                    <br />BN: Alexander Mattison
-                    <br />BN: Jayden Reed
-                    <br />BN: Keon Coleman
-                    <br />BN: Quentin Johnston
-                    <br />BN: T.J. Hockenson
-                </p>
+                <p id="team-roster"></p>
 
             </nav>
 
             <article id="article">
                 <h1>Basic Information</h1>
-                <p>
-
-                    <strong>Owner: </strong> Michael Boswell Jr.
-                    <br />	<strong>Co-Manager: </strong>Joe Whitten (2024-present)
-                    <br /> <strong>Year joined: </strong>2017
-
-                <p>
-                    <strong>Former Co-Managers: </strong>Evan Patterson (2018), Jacob Kerstner (2019 offseason), Logan Handwork (2020-2021), Ben Hatfield (2022), Tyler Bowie (2023)
-                    <br /> <strong>Former Team Names:</strong> Rex Ryan (2017)
-                <p>
-                    <strong>Championships:</strong> 2020
-                    <br /><strong>Other Awards: </strong> 2025 Last Place, 2025 Worst Draft, 2025 Biggest Draft Bust,
-                    2024 Biggest Trade Rape,
-                    2023 Comeback Player of the Year, 
-                    2022 Last Place,
-                    2021 Best Undrafted Pickup, 2021 Biggest Draft Bust, 
-                    2020 Biggest Trade Rape, 2020 Best Week Performance, 2020 Best Player Performance,
-                    2019 Best Draft, 2018 Last Place
-                <p>
-                    <strong>Career Record: </strong>59-86
-                    <br /><strong>Career Winning Percentage: </strong>41%
-                    <br /><strong>Playoff Percentage: </strong>33%
-                    <br /><strong>Finshes: </strong>6th, 10th, 8th, 1st, 8th, 10th, 2nd, 4th, 10th
-                </p>
+                <div id="team-info"></div>
 
                 <h1>Biography</h1>
                 <p>
@@ -188,4 +149,11 @@
 
         </p>
 
-    </body>
+    <script src="../data/teams.js"></script>
+        <script>
+            RFL.ready.then(function () {
+                RFL.renderTeamInfo(document.getElementById('team-info'), 'grudensPlan');
+                RFL.renderRoster(document.getElementById('team-roster'), 'grudensPlan');
+            });
+        </script>
+        </body>

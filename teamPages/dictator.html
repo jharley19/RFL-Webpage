@@ -75,24 +75,7 @@
 		<nav id="nav">
 			<h3>Roster</h3>
 
-			<p>
-				QB: Matthew Stafford
-				<br />RB: Chase Brown
-				<br />RB: Bucky Irving
-				<br />WR: Ceedee Lamb
-				<br />WR: Emeka Egbuka
-				<br />TE: Hunter Henry
-				<br />FLEX: Woody Marks
-				<br />FLEX: Kyle Monangai
-				<br />DST: Denver Broncos
-				<br />BN: Audric Estime
-				<br />BN: Troy Franklin
-				<br />BN: Josh Downs
-				<br />BN: Quentin Johnston
-				<br />BN: Darren Waller
-				<br />BN: Colby Parkinson
-				<br />RES: DK Metcalf
-			</p>
+			<p id="team-roster"></p>
 		</nav>
 
 		<article id="article">
@@ -101,39 +84,9 @@
 				Your browser does not support the video tag.
 			</video>
 				<h1>Basic Information</h1>
-				<p>
-					<strong>Owner: </strong> Jeremy Harley
-					<br />	<strong>Co-Manager: </strong>N/A
-					<br /> <strong>Year joined: </strong>2013
-				</p>
-				<p>
-					<strong>Former Co-Managers: </strong>N/A
-					<br /> <strong>Former Team Names:</strong> Avalanche (2013), Do you even lift bro (2014), The Work (2015), FaZe Harambe (2016), The Power of Scabby Katie (2017),
-					Fuck Cam Newton (2018), The Lord of the Light (2019)
-				</p>
-				<p>
-					<strong>Championships:</strong> 2013, 2015, 2017
-					<br /><strong>Other Awards: </strong> 2025 Best Undrafted Pickup, 2025 Panzerkampfwagen Bowl Survivor, 2025 Best Draft
-					2024 Best Undrafted Pickup,
-					2023 Best Undrafted Pickup (Dynasty), 
-					2021 Comeback Player of the Year, 2021 Biggest Trade Rape, 2021 Best League Video, 
-					2020 Best Undrafted Pickup, 2020 Best Team Name Announcement Video, 2020 Best In-Season Video, 2020 Panzerkampfwagen Bowl Survivor, 
-					2019 Worst Draft, 2019 Best Undrafted Pickup, 2019 Best League Music Video, 2019 Best Non-Music Video, 
-					2018 Highest Scoring Team, 2018 Worst Draft,
-					2017 Highest Scoring Team, 
-					2016 Regular Season First Place, 2016 Highest Scoring Team, 
-					2015 Regular Season First Place,
-					2014 Best Player Performance, 2014 Highest Scoring Team, 
-					2013 Regular Season First Place, 2013 Highest Scoring Team, 2013 Best Week Performance
-				</p>
-				<p>
-					<strong>Career Record: </strong>126-84
-					<br /><strong>Career Winning Percentage: </strong>60%
-					<br /><strong>Playoff Percentage: </strong>62%
-					<br /><strong>Finshes: </strong>1st, 2nd, 1st, 3rd, 1st, 3rd, 6th, 9th, 2nd, 2nd, 8th, 6th, 9th
-				</p>
+                <div id="team-info"></div>
 
-				<h1>Biography</h1>
+                <h1>Biography</h1>
 				<p>
 					The Dictator is recognized as the founding franchise of the RFL. Since the league’s inception, team owner Jeremy Harley has also served as the league’s 
 					long-standing commissioner, overseeing operations while building one of the most successful dynasties in RFL history.
@@ -302,4 +255,11 @@
 	<footer>
 		<p><a href="../index.html"><img src="../RFL LOGO.png" width="100px" /></a></p>
 	</footer>
-</body>
+<script src="../data/teams.js"></script>
+        <script>
+            RFL.ready.then(function () {
+                RFL.renderTeamInfo(document.getElementById('team-info'), 'dictator');
+                RFL.renderRoster(document.getElementById('team-roster'), 'dictator');
+            });
+        </script>
+        </body>

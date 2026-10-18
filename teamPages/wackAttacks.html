@@ -206,50 +206,13 @@
             <nav>
                 <h3>Roster</h3>
 
-                <p>
-
-                    QB: Dak Prescott
-                    <br />RB: D'Andre Swift
-                    <br />RB: Breece Hall
-                    <br />WR: Amon-Ra St. Brown
-                    <br />WR: Nico Collins
-                    <br />TE: Travis Kelce
-                    <br />FLEX: Aaron Jones
-                    <br />FLEX: Rhamondre Stevenson
-                    <br />DST: Seattle Seahawks
-                    <br />BN: Baker Mayfield
-                    <br />BN: Tony Pollard
-                    <br />BN: Tyjae Spears
-                    <br />BN: Jayden Reed
-                    <br />BN: Keon Coleman
-                    <br />BN: Kayshon Boutte
-                </p>
+                <p id="team-roster"></p>
 
             </nav>
 
             <article>
                 <h1>Basic Information</h1>
-                <p>
-
-                    <strong>Owner: </strong> Zach Zalovick
-                    <br />	<strong>Co-Manager: </strong>N/A
-                    <br /> <strong>Year joined: </strong>2021
-
-                <p>
-                    <strong>Former Co-Managers: </strong>N/A
-                    <br /> <strong>Former Team Names:</strong> N/A
-                </p>
-                <p>
-                    <strong>Championships:</strong> 2024
-                    <br /><strong>Other Awards: </strong>2025 Biggest Draft Steal (Dynasty),
-                    2024 Best Draft, 2024 Biggest Draft Steal,
-                    2021 Biggest Draft Steal, 2021 Best Week Performance
-                <p>
-                    <strong>Career Record: </strong>42-43
-                    <br /><strong>Career Winning Percentage: </strong>49%
-                    <br /><strong>Playoff Percentage: </strong>20%
-                    <br /><strong>Finshes: </strong>7th, 8th, 6th, 1st, 7th
-                </p>
+                <div id="team-info"></div>
 
                 <h1>Biography</h1>
                 <p>
@@ -319,5 +282,12 @@
 
         </p>
 
-    </body>
+    <script src="../data/teams.js"></script>
+        <script>
+            RFL.ready.then(function () {
+                RFL.renderTeamInfo(document.getElementById('team-info'), 'wackAttacks');
+                RFL.renderRoster(document.getElementById('team-roster'), 'wackAttacks');
+            });
+        </script>
+        </body>
 

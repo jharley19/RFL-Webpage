@@ -1,0 +1,1067 @@
+{
+  "teams": [
+    {
+      "id": "dictator",
+      "name": "The Dictator",
+      "active": true,
+      "owner": "Jeremy Harley",
+      "coManager": null,
+      "yearJoined": "2013",
+      "formerCoManagers": null,
+      "formerNames": "Avalanche (2013), Do you even lift bro (2014), The Work (2015), FaZe Harambe (2016), The Power of Scabby Katie (2017), Fuck Cam Newton (2018), The Lord of the Light (2019)",
+      "championships": [
+        2013,
+        2015,
+        2017
+      ],
+      "awards": [
+        "2025 Best Undrafted Pickup",
+        "2025 Panzerkampfwagen Bowl Survivor",
+        "2025 Best Draft 2024 Best Undrafted Pickup",
+        "2023 Best Undrafted Pickup (Dynasty)",
+        "2021 Comeback Player of the Year",
+        "2021 Biggest Trade Rape",
+        "2021 Best League Video",
+        "2020 Best Undrafted Pickup",
+        "2020 Best Team Name Announcement Video",
+        "2020 Best In-Season Video",
+        "2020 Panzerkampfwagen Bowl Survivor",
+        "2019 Worst Draft",
+        "2019 Best Undrafted Pickup",
+        "2019 Best League Music Video",
+        "2019 Best Non-Music Video",
+        "2018 Highest Scoring Team",
+        "2018 Worst Draft",
+        "2017 Highest Scoring Team",
+        "2016 Regular Season First Place",
+        "2016 Highest Scoring Team",
+        "2015 Regular Season First Place",
+        "2014 Best Player Performance",
+        "2014 Highest Scoring Team",
+        "2013 Regular Season First Place",
+        "2013 Highest Scoring Team",
+        "2013 Best Week Performance"
+      ],
+      "wins": 126,
+      "losses": 84,
+      "playoffPct": "62%",
+      "finishes": [
+        "1st",
+        "2nd",
+        "1st",
+        "3rd",
+        "1st",
+        "3rd",
+        "6th",
+        "9th",
+        "2nd",
+        "2nd",
+        "8th",
+        "6th",
+        "9th"
+      ],
+      "roster": [
+        {
+          "pos": "QB",
+          "player": "Matthew Stafford"
+        },
+        {
+          "pos": "RB",
+          "player": "Chase Brown"
+        },
+        {
+          "pos": "RB",
+          "player": "Bucky Irving"
+        },
+        {
+          "pos": "WR",
+          "player": "Ceedee Lamb"
+        },
+        {
+          "pos": "WR",
+          "player": "Emeka Egbuka"
+        },
+        {
+          "pos": "TE",
+          "player": "Hunter Henry"
+        },
+        {
+          "pos": "FLEX",
+          "player": "Woody Marks"
+        },
+        {
+          "pos": "FLEX",
+          "player": "Kyle Monangai"
+        },
+        {
+          "pos": "DST",
+          "player": "Denver Broncos"
+        },
+        {
+          "pos": "BN",
+          "player": "Audric Estime"
+        },
+        {
+          "pos": "BN",
+          "player": "Troy Franklin"
+        },
+        {
+          "pos": "BN",
+          "player": "Josh Downs"
+        },
+        {
+          "pos": "BN",
+          "player": "Quentin Johnston"
+        },
+        {
+          "pos": "BN",
+          "player": "Darren Waller"
+        },
+        {
+          "pos": "BN",
+          "player": "Colby Parkinson"
+        },
+        {
+          "pos": "RES",
+          "player": "DK Metcalf"
+        }
+      ]
+    },
+    {
+      "id": "redArmy",
+      "name": "The Red Army",
+      "active": true,
+      "owner": "Brian Levesque",
+      "coManager": null,
+      "yearJoined": "2013",
+      "formerCoManagers": null,
+      "formerNames": "Team USA (2013), That Awesome Team (2014), Waldorf Ice Penguins (2015), Fusion FC (2016), Krippled United (2017), Melvin and the Shitmunks (2018), Cookie Charizards (2019)",
+      "championships": [],
+      "awards": [
+        "2024 Biggest Draft Bust",
+        "2023 Worst Draft",
+        "2023 Toes Bowl Winner",
+        "2022 Toes Bowl Winner",
+        "2021 Panzerkampfwagen Bowl Survivor",
+        "2021 Worst Draft",
+        "2020 Best Draft",
+        "2020 Last Place",
+        "2019 Panzerkampfwagen Bowl Survivor",
+        "2018 Best Draft",
+        "2017 Best Week Performance",
+        "2016 Toes Bowl Winner",
+        "2015 Toes Bowl Winner",
+        "2014 Toes Bowl Winner"
+      ],
+      "wins": 98,
+      "losses": 112,
+      "playoffPct": "15%",
+      "finishes": [
+        "4th",
+        "5th",
+        "5th",
+        "5th",
+        "4th",
+        "6th",
+        "9th",
+        "10th",
+        "9th",
+        "5th",
+        "5th",
+        "8th",
+        "6th"
+      ],
+      "roster": [
+        {
+          "pos": "QB",
+          "player": "Trevor Lawerence"
+        },
+        {
+          "pos": "RB",
+          "player": "Bijan Robinson"
+        },
+        {
+          "pos": "RB",
+          "player": "Samaje Perine"
+        },
+        {
+          "pos": "WR",
+          "player": "Tee Higgins"
+        },
+        {
+          "pos": "WR",
+          "player": "Tetairoa McMillan"
+        },
+        {
+          "pos": "TE",
+          "player": "Brenton Strange"
+        },
+        {
+          "pos": "FLEX",
+          "player": "Ladd McConkey"
+        },
+        {
+          "pos": "FLEX",
+          "player": "Marvin Harrison Jr."
+        },
+        {
+          "pos": "DST",
+          "player": "Tampa Bay Buccaneers"
+        },
+        {
+          "pos": "BN",
+          "player": "Tre Tucker"
+        },
+        {
+          "pos": "BN",
+          "player": "Jerry Jeudy"
+        },
+        {
+          "pos": "BN",
+          "player": "Dalton Schultz"
+        }
+      ]
+    },
+    {
+      "id": "bigOunce",
+      "name": "Big Ounce",
+      "active": true,
+      "owner": "Brandon Harley",
+      "coManager": "Alexis Garcia (2019-present)",
+      "yearJoined": "2013, 2017",
+      "formerCoManagers": null,
+      "formerNames": "Big Ounce Pro Street (2017-2018), Big Ounce Back to Back (2019), Big Ounce Three Peat (2020)",
+      "championships": [
+        2018,
+        2019
+      ],
+      "awards": [
+        "2025 Toes Bowl Champion",
+        "2025 Best Undrafted Pickup (Dynasty)",
+        "2024 Best Week Performance",
+        "2024 Comeback Player of the Year",
+        "2023 Panzerkampfwagen Bowl Survivor",
+        "2023 Biggest Draft Bust",
+        "2022 Best Undrafted Pickup",
+        "2020 Worst Draft",
+        "2020 Biggest Trade Rape",
+        "2019 Highest Scoring Team",
+        "2019 Regular Season First Place",
+        "2019 Biggest Draft Steal",
+        "2017 Best Player Performance",
+        "2017 Toes Bowl Champion"
+      ],
+      "wins": 90,
+      "losses": 73,
+      "playoffPct": "50%",
+      "finishes": [
+        "2nd",
+        "5th",
+        "1st",
+        "1st",
+        "8th",
+        "4th",
+        "7th",
+        "9th",
+        "2nd",
+        "5th"
+      ],
+      "roster": [
+        {
+          "pos": "QB",
+          "player": "Josh Allen"
+        },
+        {
+          "pos": "RB",
+          "player": "Derrick Henry"
+        },
+        {
+          "pos": "RB",
+          "player": "David Montgomery"
+        },
+        {
+          "pos": "WR",
+          "player": "Mike Evans"
+        },
+        {
+          "pos": "WR",
+          "player": "Puka Nacua"
+        },
+        {
+          "pos": "TE",
+          "player": "George Kittle"
+        },
+        {
+          "pos": "FLEX",
+          "player": "Michael Wilson"
+        },
+        {
+          "pos": "FLEX",
+          "player": "Jaylen Waddle"
+        },
+        {
+          "pos": "DST",
+          "player": "Detroit Lions"
+        },
+        {
+          "pos": "BN",
+          "player": "Lamar Jackson"
+        },
+        {
+          "pos": "BN",
+          "player": "Tyrone Tracy"
+        },
+        {
+          "pos": "BN",
+          "player": "Jauan Jennings"
+        },
+        {
+          "pos": "BN",
+          "player": "Wan'Dale Robinson"
+        },
+        {
+          "pos": "BN",
+          "player": "Jordan Addison"
+        },
+        {
+          "pos": "BN",
+          "player": "Harold Fannin"
+        }
+      ]
+    },
+    {
+      "id": "grudensPlan",
+      "name": "Gruden's Plan",
+      "active": true,
+      "owner": "Michael Boswell Jr.",
+      "coManager": "Joe Whitten (2024-present)",
+      "yearJoined": "2017",
+      "formerCoManagers": "Evan Patterson (2018), Jacob Kerstner (2019 offseason), Logan Handwork (2020-2021), Ben Hatfield (2022), Tyler Bowie (2023)",
+      "formerNames": "Rex Ryan (2017)",
+      "championships": [
+        2020
+      ],
+      "awards": [
+        "2025 Last Place",
+        "2025 Worst Draft",
+        "2025 Biggest Draft Bust",
+        "2024 Biggest Trade Rape",
+        "2023 Comeback Player of the Year",
+        "2022 Last Place",
+        "2021 Best Undrafted Pickup",
+        "2021 Biggest Draft Bust",
+        "2020 Biggest Trade Rape",
+        "2020 Best Week Performance",
+        "2020 Best Player Performance",
+        "2019 Best Draft",
+        "2018 Last Place"
+      ],
+      "wins": 59,
+      "losses": 86,
+      "playoffPct": "33%",
+      "finishes": [
+        "6th",
+        "10th",
+        "8th",
+        "1st",
+        "8th",
+        "10th",
+        "2nd",
+        "4th",
+        "10th"
+      ],
+      "roster": [
+        {
+          "pos": "QB",
+          "player": "Lamar Jackson"
+        },
+        {
+          "pos": "RB",
+          "player": "Josh Jacobs"
+        },
+        {
+          "pos": "RB",
+          "player": "Breece Hall"
+        },
+        {
+          "pos": "WR",
+          "player": "Garrett Wilson"
+        },
+        {
+          "pos": "WR",
+          "player": "George Pickens"
+        },
+        {
+          "pos": "TE",
+          "player": "Mark Andrews"
+        },
+        {
+          "pos": "FLEX",
+          "player": "Cooper Kupp"
+        },
+        {
+          "pos": "FLEX",
+          "player": "Rachaad White"
+        },
+        {
+          "pos": "DST",
+          "player": "New York Jets"
+        },
+        {
+          "pos": "BN",
+          "player": "Isaiah Davis"
+        },
+        {
+          "pos": "BN",
+          "player": "Alexander Mattison"
+        },
+        {
+          "pos": "BN",
+          "player": "Jayden Reed"
+        },
+        {
+          "pos": "BN",
+          "player": "Keon Coleman"
+        },
+        {
+          "pos": "BN",
+          "player": "Quentin Johnston"
+        },
+        {
+          "pos": "BN",
+          "player": "T.J. Hockenson"
+        }
+      ]
+    },
+    {
+      "id": "marijuanas",
+      "name": "Maryland Marijuanas",
+      "active": true,
+      "owner": "Harry Heck",
+      "coManager": null,
+      "yearJoined": "2016",
+      "formerCoManagers": "Ben Adams (2020 offseason), Michael Heck (2023-2024)",
+      "formerNames": "Rockville Rampage (2016), Waldorf 69ers (2017), Daddy Brees Failing Me (2018)",
+      "championships": [
+        2025
+      ],
+      "awards": [
+        "2025 Best Week Performance",
+        "2025 Biggest Draft Steal (Dynasty)",
+        "2024 Toes Bowl Champion",
+        "2024 Biggest Trade Rape (Dynasty) 2023 Best Week Performance",
+        "2022 Best Player Performance",
+        "2021 First Place Regular Season",
+        "2021 Most Points For",
+        "2021 Best Draft",
+        "2019 Comeback Player of the Year",
+        "2017 Last Place"
+      ],
+      "wins": 88,
+      "losses": 77,
+      "playoffPct": "60%",
+      "finishes": [
+        "4th",
+        "8th",
+        "8th",
+        "2nd",
+        "3rd",
+        "3rd",
+        "6th",
+        "4th",
+        "5th",
+        "1st"
+      ],
+      "roster": [
+        {
+          "pos": "QB",
+          "player": "Joe Burrow"
+        },
+        {
+          "pos": "RB",
+          "player": "Saquon Barkley"
+        },
+        {
+          "pos": "RB",
+          "player": "Jahmyr Gibbs"
+        },
+        {
+          "pos": "WR",
+          "player": "Terry McLaurin"
+        },
+        {
+          "pos": "WR",
+          "player": "Ladd McConkey"
+        },
+        {
+          "pos": "TE",
+          "player": "Pat Freiermuth"
+        },
+        {
+          "pos": "FLEX",
+          "player": "James Cook"
+        },
+        {
+          "pos": "FLEX",
+          "player": "DK Metcalf"
+        },
+        {
+          "pos": "DST",
+          "player": "Washington Commanders"
+        },
+        {
+          "pos": "BN",
+          "player": "Baker Mayfield"
+        },
+        {
+          "pos": "BN",
+          "player": "Tyjae Spears"
+        },
+        {
+          "pos": "BN",
+          "player": "Michael Pittman Jr."
+        },
+        {
+          "pos": "BN",
+          "player": "Adam Thielen"
+        },
+        {
+          "pos": "BN",
+          "player": "Khalil Shakir"
+        },
+        {
+          "pos": "BN",
+          "player": "Detroit Lions"
+        },
+        {
+          "pos": "RES",
+          "player": "Chris Godwin"
+        }
+      ]
+    },
+    {
+      "id": "hurtsHelicopter",
+      "name": "The Hurts Helicopter",
+      "active": true,
+      "owner": "Zane Lehosky",
+      "coManager": null,
+      "yearJoined": "2017",
+      "formerCoManagers": "Nick Sagun (2019)",
+      "formerNames": "The Foles Wagon (2017), The Wentz Wagon Revenge Tour (2019), The Wentz Wagon (2020)",
+      "championships": [
+        2021
+      ],
+      "awards": [
+        "2025 Biggest Trade Rape",
+        "2025 Highest Scoring Team",
+        "2023 Biggest Draft Steal",
+        "2023 Last Place",
+        "2022 Best League Titantron Video",
+        "2022 Biggest Draft Steal",
+        "2022 Best Draft",
+        "2022 Highest Scoring Team",
+        "2022 Best Week Performance",
+        "2021 Best Player Performance",
+        "2020 Comeback Player of the Year",
+        "2020 Biggest Draft Steal",
+        "2020 Regular Season First Place",
+        "2020 Highest Scoring Team",
+        "2019 Best Player Performance",
+        "2019 Last Place",
+        "2018 Best Player Performance"
+      ],
+      "wins": 76,
+      "losses": 71,
+      "playoffPct": "44%",
+      "finishes": [
+        "7th",
+        "5th",
+        "10th",
+        "2nd",
+        "1st",
+        "3rd",
+        "10th",
+        "7th",
+        "4th"
+      ],
+      "roster": [
+        {
+          "pos": "QB",
+          "player": "Patrick Mahomes"
+        },
+        {
+          "pos": "RB",
+          "player": "Travis Etienne"
+        },
+        {
+          "pos": "RB",
+          "player": "Antonio Gibson"
+        },
+        {
+          "pos": "WR",
+          "player": "Justin Jefferson"
+        },
+        {
+          "pos": "WR",
+          "player": "DeVonta Smith"
+        },
+        {
+          "pos": "TE",
+          "player": "Jake Ferguson"
+        },
+        {
+          "pos": "FLEX",
+          "player": "Courtland Sutton"
+        },
+        {
+          "pos": "FLEX",
+          "player": "Jerry Jeudy"
+        },
+        {
+          "pos": "DST",
+          "player": "Philadelphia Eagles"
+        },
+        {
+          "pos": "BN",
+          "player": "Alec Pierce"
+        },
+        {
+          "pos": "BN",
+          "player": "Ray-Ray McCloud"
+        },
+        {
+          "pos": "BN",
+          "player": "Jahan Dotson"
+        },
+        {
+          "pos": "BN",
+          "player": "Johnny Wilson"
+        },
+        {
+          "pos": "BN",
+          "player": "Grant Calcaterra"
+        },
+        {
+          "pos": "BN",
+          "player": "Buffalo Bills"
+        },
+        {
+          "pos": "RES",
+          "player": "Dallas Goedert"
+        }
+      ]
+    },
+    {
+      "id": "goofyGod",
+      "name": "Goofy God",
+      "active": true,
+      "owner": "Jason Rowland",
+      "coManager": null,
+      "yearJoined": "2018",
+      "formerCoManagers": "Ben Adams (2024)",
+      "formerNames": "High Quality H2O (2018), The Many Faced God (2019), The Red Wolf of Wall Street (2020)",
+      "championships": [],
+      "awards": [
+        "2024 Regular Season First Place",
+        "2024 Highest Scoring Team",
+        "2024 Biggest Draft Steal (Dynasty)",
+        "2023 Regular Season First Place",
+        "2023 Highest Scoring Team",
+        "2023 Best Player Performance",
+        "2023 Biggest Trade Rape",
+        "2022 Panzerkampfwagen Bowl Survivor",
+        "2021 Last Place",
+        "2021 Worst Draft",
+        "2020 Toes Bowl Winner"
+      ],
+      "wins": 66,
+      "losses": 65,
+      "playoffPct": "50%",
+      "finishes": [
+        "4th",
+        "4th",
+        "5th",
+        "10th",
+        "9th",
+        "3rd",
+        "3rd",
+        "8th"
+      ],
+      "roster": [
+        {
+          "pos": "QB",
+          "player": "Sam Darnold"
+        },
+        {
+          "pos": "RB",
+          "player": "Christian McCaffrey"
+        },
+        {
+          "pos": "RB",
+          "player": "Kyren Williams"
+        },
+        {
+          "pos": "WR",
+          "player": "Davante Adams"
+        },
+        {
+          "pos": "WR",
+          "player": "DeVonta Smith"
+        },
+        {
+          "pos": "TE",
+          "player": "Colston Loveland"
+        },
+        {
+          "pos": "FLEX",
+          "player": "Travis Etienne"
+        },
+        {
+          "pos": "FLEX",
+          "player": "Deebo Samuel"
+        },
+        {
+          "pos": "DST",
+          "player": "Kansas City Chiefs"
+        },
+        {
+          "pos": "BN",
+          "player": "Brock Purdy"
+        },
+        {
+          "pos": "BN",
+          "player": "Isiaih Pacheco"
+        },
+        {
+          "pos": "BN",
+          "player": "Parker Washington"
+        },
+        {
+          "pos": "BN",
+          "player": "Romeo Doubs"
+        },
+        {
+          "pos": "BN",
+          "player": "Michael Pittman"
+        },
+        {
+          "pos": "BN",
+          "player": "T.J. Hockenson"
+        },
+        {
+          "pos": "RES",
+          "player": "Jayden Daniels"
+        }
+      ]
+    },
+    {
+      "id": "mulletMan",
+      "name": "Mullet Man",
+      "active": true,
+      "owner": "Billy Goodnow",
+      "coManager": "Alan Ashford (2022, 2024-present)",
+      "yearJoined": "2018",
+      "formerCoManagers": "Ben Adams (2020-2021, 2023)",
+      "formerNames": "Pepper Death44 (2018), sad boi hours (2019)",
+      "championships": [],
+      "awards": [
+        "2025 Best Player Performance",
+        "2025 First Place Regular Season",
+        "2025 Biggest Draft Steal 2024 Best Player Performance",
+        "2024 Panzerkampfwagen Bowl Survivor 2023 Best Draft",
+        "2022 Worst Draft",
+        "2022 Biggest Trade Rape",
+        "2021 Toes Bowl Winner",
+        "2020 Biggest Draft Bust",
+        "2019 Best Week Performance",
+        "2019 Toes Bowl Winner"
+      ],
+      "wins": 65,
+      "losses": 65,
+      "playoffPct": "38%",
+      "finishes": [
+        "9th",
+        "5th",
+        "7th",
+        "5th",
+        "4th",
+        "1st",
+        "9th",
+        "3rd"
+      ],
+      "roster": [
+        {
+          "pos": "QB",
+          "player": "Joe Burrow"
+        },
+        {
+          "pos": "RB",
+          "player": "Jahmyr Gibbs"
+        },
+        {
+          "pos": "RB",
+          "player": "Josh Jacobs"
+        },
+        {
+          "pos": "WR",
+          "player": "Jaxon Smith-Njigba"
+        },
+        {
+          "pos": "WR",
+          "player": "Zay Flowers"
+        },
+        {
+          "pos": "TE",
+          "player": "Tyler Warren"
+        },
+        {
+          "pos": "FLEX",
+          "player": "Kenneth Gainwell"
+        },
+        {
+          "pos": "FLEX",
+          "player": "Christian Watson"
+        },
+        {
+          "pos": "DST",
+          "player": "Green Bay Packers"
+        },
+        {
+          "pos": "BN",
+          "player": "Justin Herbert"
+        },
+        {
+          "pos": "BN",
+          "player": "Rome Odunze"
+        },
+        {
+          "pos": "BN",
+          "player": "Chris Godwin"
+        },
+        {
+          "pos": "BN",
+          "player": "Ricky Pearsall"
+        },
+        {
+          "pos": "BN",
+          "player": "Jalen Coker"
+        },
+        {
+          "pos": "BN",
+          "player": "AJ Barner"
+        },
+        {
+          "pos": "RES",
+          "player": "Quinshon Judkins"
+        }
+      ]
+    },
+    {
+      "id": "sleepyNick",
+      "name": "Sleepy Nick",
+      "active": true,
+      "owner": "Nick Sagun",
+      "coManager": null,
+      "yearJoined": "2014, 2020",
+      "formerCoManagers": null,
+      "formerNames": "Lollipop Guild (2014), SuperNick's SideKicks (2015)",
+      "championships": [],
+      "awards": [
+        "2025 Comeback Player of the Year",
+        "2024 Worst Draft",
+        "2024 Last Place",
+        "2022 Comeback Player of the Year",
+        "2020 Worst Draft"
+      ],
+      "wins": 53,
+      "losses": 76,
+      "playoffPct": "38%",
+      "finishes": [
+        "7th",
+        "7th",
+        "4th",
+        "6th",
+        "1st",
+        "7th",
+        "10th",
+        "2nd"
+      ],
+      "roster": [
+        {
+          "pos": "QB",
+          "player": "Jalen Hurts"
+        },
+        {
+          "pos": "RB",
+          "player": "Jonathan Taylor"
+        },
+        {
+          "pos": "RB",
+          "player": "Jaylen Warren"
+        },
+        {
+          "pos": "WR",
+          "player": "Justin Jefferson"
+        },
+        {
+          "pos": "WR",
+          "player": "Chris Olave"
+        },
+        {
+          "pos": "TE",
+          "player": "Juwan Johnson"
+        },
+        {
+          "pos": "FLEX",
+          "player": "Rico Dowdle"
+        },
+        {
+          "pos": "FLEX",
+          "player": "Brian Thomas Jr."
+        },
+        {
+          "pos": "DST",
+          "player": "Houston Texans"
+        },
+        {
+          "pos": "BN",
+          "player": "Jacoby Brissett"
+        },
+        {
+          "pos": "BN",
+          "player": "Chuba Hubbard"
+        },
+        {
+          "pos": "BN",
+          "player": "Emmanuel Wilson"
+        },
+        {
+          "pos": "BN",
+          "player": "Luther Burden"
+        },
+        {
+          "pos": "BN",
+          "player": "Dallas Goedert"
+        },
+        {
+          "pos": "BN",
+          "player": "Los Angeles Rams"
+        },
+        {
+          "pos": "RES",
+          "player": "Rashee Rice"
+        },
+        {
+          "pos": "RES",
+          "player": "Trey Benson"
+        }
+      ]
+    },
+    {
+      "id": "wackAttacks",
+      "name": "Wack Attacks",
+      "active": true,
+      "owner": "Zach Zalovick",
+      "coManager": null,
+      "yearJoined": "2021",
+      "formerCoManagers": null,
+      "formerNames": null,
+      "championships": [
+        2024
+      ],
+      "awards": [
+        "2025 Biggest Draft Steal (Dynasty)",
+        "2024 Best Draft",
+        "2024 Biggest Draft Steal",
+        "2021 Biggest Draft Steal",
+        "2021 Best Week Performance"
+      ],
+      "wins": 42,
+      "losses": 43,
+      "playoffPct": "20%",
+      "finishes": [
+        "7th",
+        "8th",
+        "6th",
+        "1st",
+        "7th"
+      ],
+      "roster": [
+        {
+          "pos": "QB",
+          "player": "Dak Prescott"
+        },
+        {
+          "pos": "RB",
+          "player": "D'Andre Swift"
+        },
+        {
+          "pos": "RB",
+          "player": "Breece Hall"
+        },
+        {
+          "pos": "WR",
+          "player": "Amon-Ra St. Brown"
+        },
+        {
+          "pos": "WR",
+          "player": "Nico Collins"
+        },
+        {
+          "pos": "TE",
+          "player": "Travis Kelce"
+        },
+        {
+          "pos": "FLEX",
+          "player": "Aaron Jones"
+        },
+        {
+          "pos": "FLEX",
+          "player": "Rhamondre Stevenson"
+        },
+        {
+          "pos": "DST",
+          "player": "Seattle Seahawks"
+        },
+        {
+          "pos": "BN",
+          "player": "Baker Mayfield"
+        },
+        {
+          "pos": "BN",
+          "player": "Tony Pollard"
+        },
+        {
+          "pos": "BN",
+          "player": "Tyjae Spears"
+        },
+        {
+          "pos": "BN",
+          "player": "Jayden Reed"
+        },
+        {
+          "pos": "BN",
+          "player": "Keon Coleman"
+        },
+        {
+          "pos": "BN",
+          "player": "Kayshon Boutte"
+        }
+      ]
+    },
+    {
+      "id": "babylon",
+      "name": "Babylon",
+      "active": false,
+      "wins": 38,
+      "losses": null
+    },
+    {
+      "id": "benskins",
+      "name": "Benskins",
+      "active": false,
+      "wins": null,
+      "losses": 36
+    }
+  ]
+}

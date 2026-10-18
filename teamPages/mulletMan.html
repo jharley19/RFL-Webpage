@@ -33,54 +33,13 @@
 
                 <h3>Roster</h3>
 
-                <p>
-                    QB: Joe Burrow
-                    <br />RB: Jahmyr Gibbs
-                    <br />RB: Josh Jacobs
-                    <br />WR: Jaxon Smith-Njigba
-                    <br />WR: Zay Flowers
-                    <br />TE: Tyler Warren
-                    <br />FLEX: Kenneth Gainwell
-                    <br />FLEX: Christian Watson
-                    <br />DST: Green Bay Packers
-                    <br />BN: Justin Herbert
-                    <br />BN: Rome Odunze
-                    <br />BN: Chris Godwin
-                    <br />BN: Ricky Pearsall
-                    <br />BN: Jalen Coker
-                    <br />BN: AJ Barner
-                    <br />RES: Quinshon Judkins
-                </p>
+                <p id="team-roster"></p>
 
             </nav>
 
             <article id="article">
                 <h1>Basic Information</h1>
-                <p>
-
-                    <strong>Owner: </strong> Billy Goodnow
-                    <br />	<strong>Co-Manager: </strong> Alan Ashford (2022, 2024-present) 
-                    <br /> <strong>Year joined: </strong>2018
-
-                <p>
-                    <strong>Former Co-Managers: </strong> Ben Adams (2020-2021, 2023)
-                    <br /> <strong>Former Team Names:</strong> Pepper Death44 (2018), sad boi hours (2019)
-                </p>
-                <p>
-                    <strong>Championships:</strong> N/A
-                    <br /><strong>Other Awards: </strong> 2025 Best Player Performance, 2025 First Place Regular Season, 2025 Biggest Draft Steal
-                    2024 Best Player Performance, 2024 Panzerkampfwagen Bowl Survivor
-                    2023 Best Draft,
-                    2022 Worst Draft, 2022 Biggest Trade Rape, 
-                    2021 Toes Bowl Winner, 
-                    2020 Biggest Draft Bust, 
-                    2019 Best Week Performance, 2019 Toes Bowl Winner
-                <p>
-                    <strong>Career Record: </strong>65-65
-                    <br /><strong>Career Winning Percentage: </strong>50%
-                    <br /><strong>Playoff Percentage: </strong>38%
-                    <br /><strong>Finshes: </strong>9th, 5th, 7th, 5th, 4th, 1st, 9th, 3rd
-                </p>
+                <div id="team-info"></div>
 
                 <h1>Biography</h1>
                 <p>
@@ -187,4 +146,11 @@
 
         </p>
 
-    </body>
+    <script src="../data/teams.js"></script>
+        <script>
+            RFL.ready.then(function () {
+                RFL.renderTeamInfo(document.getElementById('team-info'), 'mulletMan');
+                RFL.renderRoster(document.getElementById('team-roster'), 'mulletMan');
+            });
+        </script>
+        </body>
