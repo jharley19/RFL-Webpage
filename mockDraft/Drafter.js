@@ -84,18 +84,13 @@
 	var autopickedteam = [];
 	var currSpot = 'empty';
 
-
-
-
 	function startFunction() {
 		if (!draftStarted){
-			
 			document.getElementById("start").innerText = "Drafting...";
 			draftStarted = true;
 			currSpot = '1.01';
 			daCount = 1;
 			teamIndex = 1;
-			
 			drafting();
 		}
 	}
@@ -132,7 +127,6 @@
 
 	function posFunction(curr) {
 		// if no player set yet
-		
 		if(curr != currSpot){
 			if (document.getElementById(curr).value.match("[a-zA-Z-.]+ [a-zA-Z-]+")) {
 				if(window.confirm("Are you sure you want to remove this player?")){
@@ -141,8 +135,7 @@
 					let removedName = document.getElementById(curr).value;
 					var removedObj; 
 					var teamNumber;
-					
-					
+									
 					if(team1.some(x=> x.name == removedName)){		
 						removedObj = team1.find(x=> x.name == removedName);
 						team1 = team1.filter( x => x.name != removedName);
@@ -223,11 +216,7 @@
 			} else {
 				if(window.confirm("Select a Player to be drafted at this spot below.")){
 					autoset = true; 
-					autocurrspot = curr;
-					
-					
-					
-				
+					autocurrspot = curr;				
 				}
 			}
 		}

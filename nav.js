@@ -55,7 +55,7 @@
             '</div>' +
         '</li>' +
         '<li><a href="./standings1.html">Standings</a></li>' +
-        '<li><a href="./records.html">Records</a></li>' +
+        '<li><a href="./records/records.html">Records</a></li>' +
         '<li><a href="./mockDraft/mockDraft.html">Mock Draft</a></li>' +
         '</ul></div>';
 
